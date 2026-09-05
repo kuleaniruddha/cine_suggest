@@ -5,17 +5,19 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: cinesuggest-app:latest
-    container_name: cinesuggest-platform
+    image: cineai-platform:latest
+    container_name: cineai-app
     ports:
-      - "8000:8000"
+      - "8080:8080"
     volumes:
-      - sqlite_data:/workspace/backend_data
+      - cineai_data:/app/data
     environment:
-      - SECRET_KEY=9a7c36a4f108d8de95d52bbefb9087cdce2304918e7e174b8893d3958742b6a2
-      - DATABASE_URL=sqlite:////workspace/backend_data/movie_rec.db
-      - TMDB_API_KEY=
+      - PORT=8080
+      - NODE_ENV=production
+      - DATABASE_URL=/app/data/cineai.db
+      - JWT_SECRET=supersecret_cineai_production_key_9824
+      - TMDB_API_KEY=4e44d9029b1270a757cddc766a1bcb63
     restart: unless-stopped
 
 volumes:
-  sqlite_data:
+  cineai_data:

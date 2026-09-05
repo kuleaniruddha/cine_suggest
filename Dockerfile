@@ -2,40 +2,42 @@
 # STAGE 1: Build the React Frontend
 # ==========================================
 FROM node:18-alpine AS frontend-builder
-WORKDIR /frontend
+WORKDIR /app/frontend
 COPY frontend/package*.json ./
 RUN npm install
 COPY frontend/ ./
 RUN npm run build
 
 # ==========================================
-# STAGE 2: Build the FastAPI Backend
+# STAGE 2: Run Express Backend & Serve Static Frontend
 # ==========================================
-FROM python:3.10-slim
-WORKDIR /workspace
+FROM node:18-alpine
+WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+# Install native dependencies for sqlite3
+RUN apk add --no-cache python3 make g++
 
-# Install python dependencies
-COPY backend/requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+# Install backend dependencies
+COPY backend/package*.json ./backend/
+RUN cd backend && npm install --omit=dev
 
-# Copy backend files and built frontend assets
-COPY backend/ ./backend
-COPY dataset/ ./dataset
-COPY --from=frontend-builder /frontend/dist ./backend/app/static
+# Copy backend files and precalculated Big Data assets
+COPY backend/ ./backend/
+COPY dataset/ ./dataset/
 
-# Set environment configurations
-ENV SECRET_KEY=9a7c36a4f108d8de95d52bbefb9087cdce2304918e7e174b8893d3958742b6a2
-ENV ALGORITHM=HS256
-ENV ACCESS_TOKEN_EXPIRE_MINUTES=1440
-ENV DATABASE_URL=sqlite:///./backend/movie_rec.db
-ENV PYTHONPATH=/workspace/backend
+# Copy compiled React frontend assets
+COPY --from=frontend-builder /app/frontend/dist ./frontend/dist
 
-EXPOSE 8000
+# Environment configurations
+ENV PORT=8080
+ENV NODE_ENV=production
+ENV DATABASE_URL=/app/data/cineai.db
+ENV JWT_SECRET=supersecret_cineai_production_key_9824
+ENV TMDB_API_KEY=4e44d9029b1270a757cddc766a1bcb63
+
+VOLUME ["/app/data"]
+
+EXPOSE 8080
 
 # Start server
-CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["node", "backend/index.js"]
