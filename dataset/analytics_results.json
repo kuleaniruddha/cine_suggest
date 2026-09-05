@@ -1,0 +1,7030 @@
+{
+  "summary": {
+    "total_ratings": 100836,
+    "total_users": 610,
+    "total_movies": 9742,
+    "sparsity_percentage": 98.3,
+    "avg_rating_overall": 3.5,
+    "dataset_name": "MovieLens ml-latest-small"
+  },
+  "svd_model_metrics": {
+    "latent_components": 20,
+    "explained_variance_percentage": 39.21,
+    "rmse": 2.363,
+    "algorithm": "Truncated Singular Value Decomposition (TruncatedSVD)"
+  },
+  "rating_distribution": {
+    "0.5": 1370,
+    "1.0": 2811,
+    "1.5": 1791,
+    "2.0": 7551,
+    "2.5": 5550,
+    "3.0": 20047,
+    "3.5": 13136,
+    "4.0": 26818,
+    "4.5": 8551,
+    "5.0": 13211
+  },
+  "bayesian_top_movies": [
+    {
+      "movieId": 318,
+      "tmdbId": 278,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "rating_count": 317,
+      "mean_rating": 4.43,
+      "weighted_score": 4.38
+    },
+    {
+      "movieId": 858,
+      "tmdbId": 238,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "rating_count": 192,
+      "mean_rating": 4.29,
+      "weighted_score": 4.22
+    },
+    {
+      "movieId": 2959,
+      "tmdbId": 550,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "rating_count": 218,
+      "mean_rating": 4.27,
+      "weighted_score": 4.22
+    },
+    {
+      "movieId": 260,
+      "tmdbId": 11,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "rating_count": 251,
+      "mean_rating": 4.23,
+      "weighted_score": 4.18
+    },
+    {
+      "movieId": 50,
+      "tmdbId": 629,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "rating_count": 204,
+      "mean_rating": 4.24,
+      "weighted_score": 4.18
+    },
+    {
+      "movieId": 527,
+      "tmdbId": 424,
+      "title": "Schindler's List (1993)",
+      "genres": "Drama|War",
+      "rating_count": 220,
+      "mean_rating": 4.22,
+      "weighted_score": 4.17
+    },
+    {
+      "movieId": 1221,
+      "tmdbId": 240,
+      "title": "Godfather: Part II, The (1974)",
+      "genres": "Crime|Drama",
+      "rating_count": 129,
+      "mean_rating": 4.26,
+      "weighted_score": 4.17
+    },
+    {
+      "movieId": 58559,
+      "tmdbId": 155,
+      "title": "Dark Knight, The (2008)",
+      "genres": "Action|Crime|Drama|IMAX",
+      "rating_count": 149,
+      "mean_rating": 4.24,
+      "weighted_score": 4.16
+    },
+    {
+      "movieId": 1196,
+      "tmdbId": 1891,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "rating_count": 211,
+      "mean_rating": 4.22,
+      "weighted_score": 4.16
+    },
+    {
+      "movieId": 1213,
+      "tmdbId": 769,
+      "title": "Goodfellas (1990)",
+      "genres": "Crime|Drama",
+      "rating_count": 126,
+      "mean_rating": 4.25,
+      "weighted_score": 4.16
+    },
+    {
+      "movieId": 296,
+      "tmdbId": 680,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "rating_count": 307,
+      "mean_rating": 4.2,
+      "weighted_score": 4.16
+    },
+    {
+      "movieId": 1197,
+      "tmdbId": 2493,
+      "title": "Princess Bride, The (1987)",
+      "genres": "Action|Adventure|Comedy|Fantasy|Romance",
+      "rating_count": 142,
+      "mean_rating": 4.23,
+      "weighted_score": 4.15
+    },
+    {
+      "movieId": 750,
+      "tmdbId": 935,
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
+      "genres": "Comedy|War",
+      "rating_count": 97,
+      "mean_rating": 4.27,
+      "weighted_score": 4.15
+    },
+    {
+      "movieId": 2571,
+      "tmdbId": 603,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "rating_count": 278,
+      "mean_rating": 4.19,
+      "weighted_score": 4.15
+    },
+    {
+      "movieId": 1198,
+      "tmdbId": 85,
+      "title": "Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)",
+      "genres": "Action|Adventure",
+      "rating_count": 200,
+      "mean_rating": 4.21,
+      "weighted_score": 4.15
+    }
+  ],
+  "genre_analytics": [
+    {
+      "genre": "Drama",
+      "count": 41928,
+      "avg_rating": 3.66
+    },
+    {
+      "genre": "Comedy",
+      "count": 39053,
+      "avg_rating": 3.38
+    },
+    {
+      "genre": "Action",
+      "count": 30635,
+      "avg_rating": 3.45
+    },
+    {
+      "genre": "Thriller",
+      "count": 26452,
+      "avg_rating": 3.49
+    },
+    {
+      "genre": "Adventure",
+      "count": 24161,
+      "avg_rating": 3.51
+    },
+    {
+      "genre": "Romance",
+      "count": 18124,
+      "avg_rating": 3.51
+    },
+    {
+      "genre": "Sci-Fi",
+      "count": 17243,
+      "avg_rating": 3.46
+    },
+    {
+      "genre": "Crime",
+      "count": 16681,
+      "avg_rating": 3.66
+    },
+    {
+      "genre": "Fantasy",
+      "count": 11834,
+      "avg_rating": 3.49
+    },
+    {
+      "genre": "Children",
+      "count": 9208,
+      "avg_rating": 3.41
+    },
+    {
+      "genre": "Mystery",
+      "count": 7674,
+      "avg_rating": 3.63
+    },
+    {
+      "genre": "Horror",
+      "count": 7291,
+      "avg_rating": 3.26
+    },
+    {
+      "genre": "Animation",
+      "count": 6988,
+      "avg_rating": 3.63
+    },
+    {
+      "genre": "War",
+      "count": 4859,
+      "avg_rating": 3.81
+    },
+    {
+      "genre": "IMAX",
+      "count": 4145,
+      "avg_rating": 3.62
+    },
+    {
+      "genre": "Musical",
+      "count": 4138,
+      "avg_rating": 3.56
+    },
+    {
+      "genre": "Western",
+      "count": 1930,
+      "avg_rating": 3.58
+    },
+    {
+      "genre": "Documentary",
+      "count": 1219,
+      "avg_rating": 3.8
+    },
+    {
+      "genre": "Film-Noir",
+      "count": 870,
+      "avg_rating": 3.92
+    }
+  ],
+  "genre_cooccurrence": {
+    "Adventure": {
+      "Animation": 2857,
+      "Children": 3142,
+      "Comedy": 4621,
+      "Fantasy": 4130,
+      "Crime": 646,
+      "Romance": 1159,
+      "Action": 8280,
+      "Sci-Fi": 4908,
+      "Thriller": 3097,
+      "Drama": 3145,
+      "Western": 384,
+      "Musical": 688,
+      "Horror": 285,
+      "Mystery": 471,
+      "IMAX": 1698,
+      "War": 481,
+      "Film-Noir": 40,
+      "Documentary": 11
+    },
+    "Animation": {
+      "Adventure": 2857,
+      "Children": 3530,
+      "Comedy": 2629,
+      "Fantasy": 1866,
+      "Musical": 1185,
+      "Drama": 835,
+      "War": 24,
+      "Action": 683,
+      "Crime": 193,
+      "Sci-Fi": 598,
+      "Mystery": 115,
+      "Romance": 774,
+      "IMAX": 512,
+      "Horror": 35,
+      "Thriller": 76,
+      "Western": 15,
+      "Documentary": 3
+    },
+    "Children": {
+      "Adventure": 3142,
+      "Animation": 3530,
+      "Comedy": 2943,
+      "Fantasy": 2332,
+      "Romance": 733,
+      "Musical": 1358,
+      "Drama": 1077,
+      "Sci-Fi": 444,
+      "War": 6,
+      "Action": 472,
+      "Crime": 165,
+      "Mystery": 125,
+      "IMAX": 528,
+      "Thriller": 9,
+      "Horror": 9,
+      "Western": 18,
+      "Documentary": 2
+    },
+    "Comedy": {
+      "Adventure": 4621,
+      "Animation": 2629,
+      "Children": 2943,
+      "Fantasy": 3196,
+      "Romance": 6301,
+      "Crime": 2922,
+      "War": 744,
+      "Drama": 6367,
+      "Action": 3382,
+      "Thriller": 1638,
+      "Musical": 1356,
+      "Sci-Fi": 1639,
+      "Western": 251,
+      "Mystery": 440,
+      "Horror": 745,
+      "IMAX": 252,
+      "Documentary": 124,
+      "Film-Noir": 11
+    },
+    "Fantasy": {
+      "Adventure": 4130,
+      "Animation": 1866,
+      "Children": 2332,
+      "Comedy": 3196,
+      "Action": 1815,
+      "Crime": 223,
+      "Musical": 819,
+      "Drama": 1717,
+      "Romance": 1628,
+      "War": 74,
+      "Sci-Fi": 565,
+      "Horror": 459,
+      "Mystery": 412,
+      "Thriller": 528,
+      "IMAX": 845,
+      "Film-Noir": 10,
+      "Western": 8,
+      "Documentary": 1
+    },
+    "Romance": {
+      "Comedy": 6301,
+      "Adventure": 1159,
+      "Crime": 428,
+      "Action": 1178,
+      "Drama": 6362,
+      "War": 689,
+      "Western": 121,
+      "Children": 733,
+      "Thriller": 986,
+      "Fantasy": 1628,
+      "Musical": 878,
+      "Mystery": 474,
+      "Film-Noir": 65,
+      "Animation": 774,
+      "IMAX": 179,
+      "Horror": 112,
+      "Sci-Fi": 468,
+      "Documentary": 2
+    },
+    "Action": {
+      "Crime": 4026,
+      "Thriller": 7669,
+      "Drama": 4836,
+      "War": 1499,
+      "Romance": 1178,
+      "Western": 519,
+      "Adventure": 8280,
+      "Sci-Fi": 6453,
+      "Comedy": 3382,
+      "Fantasy": 1815,
+      "Musical": 93,
+      "Children": 472,
+      "Animation": 683,
+      "Mystery": 1100,
+      "Horror": 975,
+      "IMAX": 1782,
+      "Film-Noir": 68,
+      "Documentary": 19
+    },
+    "Crime": {
+      "Action": 4026,
+      "Thriller": 5925,
+      "Mystery": 1794,
+      "Adventure": 646,
+      "Comedy": 2922,
+      "Romance": 428,
+      "Drama": 6113,
+      "Fantasy": 223,
+      "Horror": 499,
+      "Sci-Fi": 508,
+      "Film-Noir": 487,
+      "Animation": 193,
+      "Children": 165,
+      "IMAX": 437,
+      "War": 126,
+      "Musical": 46,
+      "Western": 57,
+      "Documentary": 5
+    },
+    "Thriller": {
+      "Action": 7669,
+      "Crime": 5925,
+      "Mystery": 3756,
+      "Drama": 6550,
+      "Adventure": 3097,
+      "Sci-Fi": 4117,
+      "Comedy": 1638,
+      "Romance": 986,
+      "Horror": 1922,
+      "Film-Noir": 479,
+      "IMAX": 683,
+      "Western": 86,
+      "War": 403,
+      "Fantasy": 528,
+      "Musical": 26,
+      "Animation": 76,
+      "Children": 9,
+      "Documentary": 1
+    },
+    "Mystery": {
+      "Thriller": 3756,
+      "Crime": 1794,
+      "Drama": 2311,
+      "Film-Noir": 372,
+      "Action": 1100,
+      "Adventure": 471,
+      "Animation": 115,
+      "Children": 125,
+      "Comedy": 440,
+      "Fantasy": 412,
+      "Horror": 694,
+      "Sci-Fi": 994,
+      "IMAX": 267,
+      "Western": 32,
+      "Romance": 474,
+      "War": 12,
+      "Documentary": 3,
+      "Musical": 5
+    },
+    "Drama": {
+      "Action": 4836,
+      "War": 3033,
+      "Romance": 6362,
+      "Comedy": 6367,
+      "Crime": 6113,
+      "Thriller": 6550,
+      "Western": 544,
+      "Adventure": 3145,
+      "Mystery": 2311,
+      "Fantasy": 1717,
+      "Animation": 835,
+      "Children": 1077,
+      "Musical": 761,
+      "Sci-Fi": 2349,
+      "Horror": 786,
+      "IMAX": 788,
+      "Film-Noir": 277,
+      "Documentary": 78
+    },
+    "War": {
+      "Action": 1499,
+      "Drama": 3033,
+      "Romance": 689,
+      "Comedy": 744,
+      "Musical": 23,
+      "Animation": 24,
+      "Children": 6,
+      "Fantasy": 74,
+      "Adventure": 481,
+      "Thriller": 403,
+      "Horror": 7,
+      "Crime": 126,
+      "Western": 72,
+      "Sci-Fi": 85,
+      "IMAX": 65,
+      "Documentary": 30,
+      "Mystery": 12
+    },
+    "Western": {
+      "Action": 519,
+      "Romance": 121,
+      "Drama": 544,
+      "Adventure": 384,
+      "Comedy": 251,
+      "Sci-Fi": 63,
+      "Mystery": 32,
+      "Thriller": 86,
+      "War": 72,
+      "IMAX": 7,
+      "Crime": 57,
+      "Fantasy": 8,
+      "Animation": 15,
+      "Children": 18,
+      "Horror": 13,
+      "Musical": 9,
+      "Film-Noir": 2,
+      "Documentary": 1
+    },
+    "Sci-Fi": {
+      "Action": 6453,
+      "Adventure": 4908,
+      "Thriller": 4117,
+      "Children": 444,
+      "Drama": 2349,
+      "Crime": 508,
+      "Horror": 940,
+      "Comedy": 1639,
+      "Western": 63,
+      "Fantasy": 565,
+      "Animation": 598,
+      "Mystery": 994,
+      "IMAX": 1201,
+      "Romance": 468,
+      "War": 85,
+      "Musical": 54,
+      "Film-Noir": 38
+    },
+    "Horror": {
+      "Crime": 499,
+      "Thriller": 1922,
+      "Sci-Fi": 940,
+      "Action": 975,
+      "Adventure": 285,
+      "Fantasy": 459,
+      "Drama": 786,
+      "Comedy": 745,
+      "Mystery": 694,
+      "War": 7,
+      "Romance": 112,
+      "IMAX": 82,
+      "Musical": 78,
+      "Animation": 35,
+      "Children": 9,
+      "Western": 13,
+      "Film-Noir": 6
+    },
+    "Musical": {
+      "Animation": 1185,
+      "Children": 1358,
+      "Fantasy": 819,
+      "Adventure": 688,
+      "Drama": 761,
+      "Comedy": 1356,
+      "Action": 93,
+      "War": 23,
+      "Romance": 878,
+      "IMAX": 261,
+      "Crime": 46,
+      "Horror": 78,
+      "Thriller": 26,
+      "Sci-Fi": 54,
+      "Documentary": 24,
+      "Western": 9,
+      "Mystery": 5
+    },
+    "Film-Noir": {
+      "Crime": 487,
+      "Mystery": 372,
+      "Thriller": 479,
+      "Romance": 65,
+      "Drama": 277,
+      "Action": 68,
+      "Fantasy": 10,
+      "Adventure": 40,
+      "Sci-Fi": 38,
+      "Horror": 6,
+      "Comedy": 11,
+      "Western": 2
+    },
+    "IMAX": {
+      "Action": 1782,
+      "Crime": 437,
+      "Drama": 788,
+      "Mystery": 267,
+      "Sci-Fi": 1201,
+      "Thriller": 683,
+      "Adventure": 1698,
+      "Animation": 512,
+      "Children": 528,
+      "Fantasy": 845,
+      "Musical": 261,
+      "Romance": 179,
+      "Comedy": 252,
+      "Horror": 82,
+      "War": 65,
+      "Western": 7,
+      "Documentary": 11
+    },
+    "Documentary": {
+      "Comedy": 124,
+      "Drama": 78,
+      "Musical": 24,
+      "Action": 19,
+      "War": 30,
+      "IMAX": 11,
+      "Adventure": 11,
+      "Romance": 2,
+      "Animation": 3,
+      "Crime": 5,
+      "Mystery": 3,
+      "Fantasy": 1,
+      "Children": 2,
+      "Western": 1,
+      "Thriller": 1
+    }
+  },
+  "sample_item_similarities": {
+    "356": [
+      {
+        "movieId": 593,
+        "tmdbId": 274,
+        "title": "Silence of the Lambs, The (1991)",
+        "similarity_score": 0.7914
+      },
+      {
+        "movieId": 318,
+        "tmdbId": 278,
+        "title": "Shawshank Redemption, The (1994)",
+        "similarity_score": 0.788
+      },
+      {
+        "movieId": 150,
+        "tmdbId": 568,
+        "title": "Apollo 13 (1995)",
+        "similarity_score": 0.7481
+      },
+      {
+        "movieId": 110,
+        "tmdbId": 197,
+        "title": "Braveheart (1995)",
+        "similarity_score": 0.7416
+      },
+      {
+        "movieId": 364,
+        "tmdbId": 8587,
+        "title": "Lion King, The (1994)",
+        "similarity_score": 0.685
+      }
+    ],
+    "318": [
+      {
+        "movieId": 296,
+        "tmdbId": 680,
+        "title": "Pulp Fiction (1994)",
+        "similarity_score": 0.865
+      },
+      {
+        "movieId": 593,
+        "tmdbId": 274,
+        "title": "Silence of the Lambs, The (1991)",
+        "similarity_score": 0.8396
+      },
+      {
+        "movieId": 356,
+        "tmdbId": 13,
+        "title": "Forrest Gump (1994)",
+        "similarity_score": 0.788
+      },
+      {
+        "movieId": 527,
+        "tmdbId": 424,
+        "title": "Schindler's List (1993)",
+        "similarity_score": 0.76
+      },
+      {
+        "movieId": 50,
+        "tmdbId": 629,
+        "title": "Usual Suspects, The (1995)",
+        "similarity_score": 0.737
+      }
+    ],
+    "296": [
+      {
+        "movieId": 593,
+        "tmdbId": 274,
+        "title": "Silence of the Lambs, The (1991)",
+        "similarity_score": 0.8918
+      },
+      {
+        "movieId": 47,
+        "tmdbId": 807,
+        "title": "Seven (a.k.a. Se7en) (1995)",
+        "similarity_score": 0.8769
+      },
+      {
+        "movieId": 318,
+        "tmdbId": 278,
+        "title": "Shawshank Redemption, The (1994)",
+        "similarity_score": 0.865
+      },
+      {
+        "movieId": 50,
+        "tmdbId": 629,
+        "title": "Usual Suspects, The (1995)",
+        "similarity_score": 0.8551
+      },
+      {
+        "movieId": 356,
+        "tmdbId": 13,
+        "title": "Forrest Gump (1994)",
+        "similarity_score": 0.682
+      }
+    ],
+    "593": [
+      {
+        "movieId": 296,
+        "tmdbId": 680,
+        "title": "Pulp Fiction (1994)",
+        "similarity_score": 0.8918
+      },
+      {
+        "movieId": 318,
+        "tmdbId": 278,
+        "title": "Shawshank Redemption, The (1994)",
+        "similarity_score": 0.8396
+      },
+      {
+        "movieId": 527,
+        "tmdbId": 424,
+        "title": "Schindler's List (1993)",
+        "similarity_score": 0.8261
+      },
+      {
+        "movieId": 356,
+        "tmdbId": 13,
+        "title": "Forrest Gump (1994)",
+        "similarity_score": 0.7914
+      },
+      {
+        "movieId": 47,
+        "tmdbId": 807,
+        "title": "Seven (a.k.a. Se7en) (1995)",
+        "similarity_score": 0.7557
+      }
+    ],
+    "2571": [
+      {
+        "movieId": 3578,
+        "tmdbId": 98,
+        "title": "Gladiator (2000)",
+        "similarity_score": 0.8367
+      },
+      {
+        "movieId": 2762,
+        "tmdbId": 745,
+        "title": "Sixth Sense, The (1999)",
+        "similarity_score": 0.7961
+      },
+      {
+        "movieId": 2028,
+        "tmdbId": 857,
+        "title": "Saving Private Ryan (1998)",
+        "similarity_score": 0.7342
+      },
+      {
+        "movieId": 56169,
+        "tmdbId": 13483,
+        "title": "Awake (2007)",
+        "similarity_score": 0.7269
+      },
+      {
+        "movieId": 60832,
+        "tmdbId": 12192,
+        "title": "Pathology (2008)",
+        "similarity_score": 0.7269
+      }
+    ],
+    "260": [
+      {
+        "movieId": 1210,
+        "tmdbId": 1892,
+        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+        "similarity_score": 0.9305
+      },
+      {
+        "movieId": 1196,
+        "tmdbId": 1891,
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "similarity_score": 0.8954
+      },
+      {
+        "movieId": 1198,
+        "tmdbId": 85,
+        "title": "Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)",
+        "similarity_score": 0.8657
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.835
+      },
+      {
+        "movieId": 1291,
+        "tmdbId": 89,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "similarity_score": 0.8069
+      }
+    ],
+    "480": [
+      {
+        "movieId": 380,
+        "tmdbId": 36955,
+        "title": "True Lies (1994)",
+        "similarity_score": 0.8564
+      },
+      {
+        "movieId": 592,
+        "tmdbId": 268,
+        "title": "Batman (1989)",
+        "similarity_score": 0.8559
+      },
+      {
+        "movieId": 589,
+        "tmdbId": 280,
+        "title": "Terminator 2: Judgment Day (1991)",
+        "similarity_score": 0.8477
+      },
+      {
+        "movieId": 457,
+        "tmdbId": 5503,
+        "title": "Fugitive, The (1993)",
+        "similarity_score": 0.8318
+      },
+      {
+        "movieId": 377,
+        "tmdbId": 1637,
+        "title": "Speed (1994)",
+        "similarity_score": 0.8012
+      }
+    ],
+    "110": [
+      {
+        "movieId": 457,
+        "tmdbId": 5503,
+        "title": "Fugitive, The (1993)",
+        "similarity_score": 0.8341
+      },
+      {
+        "movieId": 380,
+        "tmdbId": 36955,
+        "title": "True Lies (1994)",
+        "similarity_score": 0.8172
+      },
+      {
+        "movieId": 589,
+        "tmdbId": 280,
+        "title": "Terminator 2: Judgment Day (1991)",
+        "similarity_score": 0.8095
+      },
+      {
+        "movieId": 292,
+        "tmdbId": 6950,
+        "title": "Outbreak (1995)",
+        "similarity_score": 0.7992
+      },
+      {
+        "movieId": 592,
+        "tmdbId": 268,
+        "title": "Batman (1989)",
+        "similarity_score": 0.7932
+      }
+    ],
+    "589": [
+      {
+        "movieId": 480,
+        "tmdbId": 329,
+        "title": "Jurassic Park (1993)",
+        "similarity_score": 0.8477
+      },
+      {
+        "movieId": 592,
+        "tmdbId": 268,
+        "title": "Batman (1989)",
+        "similarity_score": 0.8134
+      },
+      {
+        "movieId": 110,
+        "tmdbId": 197,
+        "title": "Braveheart (1995)",
+        "similarity_score": 0.8095
+      },
+      {
+        "movieId": 316,
+        "tmdbId": 2164,
+        "title": "Stargate (1994)",
+        "similarity_score": 0.806
+      },
+      {
+        "movieId": 1200,
+        "tmdbId": 679,
+        "title": "Aliens (1986)",
+        "similarity_score": 0.7503
+      }
+    ],
+    "527": [
+      {
+        "movieId": 593,
+        "tmdbId": 274,
+        "title": "Silence of the Lambs, The (1991)",
+        "similarity_score": 0.8261
+      },
+      {
+        "movieId": 318,
+        "tmdbId": 278,
+        "title": "Shawshank Redemption, The (1994)",
+        "similarity_score": 0.76
+      },
+      {
+        "movieId": 356,
+        "tmdbId": 13,
+        "title": "Forrest Gump (1994)",
+        "similarity_score": 0.6792
+      },
+      {
+        "movieId": 296,
+        "tmdbId": 680,
+        "title": "Pulp Fiction (1994)",
+        "similarity_score": 0.6675
+      },
+      {
+        "movieId": 46231,
+        "tmdbId": 17741,
+        "title": "Stoned (2005)",
+        "similarity_score": 0.6652
+      }
+    ],
+    "2959": [
+      {
+        "movieId": 2329,
+        "tmdbId": 73,
+        "title": "American History X (1998)",
+        "similarity_score": 0.8831
+      },
+      {
+        "movieId": 78103,
+        "tmdbId": 30527,
+        "title": "Shake Hands with the Devil (2007)",
+        "similarity_score": 0.8065
+      },
+      {
+        "movieId": 118198,
+        "tmdbId": 250798,
+        "title": "The Green Prince (2014)",
+        "similarity_score": 0.8065
+      },
+      {
+        "movieId": 136912,
+        "tmdbId": 128767,
+        "title": "God Loves Caviar (2012)",
+        "similarity_score": 0.8065
+      },
+      {
+        "movieId": 183011,
+        "tmdbId": 399035,
+        "title": "The Commuter (2018)",
+        "similarity_score": 0.8065
+      }
+    ],
+    "1": [
+      {
+        "movieId": 1073,
+        "tmdbId": 252,
+        "title": "Willy Wonka & the Chocolate Factory (1971)",
+        "similarity_score": 0.7707
+      },
+      {
+        "movieId": 304,
+        "tmdbId": 161495,
+        "title": "Roommates (1995)",
+        "similarity_score": 0.7007
+      },
+      {
+        "movieId": 5,
+        "tmdbId": 11862,
+        "title": "Father of the Bride Part II (1995)",
+        "similarity_score": 0.66
+      },
+      {
+        "movieId": 6145,
+        "tmdbId": 30789,
+        "title": "Venom (1982)",
+        "similarity_score": 0.6582
+      },
+      {
+        "movieId": 3114,
+        "tmdbId": 863,
+        "title": "Toy Story 2 (1999)",
+        "similarity_score": 0.6566
+      }
+    ],
+    "1196": [
+      {
+        "movieId": 1210,
+        "tmdbId": 1892,
+        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+        "similarity_score": 0.947
+      },
+      {
+        "movieId": 1291,
+        "tmdbId": 89,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "similarity_score": 0.9445
+      },
+      {
+        "movieId": 1198,
+        "tmdbId": 85,
+        "title": "Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)",
+        "similarity_score": 0.9114
+      },
+      {
+        "movieId": 260,
+        "tmdbId": 11,
+        "title": "Star Wars: Episode IV - A New Hope (1977)",
+        "similarity_score": 0.8954
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.8814
+      }
+    ],
+    "2858": [
+      {
+        "movieId": 1206,
+        "tmdbId": 185,
+        "title": "Clockwork Orange, A (1971)",
+        "similarity_score": 0.7818
+      },
+      {
+        "movieId": 1089,
+        "tmdbId": 500,
+        "title": "Reservoir Dogs (1992)",
+        "similarity_score": 0.7422
+      },
+      {
+        "movieId": 1732,
+        "tmdbId": 115,
+        "title": "Big Lebowski, The (1998)",
+        "similarity_score": 0.7262
+      },
+      {
+        "movieId": 2959,
+        "tmdbId": 550,
+        "title": "Fight Club (1999)",
+        "similarity_score": 0.711
+      },
+      {
+        "movieId": 778,
+        "tmdbId": 627,
+        "title": "Trainspotting (1996)",
+        "similarity_score": 0.6914
+      }
+    ],
+    "50": [
+      {
+        "movieId": 296,
+        "tmdbId": 680,
+        "title": "Pulp Fiction (1994)",
+        "similarity_score": 0.8551
+      },
+      {
+        "movieId": 1213,
+        "tmdbId": 769,
+        "title": "Goodfellas (1990)",
+        "similarity_score": 0.7814
+      },
+      {
+        "movieId": 47,
+        "tmdbId": 807,
+        "title": "Seven (a.k.a. Se7en) (1995)",
+        "similarity_score": 0.7634
+      },
+      {
+        "movieId": 858,
+        "tmdbId": 238,
+        "title": "Godfather, The (1972)",
+        "similarity_score": 0.7444
+      },
+      {
+        "movieId": 318,
+        "tmdbId": 278,
+        "title": "Shawshank Redemption, The (1994)",
+        "similarity_score": 0.737
+      }
+    ],
+    "47": [
+      {
+        "movieId": 296,
+        "tmdbId": 680,
+        "title": "Pulp Fiction (1994)",
+        "similarity_score": 0.8769
+      },
+      {
+        "movieId": 50,
+        "tmdbId": 629,
+        "title": "Usual Suspects, The (1995)",
+        "similarity_score": 0.7634
+      },
+      {
+        "movieId": 593,
+        "tmdbId": 274,
+        "title": "Silence of the Lambs, The (1991)",
+        "similarity_score": 0.7557
+      },
+      {
+        "movieId": 318,
+        "tmdbId": 278,
+        "title": "Shawshank Redemption, The (1994)",
+        "similarity_score": 0.6953
+      },
+      {
+        "movieId": 293,
+        "tmdbId": 101,
+        "title": "L\u00e9on: The Professional (a.k.a. The Professional) (L\u00e9on) (1994)",
+        "similarity_score": 0.6924
+      }
+    ],
+    "780": [
+      {
+        "movieId": 733,
+        "tmdbId": 9802,
+        "title": "Rock, The (1996)",
+        "similarity_score": 0.9271
+      },
+      {
+        "movieId": 648,
+        "tmdbId": 954,
+        "title": "Mission: Impossible (1996)",
+        "similarity_score": 0.9061
+      },
+      {
+        "movieId": 736,
+        "tmdbId": 664,
+        "title": "Twister (1996)",
+        "similarity_score": 0.8851
+      },
+      {
+        "movieId": 786,
+        "tmdbId": 9268,
+        "title": "Eraser (1996)",
+        "similarity_score": 0.7913
+      },
+      {
+        "movieId": 40,
+        "tmdbId": 34615,
+        "title": "Cry, the Beloved Country (1995)",
+        "similarity_score": 0.7871
+      }
+    ],
+    "150": [
+      {
+        "movieId": 539,
+        "tmdbId": 858,
+        "title": "Sleepless in Seattle (1993)",
+        "similarity_score": 0.8385
+      },
+      {
+        "movieId": 457,
+        "tmdbId": 5503,
+        "title": "Fugitive, The (1993)",
+        "similarity_score": 0.8384
+      },
+      {
+        "movieId": 339,
+        "tmdbId": 2064,
+        "title": "While You Were Sleeping (1995)",
+        "similarity_score": 0.8267
+      },
+      {
+        "movieId": 349,
+        "tmdbId": 9331,
+        "title": "Clear and Present Danger (1994)",
+        "similarity_score": 0.8142
+      },
+      {
+        "movieId": 590,
+        "tmdbId": 581,
+        "title": "Dances with Wolves (1990)",
+        "similarity_score": 0.8115
+      }
+    ],
+    "1198": [
+      {
+        "movieId": 1196,
+        "tmdbId": 1891,
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "similarity_score": 0.9114
+      },
+      {
+        "movieId": 1291,
+        "tmdbId": 89,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "similarity_score": 0.901
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.8684
+      },
+      {
+        "movieId": 260,
+        "tmdbId": 11,
+        "title": "Star Wars: Episode IV - A New Hope (1977)",
+        "similarity_score": 0.8657
+      },
+      {
+        "movieId": 1210,
+        "tmdbId": 1892,
+        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+        "similarity_score": 0.8291
+      }
+    ],
+    "4993": [
+      {
+        "movieId": 5952,
+        "tmdbId": 121,
+        "title": "Lord of the Rings: The Two Towers, The (2002)",
+        "similarity_score": 0.9817
+      },
+      {
+        "movieId": 7153,
+        "tmdbId": 122,
+        "title": "Lord of the Rings: The Return of the King, The (2003)",
+        "similarity_score": 0.9624
+      },
+      {
+        "movieId": 4226,
+        "tmdbId": 77,
+        "title": "Memento (2000)",
+        "similarity_score": 0.7949
+      },
+      {
+        "movieId": 89039,
+        "tmdbId": 55420,
+        "title": "Another Earth (2011)",
+        "similarity_score": 0.7794
+      },
+      {
+        "movieId": 8961,
+        "tmdbId": 9806,
+        "title": "Incredibles, The (2004)",
+        "similarity_score": 0.7762
+      }
+    ],
+    "1210": [
+      {
+        "movieId": 1196,
+        "tmdbId": 1891,
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "similarity_score": 0.947
+      },
+      {
+        "movieId": 260,
+        "tmdbId": 11,
+        "title": "Star Wars: Episode IV - A New Hope (1977)",
+        "similarity_score": 0.9305
+      },
+      {
+        "movieId": 1291,
+        "tmdbId": 89,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "similarity_score": 0.907
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.8799
+      },
+      {
+        "movieId": 1198,
+        "tmdbId": 85,
+        "title": "Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)",
+        "similarity_score": 0.8291
+      }
+    ],
+    "858": [
+      {
+        "movieId": 1221,
+        "tmdbId": 240,
+        "title": "Godfather: Part II, The (1974)",
+        "similarity_score": 0.9501
+      },
+      {
+        "movieId": 1213,
+        "tmdbId": 769,
+        "title": "Goodfellas (1990)",
+        "similarity_score": 0.8747
+      },
+      {
+        "movieId": 1193,
+        "tmdbId": 510,
+        "title": "One Flew Over the Cuckoo's Nest (1975)",
+        "similarity_score": 0.7828
+      },
+      {
+        "movieId": 50,
+        "tmdbId": 629,
+        "title": "Usual Suspects, The (1995)",
+        "similarity_score": 0.7444
+      },
+      {
+        "movieId": 2669,
+        "tmdbId": 37305,
+        "title": "Pork Chop Hill (1959)",
+        "similarity_score": 0.723
+      }
+    ],
+    "457": [
+      {
+        "movieId": 380,
+        "tmdbId": 36955,
+        "title": "True Lies (1994)",
+        "similarity_score": 0.9034
+      },
+      {
+        "movieId": 377,
+        "tmdbId": 1637,
+        "title": "Speed (1994)",
+        "similarity_score": 0.9025
+      },
+      {
+        "movieId": 349,
+        "tmdbId": 9331,
+        "title": "Clear and Present Danger (1994)",
+        "similarity_score": 0.8714
+      },
+      {
+        "movieId": 474,
+        "tmdbId": 9386,
+        "title": "In the Line of Fire (1993)",
+        "similarity_score": 0.8708
+      },
+      {
+        "movieId": 161,
+        "tmdbId": 8963,
+        "title": "Crimson Tide (1995)",
+        "similarity_score": 0.8623
+      }
+    ],
+    "592": [
+      {
+        "movieId": 380,
+        "tmdbId": 36955,
+        "title": "True Lies (1994)",
+        "similarity_score": 0.929
+      },
+      {
+        "movieId": 316,
+        "tmdbId": 2164,
+        "title": "Stargate (1994)",
+        "similarity_score": 0.8805
+      },
+      {
+        "movieId": 153,
+        "tmdbId": 414,
+        "title": "Batman Forever (1995)",
+        "similarity_score": 0.8787
+      },
+      {
+        "movieId": 367,
+        "tmdbId": 854,
+        "title": "Mask, The (1994)",
+        "similarity_score": 0.8736
+      },
+      {
+        "movieId": 480,
+        "tmdbId": 329,
+        "title": "Jurassic Park (1993)",
+        "similarity_score": 0.8559
+      }
+    ],
+    "5952": [
+      {
+        "movieId": 7153,
+        "tmdbId": 122,
+        "title": "Lord of the Rings: The Return of the King, The (2003)",
+        "similarity_score": 0.9857
+      },
+      {
+        "movieId": 4993,
+        "tmdbId": 120,
+        "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+        "similarity_score": 0.9817
+      },
+      {
+        "movieId": 8961,
+        "tmdbId": 9806,
+        "title": "Incredibles, The (2004)",
+        "similarity_score": 0.8471
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.8095
+      },
+      {
+        "movieId": 89039,
+        "tmdbId": 55420,
+        "title": "Another Earth (2011)",
+        "similarity_score": 0.7964
+      }
+    ],
+    "2028": [
+      {
+        "movieId": 3147,
+        "tmdbId": 497,
+        "title": "Green Mile, The (1999)",
+        "similarity_score": 0.831
+      },
+      {
+        "movieId": 2762,
+        "tmdbId": 745,
+        "title": "Sixth Sense, The (1999)",
+        "similarity_score": 0.7939
+      },
+      {
+        "movieId": 2571,
+        "tmdbId": 603,
+        "title": "Matrix, The (1999)",
+        "similarity_score": 0.7342
+      },
+      {
+        "movieId": 241,
+        "tmdbId": 21183,
+        "title": "Fluke (1995)",
+        "similarity_score": 0.7018
+      },
+      {
+        "movieId": 2737,
+        "tmdbId": 48686,
+        "title": "Assassination (1987)",
+        "similarity_score": 0.7018
+      }
+    ],
+    "7153": [
+      {
+        "movieId": 5952,
+        "tmdbId": 121,
+        "title": "Lord of the Rings: The Two Towers, The (2002)",
+        "similarity_score": 0.9857
+      },
+      {
+        "movieId": 4993,
+        "tmdbId": 120,
+        "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+        "similarity_score": 0.9624
+      },
+      {
+        "movieId": 8961,
+        "tmdbId": 9806,
+        "title": "Incredibles, The (2004)",
+        "similarity_score": 0.8413
+      },
+      {
+        "movieId": 89039,
+        "tmdbId": 55420,
+        "title": "Another Earth (2011)",
+        "similarity_score": 0.8033
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.7849
+      }
+    ],
+    "588": [
+      {
+        "movieId": 586,
+        "tmdbId": 771,
+        "title": "Home Alone (1990)",
+        "similarity_score": 0.9033
+      },
+      {
+        "movieId": 364,
+        "tmdbId": 8587,
+        "title": "Lion King, The (1994)",
+        "similarity_score": 0.9018
+      },
+      {
+        "movieId": 595,
+        "tmdbId": 10020,
+        "title": "Beauty and the Beast (1991)",
+        "similarity_score": 0.8748
+      },
+      {
+        "movieId": 339,
+        "tmdbId": 2064,
+        "title": "While You Were Sleeping (1995)",
+        "similarity_score": 0.8242
+      },
+      {
+        "movieId": 500,
+        "tmdbId": 788,
+        "title": "Mrs. Doubtfire (1993)",
+        "similarity_score": 0.8111
+      }
+    ],
+    "608": [
+      {
+        "movieId": 1151,
+        "tmdbId": 18919,
+        "title": "Lesson Faust (1994)",
+        "similarity_score": 0.816
+      },
+      {
+        "movieId": 1208,
+        "tmdbId": 28,
+        "title": "Apocalypse Now (1979)",
+        "similarity_score": 0.7792
+      },
+      {
+        "movieId": 1055,
+        "tmdbId": 38153,
+        "title": "Shadow Conspiracy (1997)",
+        "similarity_score": 0.7589
+      },
+      {
+        "movieId": 882,
+        "tmdbId": 58770,
+        "title": "Trigger Effect, The (1996)",
+        "similarity_score": 0.7412
+      },
+      {
+        "movieId": 1132,
+        "tmdbId": 4481,
+        "title": "Manon of the Spring (Manon des sources) (1986)",
+        "similarity_score": 0.7377
+      }
+    ],
+    "2762": [
+      {
+        "movieId": 2571,
+        "tmdbId": 603,
+        "title": "Matrix, The (1999)",
+        "similarity_score": 0.7961
+      },
+      {
+        "movieId": 2028,
+        "tmdbId": 857,
+        "title": "Saving Private Ryan (1998)",
+        "similarity_score": 0.7939
+      },
+      {
+        "movieId": 3147,
+        "tmdbId": 497,
+        "title": "Green Mile, The (1999)",
+        "similarity_score": 0.7464
+      },
+      {
+        "movieId": 2710,
+        "tmdbId": 2667,
+        "title": "Blair Witch Project, The (1999)",
+        "similarity_score": 0.7229
+      },
+      {
+        "movieId": 3578,
+        "tmdbId": 98,
+        "title": "Gladiator (2000)",
+        "similarity_score": 0.685
+      }
+    ],
+    "380": [
+      {
+        "movieId": 592,
+        "tmdbId": 268,
+        "title": "Batman (1989)",
+        "similarity_score": 0.929
+      },
+      {
+        "movieId": 153,
+        "tmdbId": 414,
+        "title": "Batman Forever (1995)",
+        "similarity_score": 0.9043
+      },
+      {
+        "movieId": 457,
+        "tmdbId": 5503,
+        "title": "Fugitive, The (1993)",
+        "similarity_score": 0.9034
+      },
+      {
+        "movieId": 185,
+        "tmdbId": 1642,
+        "title": "Net, The (1995)",
+        "similarity_score": 0.8779
+      },
+      {
+        "movieId": 377,
+        "tmdbId": 1637,
+        "title": "Speed (1994)",
+        "similarity_score": 0.877
+      }
+    ],
+    "32": [
+      {
+        "movieId": 780,
+        "tmdbId": 602,
+        "title": "Independence Day (a.k.a. ID4) (1996)",
+        "similarity_score": 0.7238
+      },
+      {
+        "movieId": 25,
+        "tmdbId": 451,
+        "title": "Leaving Las Vegas (1995)",
+        "similarity_score": 0.7138
+      },
+      {
+        "movieId": 608,
+        "tmdbId": 275,
+        "title": "Fargo (1996)",
+        "similarity_score": 0.7092
+      },
+      {
+        "movieId": 882,
+        "tmdbId": 58770,
+        "title": "Trigger Effect, The (1996)",
+        "similarity_score": 0.7037
+      },
+      {
+        "movieId": 839,
+        "tmdbId": 10546,
+        "title": "Crow: City of Angels, The (1996)",
+        "similarity_score": 0.6991
+      }
+    ],
+    "364": [
+      {
+        "movieId": 595,
+        "tmdbId": 10020,
+        "title": "Beauty and the Beast (1991)",
+        "similarity_score": 0.9124
+      },
+      {
+        "movieId": 588,
+        "tmdbId": 812,
+        "title": "Aladdin (1992)",
+        "similarity_score": 0.9018
+      },
+      {
+        "movieId": 586,
+        "tmdbId": 771,
+        "title": "Home Alone (1990)",
+        "similarity_score": 0.8434
+      },
+      {
+        "movieId": 2,
+        "tmdbId": 8844,
+        "title": "Jumanji (1995)",
+        "similarity_score": 0.7964
+      },
+      {
+        "movieId": 48,
+        "tmdbId": 10530,
+        "title": "Pocahontas (1995)",
+        "similarity_score": 0.7835
+      }
+    ],
+    "1270": [
+      {
+        "movieId": 1196,
+        "tmdbId": 1891,
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "similarity_score": 0.8814
+      },
+      {
+        "movieId": 1210,
+        "tmdbId": 1892,
+        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+        "similarity_score": 0.8799
+      },
+      {
+        "movieId": 1198,
+        "tmdbId": 85,
+        "title": "Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)",
+        "similarity_score": 0.8684
+      },
+      {
+        "movieId": 1291,
+        "tmdbId": 89,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "similarity_score": 0.862
+      },
+      {
+        "movieId": 260,
+        "tmdbId": 11,
+        "title": "Star Wars: Episode IV - A New Hope (1977)",
+        "similarity_score": 0.835
+      }
+    ],
+    "377": [
+      {
+        "movieId": 457,
+        "tmdbId": 5503,
+        "title": "Fugitive, The (1993)",
+        "similarity_score": 0.9025
+      },
+      {
+        "movieId": 380,
+        "tmdbId": 36955,
+        "title": "True Lies (1994)",
+        "similarity_score": 0.877
+      },
+      {
+        "movieId": 165,
+        "tmdbId": 1572,
+        "title": "Die Hard: With a Vengeance (1995)",
+        "similarity_score": 0.8574
+      },
+      {
+        "movieId": 185,
+        "tmdbId": 1642,
+        "title": "Net, The (1995)",
+        "similarity_score": 0.8042
+      },
+      {
+        "movieId": 590,
+        "tmdbId": 581,
+        "title": "Dances with Wolves (1990)",
+        "similarity_score": 0.8022
+      }
+    ],
+    "3578": [
+      {
+        "movieId": 2571,
+        "tmdbId": 603,
+        "title": "Matrix, The (1999)",
+        "similarity_score": 0.8367
+      },
+      {
+        "movieId": 5418,
+        "tmdbId": 2501,
+        "title": "Bourne Identity, The (2002)",
+        "similarity_score": 0.7893
+      },
+      {
+        "movieId": 56169,
+        "tmdbId": 13483,
+        "title": "Awake (2007)",
+        "similarity_score": 0.7755
+      },
+      {
+        "movieId": 60832,
+        "tmdbId": 12192,
+        "title": "Pathology (2008)",
+        "similarity_score": 0.7755
+      },
+      {
+        "movieId": 74580,
+        "tmdbId": 23172,
+        "title": "Spy Next Door, The (2010)",
+        "similarity_score": 0.7755
+      }
+    ],
+    "4306": [
+      {
+        "movieId": 4886,
+        "tmdbId": 585,
+        "title": "Monsters, Inc. (2001)",
+        "similarity_score": 0.9212
+      },
+      {
+        "movieId": 4896,
+        "tmdbId": 671,
+        "title": "Harry Potter and the Sorcerer's Stone (a.k.a. Harry Potter and the Philosopher's Stone) (2001)",
+        "similarity_score": 0.8371
+      },
+      {
+        "movieId": 6377,
+        "tmdbId": 12,
+        "title": "Finding Nemo (2003)",
+        "similarity_score": 0.8139
+      },
+      {
+        "movieId": 5816,
+        "tmdbId": 672,
+        "title": "Harry Potter and the Chamber of Secrets (2002)",
+        "similarity_score": 0.8082
+      },
+      {
+        "movieId": 8368,
+        "tmdbId": 673,
+        "title": "Harry Potter and the Prisoner of Azkaban (2004)",
+        "similarity_score": 0.7635
+      }
+    ],
+    "1580": [
+      {
+        "movieId": 2628,
+        "tmdbId": 1893,
+        "title": "Star Wars: Episode I - The Phantom Menace (1999)",
+        "similarity_score": 0.8601
+      },
+      {
+        "movieId": 1036,
+        "tmdbId": 562,
+        "title": "Die Hard (1988)",
+        "similarity_score": 0.8206
+      },
+      {
+        "movieId": 1917,
+        "tmdbId": 95,
+        "title": "Armageddon (1998)",
+        "similarity_score": 0.7744
+      },
+      {
+        "movieId": 1370,
+        "tmdbId": 1573,
+        "title": "Die Hard 2 (1990)",
+        "similarity_score": 0.7225
+      },
+      {
+        "movieId": 2115,
+        "tmdbId": 87,
+        "title": "Indiana Jones and the Temple of Doom (1984)",
+        "similarity_score": 0.7097
+      }
+    ],
+    "590": [
+      {
+        "movieId": 454,
+        "tmdbId": 37233,
+        "title": "Firm, The (1993)",
+        "similarity_score": 0.894
+      },
+      {
+        "movieId": 349,
+        "tmdbId": 9331,
+        "title": "Clear and Present Danger (1994)",
+        "similarity_score": 0.8755
+      },
+      {
+        "movieId": 225,
+        "tmdbId": 8984,
+        "title": "Disclosure (1994)",
+        "similarity_score": 0.8597
+      },
+      {
+        "movieId": 161,
+        "tmdbId": 8963,
+        "title": "Crimson Tide (1995)",
+        "similarity_score": 0.8565
+      },
+      {
+        "movieId": 457,
+        "tmdbId": 5503,
+        "title": "Fugitive, The (1993)",
+        "similarity_score": 0.8388
+      }
+    ],
+    "648": [
+      {
+        "movieId": 780,
+        "tmdbId": 602,
+        "title": "Independence Day (a.k.a. ID4) (1996)",
+        "similarity_score": 0.9061
+      },
+      {
+        "movieId": 733,
+        "tmdbId": 9802,
+        "title": "Rock, The (1996)",
+        "similarity_score": 0.886
+      },
+      {
+        "movieId": 736,
+        "tmdbId": 664,
+        "title": "Twister (1996)",
+        "similarity_score": 0.8625
+      },
+      {
+        "movieId": 653,
+        "tmdbId": 8840,
+        "title": "Dragonheart (1996)",
+        "similarity_score": 0.748
+      },
+      {
+        "movieId": 786,
+        "tmdbId": 9268,
+        "title": "Eraser (1996)",
+        "similarity_score": 0.7469
+      }
+    ],
+    "344": [
+      {
+        "movieId": 231,
+        "tmdbId": 8467,
+        "title": "Dumb & Dumber (Dumb and Dumber) (1994)",
+        "similarity_score": 0.9045
+      },
+      {
+        "movieId": 153,
+        "tmdbId": 414,
+        "title": "Batman Forever (1995)",
+        "similarity_score": 0.8828
+      },
+      {
+        "movieId": 367,
+        "tmdbId": 854,
+        "title": "Mask, The (1994)",
+        "similarity_score": 0.8744
+      },
+      {
+        "movieId": 208,
+        "tmdbId": 9804,
+        "title": "Waterworld (1995)",
+        "similarity_score": 0.8679
+      },
+      {
+        "movieId": 500,
+        "tmdbId": 788,
+        "title": "Mrs. Doubtfire (1993)",
+        "similarity_score": 0.8422
+      }
+    ],
+    "4226": [
+      {
+        "movieId": 4993,
+        "tmdbId": 120,
+        "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+        "similarity_score": 0.7949
+      },
+      {
+        "movieId": 2959,
+        "tmdbId": 550,
+        "title": "Fight Club (1999)",
+        "similarity_score": 0.7635
+      },
+      {
+        "movieId": 5952,
+        "tmdbId": 121,
+        "title": "Lord of the Rings: The Two Towers, The (2002)",
+        "similarity_score": 0.763
+      },
+      {
+        "movieId": 68536,
+        "tmdbId": 30416,
+        "title": "Stanley Kubrick: A Life in Pictures (2001)",
+        "similarity_score": 0.7355
+      },
+      {
+        "movieId": 6874,
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1 (2003)",
+        "similarity_score": 0.7278
+      }
+    ],
+    "367": [
+      {
+        "movieId": 344,
+        "tmdbId": 3049,
+        "title": "Ace Ventura: Pet Detective (1994)",
+        "similarity_score": 0.8744
+      },
+      {
+        "movieId": 592,
+        "tmdbId": 268,
+        "title": "Batman (1989)",
+        "similarity_score": 0.8736
+      },
+      {
+        "movieId": 153,
+        "tmdbId": 414,
+        "title": "Batman Forever (1995)",
+        "similarity_score": 0.8668
+      },
+      {
+        "movieId": 160,
+        "tmdbId": 10329,
+        "title": "Congo (1995)",
+        "similarity_score": 0.8581
+      },
+      {
+        "movieId": 169,
+        "tmdbId": 9073,
+        "title": "Free Willy 2: The Adventure Home (1995)",
+        "similarity_score": 0.8579
+      }
+    ],
+    "58559": [
+      {
+        "movieId": 79132,
+        "tmdbId": 27205,
+        "title": "Inception (2010)",
+        "similarity_score": 0.8873
+      },
+      {
+        "movieId": 91529,
+        "tmdbId": 49026,
+        "title": "Dark Knight Rises, The (2012)",
+        "similarity_score": 0.8212
+      },
+      {
+        "movieId": 172591,
+        "tmdbId": 364150,
+        "title": "The Godfather Trilogy: 1972-1990 (1992)",
+        "similarity_score": 0.7801
+      },
+      {
+        "movieId": 59315,
+        "tmdbId": 1726,
+        "title": "Iron Man (2008)",
+        "similarity_score": 0.7766
+      },
+      {
+        "movieId": 68157,
+        "tmdbId": 16869,
+        "title": "Inglourious Basterds (2009)",
+        "similarity_score": 0.7675
+      }
+    ],
+    "6539": [
+      {
+        "movieId": 8961,
+        "tmdbId": 9806,
+        "title": "Incredibles, The (2004)",
+        "similarity_score": 0.8885
+      },
+      {
+        "movieId": 5349,
+        "tmdbId": 557,
+        "title": "Spider-Man (2002)",
+        "similarity_score": 0.8408
+      },
+      {
+        "movieId": 4963,
+        "tmdbId": 161,
+        "title": "Ocean's Eleven (2001)",
+        "similarity_score": 0.8291
+      },
+      {
+        "movieId": 5445,
+        "tmdbId": 180,
+        "title": "Minority Report (2002)",
+        "similarity_score": 0.826
+      },
+      {
+        "movieId": 5952,
+        "tmdbId": 121,
+        "title": "Lord of the Rings: The Two Towers, The (2002)",
+        "similarity_score": 0.8095
+      }
+    ],
+    "1214": [
+      {
+        "movieId": 1200,
+        "tmdbId": 679,
+        "title": "Aliens (1986)",
+        "similarity_score": 0.9468
+      },
+      {
+        "movieId": 1240,
+        "tmdbId": 218,
+        "title": "Terminator, The (1984)",
+        "similarity_score": 0.8526
+      },
+      {
+        "movieId": 3527,
+        "tmdbId": 106,
+        "title": "Predator (1987)",
+        "similarity_score": 0.8373
+      },
+      {
+        "movieId": 1127,
+        "tmdbId": 2756,
+        "title": "Abyss, The (1989)",
+        "similarity_score": 0.801
+      },
+      {
+        "movieId": 924,
+        "tmdbId": 62,
+        "title": "2001: A Space Odyssey (1968)",
+        "similarity_score": 0.7753
+      }
+    ],
+    "595": [
+      {
+        "movieId": 364,
+        "tmdbId": 8587,
+        "title": "Lion King, The (1994)",
+        "similarity_score": 0.9124
+      },
+      {
+        "movieId": 588,
+        "tmdbId": 812,
+        "title": "Aladdin (1992)",
+        "similarity_score": 0.8748
+      },
+      {
+        "movieId": 317,
+        "tmdbId": 11395,
+        "title": "Santa Clause, The (1994)",
+        "similarity_score": 0.8668
+      },
+      {
+        "movieId": 586,
+        "tmdbId": 771,
+        "title": "Home Alone (1990)",
+        "similarity_score": 0.8094
+      },
+      {
+        "movieId": 48,
+        "tmdbId": 10530,
+        "title": "Pocahontas (1995)",
+        "similarity_score": 0.7949
+      }
+    ],
+    "1036": [
+      {
+        "movieId": 1240,
+        "tmdbId": 218,
+        "title": "Terminator, The (1984)",
+        "similarity_score": 0.8399
+      },
+      {
+        "movieId": 1580,
+        "tmdbId": 607,
+        "title": "Men in Black (a.k.a. MIB) (1997)",
+        "similarity_score": 0.8206
+      },
+      {
+        "movieId": 1196,
+        "tmdbId": 1891,
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "similarity_score": 0.7846
+      },
+      {
+        "movieId": 1210,
+        "tmdbId": 1892,
+        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+        "similarity_score": 0.7842
+      },
+      {
+        "movieId": 2628,
+        "tmdbId": 1893,
+        "title": "Star Wars: Episode I - The Phantom Menace (1999)",
+        "similarity_score": 0.7796
+      }
+    ],
+    "500": [
+      {
+        "movieId": 344,
+        "tmdbId": 3049,
+        "title": "Ace Ventura: Pet Detective (1994)",
+        "similarity_score": 0.8422
+      },
+      {
+        "movieId": 586,
+        "tmdbId": 771,
+        "title": "Home Alone (1990)",
+        "similarity_score": 0.8185
+      },
+      {
+        "movieId": 539,
+        "tmdbId": 858,
+        "title": "Sleepless in Seattle (1993)",
+        "similarity_score": 0.8169
+      },
+      {
+        "movieId": 588,
+        "tmdbId": 812,
+        "title": "Aladdin (1992)",
+        "similarity_score": 0.8111
+      },
+      {
+        "movieId": 587,
+        "tmdbId": 251,
+        "title": "Ghost (1990)",
+        "similarity_score": 0.8092
+      }
+    ],
+    "165": [
+      {
+        "movieId": 434,
+        "tmdbId": 9350,
+        "title": "Cliffhanger (1993)",
+        "similarity_score": 0.9155
+      },
+      {
+        "movieId": 208,
+        "tmdbId": 9804,
+        "title": "Waterworld (1995)",
+        "similarity_score": 0.8988
+      },
+      {
+        "movieId": 10,
+        "tmdbId": 710,
+        "title": "GoldenEye (1995)",
+        "similarity_score": 0.8852
+      },
+      {
+        "movieId": 292,
+        "tmdbId": 6950,
+        "title": "Outbreak (1995)",
+        "similarity_score": 0.8831
+      },
+      {
+        "movieId": 227,
+        "tmdbId": 4954,
+        "title": "Drop Zone (1994)",
+        "similarity_score": 0.8805
+      }
+    ],
+    "79132": [
+      {
+        "movieId": 68157,
+        "tmdbId": 16869,
+        "title": "Inglourious Basterds (2009)",
+        "similarity_score": 0.9102
+      },
+      {
+        "movieId": 91529,
+        "tmdbId": 49026,
+        "title": "Dark Knight Rises, The (2012)",
+        "similarity_score": 0.8906
+      },
+      {
+        "movieId": 58559,
+        "tmdbId": 155,
+        "title": "Dark Knight, The (2008)",
+        "similarity_score": 0.8873
+      },
+      {
+        "movieId": 143458,
+        "tmdbId": 273197,
+        "title": "The Great Hypnotist (2014)",
+        "similarity_score": 0.8754
+      },
+      {
+        "movieId": 187541,
+        "tmdbId": 260513,
+        "title": "Incredibles 2 (2018)",
+        "similarity_score": 0.8573
+      }
+    ],
+    "1265": [
+      {
+        "movieId": 1197,
+        "tmdbId": 2493,
+        "title": "Princess Bride, The (1987)",
+        "similarity_score": 0.8054
+      },
+      {
+        "movieId": 1968,
+        "tmdbId": 2108,
+        "title": "Breakfast Club, The (1985)",
+        "similarity_score": 0.7305
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.7139
+      },
+      {
+        "movieId": 2918,
+        "tmdbId": 9377,
+        "title": "Ferris Bueller's Day Off (1986)",
+        "similarity_score": 0.6889
+      },
+      {
+        "movieId": 1097,
+        "tmdbId": 601,
+        "title": "E.T. the Extra-Terrestrial (1982)",
+        "similarity_score": 0.6678
+      }
+    ],
+    "1197": [
+      {
+        "movieId": 1265,
+        "tmdbId": 137,
+        "title": "Groundhog Day (1993)",
+        "similarity_score": 0.8054
+      },
+      {
+        "movieId": 2918,
+        "tmdbId": 9377,
+        "title": "Ferris Bueller's Day Off (1986)",
+        "similarity_score": 0.7598
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.7539
+      },
+      {
+        "movieId": 1259,
+        "tmdbId": 235,
+        "title": "Stand by Me (1986)",
+        "similarity_score": 0.75
+      },
+      {
+        "movieId": 1968,
+        "tmdbId": 2108,
+        "title": "Breakfast Club, The (1985)",
+        "similarity_score": 0.7381
+      }
+    ],
+    "6377": [
+      {
+        "movieId": 4886,
+        "tmdbId": 585,
+        "title": "Monsters, Inc. (2001)",
+        "similarity_score": 0.8655
+      },
+      {
+        "movieId": 8961,
+        "tmdbId": 9806,
+        "title": "Incredibles, The (2004)",
+        "similarity_score": 0.8346
+      },
+      {
+        "movieId": 4306,
+        "tmdbId": 808,
+        "title": "Shrek (2001)",
+        "similarity_score": 0.8139
+      },
+      {
+        "movieId": 8368,
+        "tmdbId": 673,
+        "title": "Harry Potter and the Prisoner of Azkaban (2004)",
+        "similarity_score": 0.7492
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.7333
+      }
+    ],
+    "1704": [
+      {
+        "movieId": 4963,
+        "tmdbId": 161,
+        "title": "Ocean's Eleven (2001)",
+        "similarity_score": 0.7058
+      },
+      {
+        "movieId": 4995,
+        "tmdbId": 453,
+        "title": "Beautiful Mind, A (2001)",
+        "similarity_score": 0.6873
+      },
+      {
+        "movieId": 3578,
+        "tmdbId": 98,
+        "title": "Gladiator (2000)",
+        "similarity_score": 0.6762
+      },
+      {
+        "movieId": 5989,
+        "tmdbId": 640,
+        "title": "Catch Me If You Can (2002)",
+        "similarity_score": 0.6552
+      },
+      {
+        "movieId": 2959,
+        "tmdbId": 550,
+        "title": "Fight Club (1999)",
+        "similarity_score": 0.6535
+      }
+    ],
+    "316": [
+      {
+        "movieId": 592,
+        "tmdbId": 268,
+        "title": "Batman (1989)",
+        "similarity_score": 0.8805
+      },
+      {
+        "movieId": 380,
+        "tmdbId": 36955,
+        "title": "True Lies (1994)",
+        "similarity_score": 0.8507
+      },
+      {
+        "movieId": 10,
+        "tmdbId": 710,
+        "title": "GoldenEye (1995)",
+        "similarity_score": 0.8338
+      },
+      {
+        "movieId": 329,
+        "tmdbId": 193,
+        "title": "Star Trek: Generations (1994)",
+        "similarity_score": 0.8289
+      },
+      {
+        "movieId": 589,
+        "tmdbId": 280,
+        "title": "Terminator 2: Judgment Day (1991)",
+        "similarity_score": 0.806
+      }
+    ],
+    "2628": [
+      {
+        "movieId": 1580,
+        "tmdbId": 607,
+        "title": "Men in Black (a.k.a. MIB) (1997)",
+        "similarity_score": 0.8601
+      },
+      {
+        "movieId": 1036,
+        "tmdbId": 562,
+        "title": "Die Hard (1988)",
+        "similarity_score": 0.7796
+      },
+      {
+        "movieId": 1210,
+        "tmdbId": 1892,
+        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+        "similarity_score": 0.7717
+      },
+      {
+        "movieId": 1240,
+        "tmdbId": 218,
+        "title": "Terminator, The (1984)",
+        "similarity_score": 0.7688
+      },
+      {
+        "movieId": 1584,
+        "tmdbId": 686,
+        "title": "Contact (1997)",
+        "similarity_score": 0.7624
+      }
+    ],
+    "1721": [
+      {
+        "movieId": 2724,
+        "tmdbId": 4806,
+        "title": "Runaway Bride (1999)",
+        "similarity_score": 0.7173
+      },
+      {
+        "movieId": 5620,
+        "tmdbId": 11529,
+        "title": "Sweet Home Alabama (2002)",
+        "similarity_score": 0.6908
+      },
+      {
+        "movieId": 86817,
+        "tmdbId": 49022,
+        "title": "Something Borrowed (2011)",
+        "similarity_score": 0.6904
+      },
+      {
+        "movieId": 56949,
+        "tmdbId": 6557,
+        "title": "27 Dresses (2008)",
+        "similarity_score": 0.6663
+      },
+      {
+        "movieId": 33145,
+        "tmdbId": 8976,
+        "title": "Lot Like Love, A (2005)",
+        "similarity_score": 0.666
+      }
+    ],
+    "1291": [
+      {
+        "movieId": 1196,
+        "tmdbId": 1891,
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "similarity_score": 0.9445
+      },
+      {
+        "movieId": 1210,
+        "tmdbId": 1892,
+        "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+        "similarity_score": 0.907
+      },
+      {
+        "movieId": 1198,
+        "tmdbId": 85,
+        "title": "Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)",
+        "similarity_score": 0.901
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.862
+      },
+      {
+        "movieId": 2716,
+        "tmdbId": 620,
+        "title": "Ghostbusters (a.k.a. Ghost Busters) (1984)",
+        "similarity_score": 0.853
+      }
+    ],
+    "153": [
+      {
+        "movieId": 380,
+        "tmdbId": 36955,
+        "title": "True Lies (1994)",
+        "similarity_score": 0.9043
+      },
+      {
+        "movieId": 185,
+        "tmdbId": 1642,
+        "title": "Net, The (1995)",
+        "similarity_score": 0.8948
+      },
+      {
+        "movieId": 344,
+        "tmdbId": 3049,
+        "title": "Ace Ventura: Pet Detective (1994)",
+        "similarity_score": 0.8828
+      },
+      {
+        "movieId": 434,
+        "tmdbId": 9350,
+        "title": "Cliffhanger (1993)",
+        "similarity_score": 0.881
+      },
+      {
+        "movieId": 592,
+        "tmdbId": 268,
+        "title": "Batman (1989)",
+        "similarity_score": 0.8787
+      }
+    ],
+    "1136": [
+      {
+        "movieId": 1080,
+        "tmdbId": 583,
+        "title": "Monty Python's Life of Brian (1979)",
+        "similarity_score": 0.8396
+      },
+      {
+        "movieId": 1288,
+        "tmdbId": 11031,
+        "title": "This Is Spinal Tap (1984)",
+        "similarity_score": 0.7525
+      },
+      {
+        "movieId": 103107,
+        "tmdbId": 159014,
+        "title": "20 Feet from Stardom (Twenty Feet from Stardom) (2013)",
+        "similarity_score": 0.7148
+      },
+      {
+        "movieId": 6480,
+        "tmdbId": 32489,
+        "title": "Thoroughly Modern Millie (1967)",
+        "similarity_score": 0.7128
+      },
+      {
+        "movieId": 4079,
+        "tmdbId": 5709,
+        "title": "Amazon Women on the Moon (1987)",
+        "similarity_score": 0.6902
+      }
+    ],
+    "597": [
+      {
+        "movieId": 539,
+        "tmdbId": 858,
+        "title": "Sleepless in Seattle (1993)",
+        "similarity_score": 0.8496
+      },
+      {
+        "movieId": 339,
+        "tmdbId": 2064,
+        "title": "While You Were Sleeping (1995)",
+        "similarity_score": 0.8394
+      },
+      {
+        "movieId": 587,
+        "tmdbId": 251,
+        "title": "Ghost (1990)",
+        "similarity_score": 0.744
+      },
+      {
+        "movieId": 500,
+        "tmdbId": 788,
+        "title": "Mrs. Doubtfire (1993)",
+        "similarity_score": 0.7155
+      },
+      {
+        "movieId": 150,
+        "tmdbId": 568,
+        "title": "Apollo 13 (1995)",
+        "similarity_score": 0.6946
+      }
+    ],
+    "1193": [
+      {
+        "movieId": 130482,
+        "tmdbId": 27036,
+        "title": "Too Late for Tears (1949)",
+        "similarity_score": 0.8026
+      },
+      {
+        "movieId": 136850,
+        "tmdbId": 30341,
+        "title": "Villain (1971)",
+        "similarity_score": 0.8026
+      },
+      {
+        "movieId": 858,
+        "tmdbId": 238,
+        "title": "Godfather, The (1972)",
+        "similarity_score": 0.7828
+      },
+      {
+        "movieId": 1221,
+        "tmdbId": 240,
+        "title": "Godfather: Part II, The (1974)",
+        "similarity_score": 0.7585
+      },
+      {
+        "movieId": 1213,
+        "tmdbId": 769,
+        "title": "Goodfellas (1990)",
+        "similarity_score": 0.758
+      }
+    ],
+    "293": [
+      {
+        "movieId": 47,
+        "tmdbId": 807,
+        "title": "Seven (a.k.a. Se7en) (1995)",
+        "similarity_score": 0.6924
+      },
+      {
+        "movieId": 110,
+        "tmdbId": 197,
+        "title": "Braveheart (1995)",
+        "similarity_score": 0.6435
+      },
+      {
+        "movieId": 431,
+        "tmdbId": 6075,
+        "title": "Carlito's Way (1993)",
+        "similarity_score": 0.6406
+      },
+      {
+        "movieId": 7134,
+        "tmdbId": 9063,
+        "title": "Element of Crime, The (Forbrydelsens Element) (1984)",
+        "similarity_score": 0.6314
+      },
+      {
+        "movieId": 77266,
+        "tmdbId": 12411,
+        "title": "Disgrace (2008)",
+        "similarity_score": 0.6314
+      }
+    ],
+    "231": [
+      {
+        "movieId": 344,
+        "tmdbId": 3049,
+        "title": "Ace Ventura: Pet Detective (1994)",
+        "similarity_score": 0.9045
+      },
+      {
+        "movieId": 420,
+        "tmdbId": 306,
+        "title": "Beverly Hills Cop III (1994)",
+        "similarity_score": 0.8125
+      },
+      {
+        "movieId": 367,
+        "tmdbId": 854,
+        "title": "Mask, The (1994)",
+        "similarity_score": 0.8046
+      },
+      {
+        "movieId": 253,
+        "tmdbId": 628,
+        "title": "Interview with the Vampire: The Vampire Chronicles (1994)",
+        "similarity_score": 0.8006
+      },
+      {
+        "movieId": 410,
+        "tmdbId": 2758,
+        "title": "Addams Family Values (1993)",
+        "similarity_score": 0.7877
+      }
+    ],
+    "3793": [
+      {
+        "movieId": 1527,
+        "tmdbId": 18,
+        "title": "Fifth Element, The (1997)",
+        "similarity_score": 0.77
+      },
+      {
+        "movieId": 5349,
+        "tmdbId": 557,
+        "title": "Spider-Man (2002)",
+        "similarity_score": 0.762
+      },
+      {
+        "movieId": 31184,
+        "tmdbId": 11633,
+        "title": "Appleseed (Appurush\u00eedo) (2004)",
+        "similarity_score": 0.7619
+      },
+      {
+        "movieId": 6333,
+        "tmdbId": 36658,
+        "title": "X2: X-Men United (2003)",
+        "similarity_score": 0.7592
+      },
+      {
+        "movieId": 5445,
+        "tmdbId": 180,
+        "title": "Minority Report (2002)",
+        "similarity_score": 0.7366
+      }
+    ],
+    "10": [
+      {
+        "movieId": 165,
+        "tmdbId": 1572,
+        "title": "Die Hard: With a Vengeance (1995)",
+        "similarity_score": 0.8852
+      },
+      {
+        "movieId": 316,
+        "tmdbId": 2164,
+        "title": "Stargate (1994)",
+        "similarity_score": 0.8338
+      },
+      {
+        "movieId": 380,
+        "tmdbId": 36955,
+        "title": "True Lies (1994)",
+        "similarity_score": 0.8045
+      },
+      {
+        "movieId": 349,
+        "tmdbId": 9331,
+        "title": "Clear and Present Danger (1994)",
+        "similarity_score": 0.7903
+      },
+      {
+        "movieId": 292,
+        "tmdbId": 6950,
+        "title": "Outbreak (1995)",
+        "similarity_score": 0.79
+      }
+    ],
+    "4886": [
+      {
+        "movieId": 4306,
+        "tmdbId": 808,
+        "title": "Shrek (2001)",
+        "similarity_score": 0.9212
+      },
+      {
+        "movieId": 6377,
+        "tmdbId": 12,
+        "title": "Finding Nemo (2003)",
+        "similarity_score": 0.8655
+      },
+      {
+        "movieId": 4896,
+        "tmdbId": 671,
+        "title": "Harry Potter and the Sorcerer's Stone (a.k.a. Harry Potter and the Philosopher's Stone) (2001)",
+        "similarity_score": 0.8289
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.8061
+      },
+      {
+        "movieId": 8961,
+        "tmdbId": 9806,
+        "title": "Incredibles, The (2004)",
+        "similarity_score": 0.7807
+      }
+    ],
+    "6874": [
+      {
+        "movieId": 7438,
+        "tmdbId": 393,
+        "title": "Kill Bill: Vol. 2 (2004)",
+        "similarity_score": 0.9484
+      },
+      {
+        "movieId": 32587,
+        "tmdbId": 187,
+        "title": "Sin City (2005)",
+        "similarity_score": 0.8644
+      },
+      {
+        "movieId": 4878,
+        "tmdbId": 141,
+        "title": "Donnie Darko (2001)",
+        "similarity_score": 0.7957
+      },
+      {
+        "movieId": 44191,
+        "tmdbId": 752,
+        "title": "V for Vendetta (2006)",
+        "similarity_score": 0.7879
+      },
+      {
+        "movieId": 3949,
+        "tmdbId": 641,
+        "title": "Requiem for a Dream (2000)",
+        "similarity_score": 0.7595
+      }
+    ],
+    "1089": [
+      {
+        "movieId": 1222,
+        "tmdbId": 600,
+        "title": "Full Metal Jacket (1987)",
+        "similarity_score": 0.8676
+      },
+      {
+        "movieId": 1206,
+        "tmdbId": 185,
+        "title": "Clockwork Orange, A (1971)",
+        "similarity_score": 0.8316
+      },
+      {
+        "movieId": 778,
+        "tmdbId": 627,
+        "title": "Trainspotting (1996)",
+        "similarity_score": 0.7958
+      },
+      {
+        "movieId": 1213,
+        "tmdbId": 769,
+        "title": "Goodfellas (1990)",
+        "similarity_score": 0.7706
+      },
+      {
+        "movieId": 2858,
+        "tmdbId": 14,
+        "title": "American Beauty (1999)",
+        "similarity_score": 0.7422
+      }
+    ],
+    "1240": [
+      {
+        "movieId": 1200,
+        "tmdbId": 679,
+        "title": "Aliens (1986)",
+        "similarity_score": 0.918
+      },
+      {
+        "movieId": 876,
+        "tmdbId": 38955,
+        "title": "Supercop 2 (Project S) (Chao ji ji hua) (1993)",
+        "similarity_score": 0.8532
+      },
+      {
+        "movieId": 1214,
+        "tmdbId": 348,
+        "title": "Alien (1979)",
+        "similarity_score": 0.8526
+      },
+      {
+        "movieId": 1036,
+        "tmdbId": 562,
+        "title": "Die Hard (1988)",
+        "similarity_score": 0.8399
+      },
+      {
+        "movieId": 3527,
+        "tmdbId": 106,
+        "title": "Predator (1987)",
+        "similarity_score": 0.8357
+      }
+    ],
+    "7361": [
+      {
+        "movieId": 4973,
+        "tmdbId": 194,
+        "title": "Amelie (Fabuleux destin d'Am\u00e9lie Poulain, Le) (2001)",
+        "similarity_score": 0.8055
+      },
+      {
+        "movieId": 3949,
+        "tmdbId": 641,
+        "title": "Requiem for a Dream (2000)",
+        "similarity_score": 0.7504
+      },
+      {
+        "movieId": 6874,
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1 (2003)",
+        "similarity_score": 0.7333
+      },
+      {
+        "movieId": 4878,
+        "tmdbId": 141,
+        "title": "Donnie Darko (2001)",
+        "similarity_score": 0.7125
+      },
+      {
+        "movieId": 7147,
+        "tmdbId": 587,
+        "title": "Big Fish (2003)",
+        "similarity_score": 0.7119
+      }
+    ],
+    "1221": [
+      {
+        "movieId": 858,
+        "tmdbId": 238,
+        "title": "Godfather, The (1972)",
+        "similarity_score": 0.9501
+      },
+      {
+        "movieId": 1617,
+        "tmdbId": 2118,
+        "title": "L.A. Confidential (1997)",
+        "similarity_score": 0.804
+      },
+      {
+        "movieId": 1213,
+        "tmdbId": 769,
+        "title": "Goodfellas (1990)",
+        "similarity_score": 0.7998
+      },
+      {
+        "movieId": 1193,
+        "tmdbId": 510,
+        "title": "One Flew Over the Cuckoo's Nest (1975)",
+        "similarity_score": 0.7585
+      },
+      {
+        "movieId": 1089,
+        "tmdbId": 500,
+        "title": "Reservoir Dogs (1992)",
+        "similarity_score": 0.6985
+      }
+    ],
+    "2329": [
+      {
+        "movieId": 2959,
+        "tmdbId": 550,
+        "title": "Fight Club (1999)",
+        "similarity_score": 0.8831
+      },
+      {
+        "movieId": 7312,
+        "tmdbId": 40454,
+        "title": "Follow Me, Boys! (1966)",
+        "similarity_score": 0.7668
+      },
+      {
+        "movieId": 61465,
+        "tmdbId": 13184,
+        "title": "Bangkok Dangerous (2008)",
+        "similarity_score": 0.7622
+      },
+      {
+        "movieId": 61697,
+        "tmdbId": 13389,
+        "title": "Righteous Kill (2008)",
+        "similarity_score": 0.7525
+      },
+      {
+        "movieId": 27373,
+        "tmdbId": 20536,
+        "title": "61* (2001)",
+        "similarity_score": 0.7426
+      }
+    ],
+    "34": [
+      {
+        "movieId": 364,
+        "tmdbId": 8587,
+        "title": "Lion King, The (1994)",
+        "similarity_score": 0.7689
+      },
+      {
+        "movieId": 588,
+        "tmdbId": 812,
+        "title": "Aladdin (1992)",
+        "similarity_score": 0.7648
+      },
+      {
+        "movieId": 595,
+        "tmdbId": 10020,
+        "title": "Beauty and the Beast (1991)",
+        "similarity_score": 0.7461
+      },
+      {
+        "movieId": 586,
+        "tmdbId": 771,
+        "title": "Home Alone (1990)",
+        "similarity_score": 0.7272
+      },
+      {
+        "movieId": 532,
+        "tmdbId": 11592,
+        "title": "Serial Mom (1994)",
+        "similarity_score": 0.7244
+      }
+    ],
+    "1200": [
+      {
+        "movieId": 1214,
+        "tmdbId": 348,
+        "title": "Alien (1979)",
+        "similarity_score": 0.9468
+      },
+      {
+        "movieId": 1240,
+        "tmdbId": 218,
+        "title": "Terminator, The (1984)",
+        "similarity_score": 0.918
+      },
+      {
+        "movieId": 3527,
+        "tmdbId": 106,
+        "title": "Predator (1987)",
+        "similarity_score": 0.8926
+      },
+      {
+        "movieId": 876,
+        "tmdbId": 38955,
+        "title": "Supercop 2 (Project S) (Chao ji ji hua) (1993)",
+        "similarity_score": 0.8746
+      },
+      {
+        "movieId": 1127,
+        "tmdbId": 2756,
+        "title": "Abyss, The (1989)",
+        "similarity_score": 0.8575
+      }
+    ],
+    "1213": [
+      {
+        "movieId": 858,
+        "tmdbId": 238,
+        "title": "Godfather, The (1972)",
+        "similarity_score": 0.8747
+      },
+      {
+        "movieId": 130482,
+        "tmdbId": 27036,
+        "title": "Too Late for Tears (1949)",
+        "similarity_score": 0.8104
+      },
+      {
+        "movieId": 136850,
+        "tmdbId": 30341,
+        "title": "Villain (1971)",
+        "similarity_score": 0.8104
+      },
+      {
+        "movieId": 1221,
+        "tmdbId": 240,
+        "title": "Godfather: Part II, The (1974)",
+        "similarity_score": 0.7998
+      },
+      {
+        "movieId": 2669,
+        "tmdbId": 37305,
+        "title": "Pork Chop Hill (1959)",
+        "similarity_score": 0.795
+      }
+    ],
+    "1682": [
+      {
+        "movieId": 4027,
+        "tmdbId": 134,
+        "title": "O Brother, Where Art Thou? (2000)",
+        "similarity_score": 0.7227
+      },
+      {
+        "movieId": 3897,
+        "tmdbId": 786,
+        "title": "Almost Famous (2000)",
+        "similarity_score": 0.7074
+      },
+      {
+        "movieId": 5989,
+        "tmdbId": 640,
+        "title": "Catch Me If You Can (2002)",
+        "similarity_score": 0.6655
+      },
+      {
+        "movieId": 3948,
+        "tmdbId": 1597,
+        "title": "Meet the Parents (2000)",
+        "similarity_score": 0.6617
+      },
+      {
+        "movieId": 5502,
+        "tmdbId": 2675,
+        "title": "Signs (2002)",
+        "similarity_score": 0.6537
+      }
+    ],
+    "8961": [
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.8885
+      },
+      {
+        "movieId": 5952,
+        "tmdbId": 121,
+        "title": "Lord of the Rings: The Two Towers, The (2002)",
+        "similarity_score": 0.8471
+      },
+      {
+        "movieId": 7153,
+        "tmdbId": 122,
+        "title": "Lord of the Rings: The Return of the King, The (2003)",
+        "similarity_score": 0.8413
+      },
+      {
+        "movieId": 6377,
+        "tmdbId": 12,
+        "title": "Finding Nemo (2003)",
+        "similarity_score": 0.8346
+      },
+      {
+        "movieId": 5445,
+        "tmdbId": 180,
+        "title": "Minority Report (2002)",
+        "similarity_score": 0.8259
+      }
+    ],
+    "541": [
+      {
+        "movieId": 924,
+        "tmdbId": 62,
+        "title": "2001: A Space Odyssey (1968)",
+        "similarity_score": 0.8248
+      },
+      {
+        "movieId": 1214,
+        "tmdbId": 348,
+        "title": "Alien (1979)",
+        "similarity_score": 0.7338
+      },
+      {
+        "movieId": 1208,
+        "tmdbId": 28,
+        "title": "Apocalypse Now (1979)",
+        "similarity_score": 0.7175
+      },
+      {
+        "movieId": 456,
+        "tmdbId": 13815,
+        "title": "Fresh (1994)",
+        "similarity_score": 0.7089
+      },
+      {
+        "movieId": 26564,
+        "tmdbId": 14670,
+        "title": "'Round Midnight (1986)",
+        "similarity_score": 0.6826
+      }
+    ],
+    "736": [
+      {
+        "movieId": 95,
+        "tmdbId": 9208,
+        "title": "Broken Arrow (1996)",
+        "similarity_score": 0.902
+      },
+      {
+        "movieId": 786,
+        "tmdbId": 9268,
+        "title": "Eraser (1996)",
+        "similarity_score": 0.8936
+      },
+      {
+        "movieId": 780,
+        "tmdbId": 602,
+        "title": "Independence Day (a.k.a. ID4) (1996)",
+        "similarity_score": 0.8851
+      },
+      {
+        "movieId": 733,
+        "tmdbId": 9802,
+        "title": "Rock, The (1996)",
+        "similarity_score": 0.8783
+      },
+      {
+        "movieId": 648,
+        "tmdbId": 954,
+        "title": "Mission: Impossible (1996)",
+        "similarity_score": 0.8625
+      }
+    ],
+    "4995": [
+      {
+        "movieId": 5989,
+        "tmdbId": 640,
+        "title": "Catch Me If You Can (2002)",
+        "similarity_score": 0.8196
+      },
+      {
+        "movieId": 85885,
+        "tmdbId": 48650,
+        "title": "Room in Rome (Habitaci\u00f3n en Roma) (2010)",
+        "similarity_score": 0.762
+      },
+      {
+        "movieId": 4963,
+        "tmdbId": 161,
+        "title": "Ocean's Eleven (2001)",
+        "similarity_score": 0.7277
+      },
+      {
+        "movieId": 4022,
+        "tmdbId": 8358,
+        "title": "Cast Away (2000)",
+        "similarity_score": 0.7172
+      },
+      {
+        "movieId": 71902,
+        "tmdbId": 19918,
+        "title": "Spread (2009)",
+        "similarity_score": 0.7165
+      }
+    ],
+    "1097": [
+      {
+        "movieId": 2628,
+        "tmdbId": 1893,
+        "title": "Star Wars: Episode I - The Phantom Menace (1999)",
+        "similarity_score": 0.7535
+      },
+      {
+        "movieId": 2000,
+        "tmdbId": 941,
+        "title": "Lethal Weapon (1987)",
+        "similarity_score": 0.7235
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.7223
+      },
+      {
+        "movieId": 2742,
+        "tmdbId": 3934,
+        "title": "M\u00e9nage (Tenue de soir\u00e9e) (1986)",
+        "similarity_score": 0.711
+      },
+      {
+        "movieId": 3674,
+        "tmdbId": 38802,
+        "title": "For the Love of Benji (1977)",
+        "similarity_score": 0.711
+      }
+    ],
+    "5349": [
+      {
+        "movieId": 5445,
+        "tmdbId": 180,
+        "title": "Minority Report (2002)",
+        "similarity_score": 0.9374
+      },
+      {
+        "movieId": 8636,
+        "tmdbId": 558,
+        "title": "Spider-Man 2 (2004)",
+        "similarity_score": 0.8546
+      },
+      {
+        "movieId": 5418,
+        "tmdbId": 2501,
+        "title": "Bourne Identity, The (2002)",
+        "similarity_score": 0.8542
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.8408
+      },
+      {
+        "movieId": 6365,
+        "tmdbId": 604,
+        "title": "Matrix Reloaded, The (2003)",
+        "similarity_score": 0.83
+      }
+    ],
+    "2683": [
+      {
+        "movieId": 1517,
+        "tmdbId": 816,
+        "title": "Austin Powers: International Man of Mystery (1997)",
+        "similarity_score": 0.9068
+      },
+      {
+        "movieId": 3253,
+        "tmdbId": 8872,
+        "title": "Wayne's World (1992)",
+        "similarity_score": 0.8308
+      },
+      {
+        "movieId": 1923,
+        "tmdbId": 544,
+        "title": "There's Something About Mary (1998)",
+        "similarity_score": 0.7999
+      },
+      {
+        "movieId": 2706,
+        "tmdbId": 2105,
+        "title": "American Pie (1999)",
+        "similarity_score": 0.7397
+      },
+      {
+        "movieId": 2700,
+        "tmdbId": 9473,
+        "title": "South Park: Bigger, Longer and Uncut (1999)",
+        "similarity_score": 0.7031
+      }
+    ],
+    "733": [
+      {
+        "movieId": 780,
+        "tmdbId": 602,
+        "title": "Independence Day (a.k.a. ID4) (1996)",
+        "similarity_score": 0.9271
+      },
+      {
+        "movieId": 648,
+        "tmdbId": 954,
+        "title": "Mission: Impossible (1996)",
+        "similarity_score": 0.886
+      },
+      {
+        "movieId": 736,
+        "tmdbId": 664,
+        "title": "Twister (1996)",
+        "similarity_score": 0.8783
+      },
+      {
+        "movieId": 1356,
+        "tmdbId": 199,
+        "title": "Star Trek: First Contact (1996)",
+        "similarity_score": 0.8628
+      },
+      {
+        "movieId": 786,
+        "tmdbId": 9268,
+        "title": "Eraser (1996)",
+        "similarity_score": 0.8312
+      }
+    ],
+    "2716": [
+      {
+        "movieId": 1291,
+        "tmdbId": 89,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "similarity_score": 0.853
+      },
+      {
+        "movieId": 1270,
+        "tmdbId": 105,
+        "title": "Back to the Future (1985)",
+        "similarity_score": 0.8069
+      },
+      {
+        "movieId": 2115,
+        "tmdbId": 87,
+        "title": "Indiana Jones and the Temple of Doom (1984)",
+        "similarity_score": 0.8031
+      },
+      {
+        "movieId": 2011,
+        "tmdbId": 165,
+        "title": "Back to the Future Part II (1989)",
+        "similarity_score": 0.749
+      },
+      {
+        "movieId": 2797,
+        "tmdbId": 2280,
+        "title": "Big (1988)",
+        "similarity_score": 0.7428
+      }
+    ],
+    "5445": [
+      {
+        "movieId": 5349,
+        "tmdbId": 557,
+        "title": "Spider-Man (2002)",
+        "similarity_score": 0.9374
+      },
+      {
+        "movieId": 5418,
+        "tmdbId": 2501,
+        "title": "Bourne Identity, The (2002)",
+        "similarity_score": 0.8779
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.826
+      },
+      {
+        "movieId": 8961,
+        "tmdbId": 9806,
+        "title": "Incredibles, The (2004)",
+        "similarity_score": 0.8259
+      },
+      {
+        "movieId": 4963,
+        "tmdbId": 161,
+        "title": "Ocean's Eleven (2001)",
+        "similarity_score": 0.8209
+      }
+    ],
+    "4973": [
+      {
+        "movieId": 7361,
+        "tmdbId": 38,
+        "title": "Eternal Sunshine of the Spotless Mind (2004)",
+        "similarity_score": 0.8055
+      },
+      {
+        "movieId": 5618,
+        "tmdbId": 129,
+        "title": "Spirited Away (Sen to Chihiro no kamikakushi) (2001)",
+        "similarity_score": 0.7363
+      },
+      {
+        "movieId": 8327,
+        "tmdbId": 870,
+        "title": "Dolls (2002)",
+        "similarity_score": 0.7167
+      },
+      {
+        "movieId": 26366,
+        "tmdbId": 33324,
+        "title": "Harlan County U.S.A. (1976)",
+        "similarity_score": 0.6905
+      },
+      {
+        "movieId": 44633,
+        "tmdbId": 13222,
+        "title": "Devil and Daniel Johnston, The (2005)",
+        "similarity_score": 0.6905
+      }
+    ],
+    "1206": [
+      {
+        "movieId": 1089,
+        "tmdbId": 500,
+        "title": "Reservoir Dogs (1992)",
+        "similarity_score": 0.8316
+      },
+      {
+        "movieId": 1222,
+        "tmdbId": 600,
+        "title": "Full Metal Jacket (1987)",
+        "similarity_score": 0.7955
+      },
+      {
+        "movieId": 2858,
+        "tmdbId": 14,
+        "title": "American Beauty (1999)",
+        "similarity_score": 0.7818
+      },
+      {
+        "movieId": 778,
+        "tmdbId": 627,
+        "title": "Trainspotting (1996)",
+        "similarity_score": 0.7721
+      },
+      {
+        "movieId": 2997,
+        "tmdbId": 492,
+        "title": "Being John Malkovich (1999)",
+        "similarity_score": 0.76
+      }
+    ],
+    "4963": [
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.8291
+      },
+      {
+        "movieId": 5445,
+        "tmdbId": 180,
+        "title": "Minority Report (2002)",
+        "similarity_score": 0.8209
+      },
+      {
+        "movieId": 5418,
+        "tmdbId": 2501,
+        "title": "Bourne Identity, The (2002)",
+        "similarity_score": 0.7897
+      },
+      {
+        "movieId": 8961,
+        "tmdbId": 9806,
+        "title": "Incredibles, The (2004)",
+        "similarity_score": 0.7617
+      },
+      {
+        "movieId": 4995,
+        "tmdbId": 453,
+        "title": "Beautiful Mind, A (2001)",
+        "similarity_score": 0.7277
+      }
+    ],
+    "1073": [
+      {
+        "movieId": 661,
+        "tmdbId": 10539,
+        "title": "James and the Giant Peach (1996)",
+        "similarity_score": 0.8485
+      },
+      {
+        "movieId": 765,
+        "tmdbId": 7095,
+        "title": "Jack (1996)",
+        "similarity_score": 0.8041
+      },
+      {
+        "movieId": 1,
+        "tmdbId": 862,
+        "title": "Toy Story (1995)",
+        "similarity_score": 0.7707
+      },
+      {
+        "movieId": 879,
+        "tmdbId": 11015,
+        "title": "Relic, The (1997)",
+        "similarity_score": 0.7698
+      },
+      {
+        "movieId": 788,
+        "tmdbId": 9327,
+        "title": "Nutty Professor, The (1996)",
+        "similarity_score": 0.7509
+      }
+    ],
+    "33794": [
+      {
+        "movieId": 44191,
+        "tmdbId": 752,
+        "title": "V for Vendetta (2006)",
+        "similarity_score": 0.8679
+      },
+      {
+        "movieId": 49272,
+        "tmdbId": 36557,
+        "title": "Casino Royale (2006)",
+        "similarity_score": 0.8259
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.7944
+      },
+      {
+        "movieId": 45722,
+        "tmdbId": 58,
+        "title": "Pirates of the Caribbean: Dead Man's Chest (2006)",
+        "similarity_score": 0.7498
+      },
+      {
+        "movieId": 59315,
+        "tmdbId": 1726,
+        "title": "Iron Man (2008)",
+        "similarity_score": 0.7468
+      }
+    ],
+    "1527": [
+      {
+        "movieId": 3793,
+        "tmdbId": 36657,
+        "title": "X-Men (2000)",
+        "similarity_score": 0.77
+      },
+      {
+        "movieId": 1659,
+        "tmdbId": 125052,
+        "title": "Hurricane Streets (1997)",
+        "similarity_score": 0.762
+      },
+      {
+        "movieId": 2115,
+        "tmdbId": 87,
+        "title": "Indiana Jones and the Temple of Doom (1984)",
+        "similarity_score": 0.7504
+      },
+      {
+        "movieId": 2628,
+        "tmdbId": 1893,
+        "title": "Star Wars: Episode I - The Phantom Menace (1999)",
+        "similarity_score": 0.7352
+      },
+      {
+        "movieId": 31184,
+        "tmdbId": 11633,
+        "title": "Appleseed (Appurush\u00eedo) (2004)",
+        "similarity_score": 0.7179
+      }
+    ],
+    "586": [
+      {
+        "movieId": 588,
+        "tmdbId": 812,
+        "title": "Aladdin (1992)",
+        "similarity_score": 0.9033
+      },
+      {
+        "movieId": 364,
+        "tmdbId": 8587,
+        "title": "Lion King, The (1994)",
+        "similarity_score": 0.8434
+      },
+      {
+        "movieId": 500,
+        "tmdbId": 788,
+        "title": "Mrs. Doubtfire (1993)",
+        "similarity_score": 0.8185
+      },
+      {
+        "movieId": 595,
+        "tmdbId": 10020,
+        "title": "Beauty and the Beast (1991)",
+        "similarity_score": 0.8094
+      },
+      {
+        "movieId": 344,
+        "tmdbId": 3049,
+        "title": "Ace Ventura: Pet Detective (1994)",
+        "similarity_score": 0.7671
+      }
+    ],
+    "5989": [
+      {
+        "movieId": 4995,
+        "tmdbId": 453,
+        "title": "Beautiful Mind, A (2001)",
+        "similarity_score": 0.8196
+      },
+      {
+        "movieId": 4022,
+        "tmdbId": 8358,
+        "title": "Cast Away (2000)",
+        "similarity_score": 0.8012
+      },
+      {
+        "movieId": 49530,
+        "tmdbId": 1372,
+        "title": "Blood Diamond (2006)",
+        "similarity_score": 0.7305
+      },
+      {
+        "movieId": 1961,
+        "tmdbId": 380,
+        "title": "Rain Man (1988)",
+        "similarity_score": 0.7206
+      },
+      {
+        "movieId": 4963,
+        "tmdbId": 161,
+        "title": "Ocean's Eleven (2001)",
+        "similarity_score": 0.7171
+      }
+    ],
+    "587": [
+      {
+        "movieId": 539,
+        "tmdbId": 858,
+        "title": "Sleepless in Seattle (1993)",
+        "similarity_score": 0.8662
+      },
+      {
+        "movieId": 339,
+        "tmdbId": 2064,
+        "title": "While You Were Sleeping (1995)",
+        "similarity_score": 0.8412
+      },
+      {
+        "movieId": 500,
+        "tmdbId": 788,
+        "title": "Mrs. Doubtfire (1993)",
+        "similarity_score": 0.8092
+      },
+      {
+        "movieId": 236,
+        "tmdbId": 397,
+        "title": "French Kiss (1995)",
+        "similarity_score": 0.7981
+      },
+      {
+        "movieId": 289,
+        "tmdbId": 9058,
+        "title": "Only You (1994)",
+        "similarity_score": 0.7836
+      }
+    ],
+    "208": [
+      {
+        "movieId": 165,
+        "tmdbId": 1572,
+        "title": "Die Hard: With a Vengeance (1995)",
+        "similarity_score": 0.8988
+      },
+      {
+        "movieId": 344,
+        "tmdbId": 3049,
+        "title": "Ace Ventura: Pet Detective (1994)",
+        "similarity_score": 0.8679
+      },
+      {
+        "movieId": 292,
+        "tmdbId": 6950,
+        "title": "Outbreak (1995)",
+        "similarity_score": 0.845
+      },
+      {
+        "movieId": 153,
+        "tmdbId": 414,
+        "title": "Batman Forever (1995)",
+        "similarity_score": 0.8151
+      },
+      {
+        "movieId": 160,
+        "tmdbId": 10329,
+        "title": "Congo (1995)",
+        "similarity_score": 0.8061
+      }
+    ],
+    "1968": [
+      {
+        "movieId": 1259,
+        "tmdbId": 235,
+        "title": "Stand by Me (1986)",
+        "similarity_score": 0.744
+      },
+      {
+        "movieId": 1197,
+        "tmdbId": 2493,
+        "title": "Princess Bride, The (1987)",
+        "similarity_score": 0.7381
+      },
+      {
+        "movieId": 2918,
+        "tmdbId": 9377,
+        "title": "Ferris Bueller's Day Off (1986)",
+        "similarity_score": 0.7329
+      },
+      {
+        "movieId": 1265,
+        "tmdbId": 137,
+        "title": "Groundhog Day (1993)",
+        "similarity_score": 0.7305
+      },
+      {
+        "movieId": 3496,
+        "tmdbId": 118098,
+        "title": "Madame Sousatzka (1988)",
+        "similarity_score": 0.7012
+      }
+    ],
+    "185": [
+      {
+        "movieId": 292,
+        "tmdbId": 6950,
+        "title": "Outbreak (1995)",
+        "similarity_score": 0.9209
+      },
+      {
+        "movieId": 227,
+        "tmdbId": 4954,
+        "title": "Drop Zone (1994)",
+        "similarity_score": 0.9193
+      },
+      {
+        "movieId": 434,
+        "tmdbId": 9350,
+        "title": "Cliffhanger (1993)",
+        "similarity_score": 0.9136
+      },
+      {
+        "movieId": 153,
+        "tmdbId": 414,
+        "title": "Batman Forever (1995)",
+        "similarity_score": 0.8948
+      },
+      {
+        "movieId": 315,
+        "tmdbId": 2636,
+        "title": "Specialist, The (1994)",
+        "similarity_score": 0.8919
+      }
+    ],
+    "5418": [
+      {
+        "movieId": 5445,
+        "tmdbId": 180,
+        "title": "Minority Report (2002)",
+        "similarity_score": 0.8779
+      },
+      {
+        "movieId": 8665,
+        "tmdbId": 2502,
+        "title": "Bourne Supremacy, The (2004)",
+        "similarity_score": 0.8611
+      },
+      {
+        "movieId": 5349,
+        "tmdbId": 557,
+        "title": "Spider-Man (2002)",
+        "similarity_score": 0.8542
+      },
+      {
+        "movieId": 49272,
+        "tmdbId": 36557,
+        "title": "Casino Royale (2006)",
+        "similarity_score": 0.8153
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.8001
+      }
+    ],
+    "3147": [
+      {
+        "movieId": 2028,
+        "tmdbId": 857,
+        "title": "Saving Private Ryan (1998)",
+        "similarity_score": 0.831
+      },
+      {
+        "movieId": 102194,
+        "tmdbId": 103731,
+        "title": "Mud (2012)",
+        "similarity_score": 0.8003
+      },
+      {
+        "movieId": 85885,
+        "tmdbId": 48650,
+        "title": "Room in Rome (Habitaci\u00f3n en Roma) (2010)",
+        "similarity_score": 0.7757
+      },
+      {
+        "movieId": 70451,
+        "tmdbId": 13752,
+        "title": "Max Manus (2008)",
+        "similarity_score": 0.7506
+      },
+      {
+        "movieId": 27866,
+        "tmdbId": 1126,
+        "title": "In My Father's Den (2004)",
+        "similarity_score": 0.7506
+      }
+    ],
+    "3996": [
+      {
+        "movieId": 31184,
+        "tmdbId": 11633,
+        "title": "Appleseed (Appurush\u00eedo) (2004)",
+        "similarity_score": 0.7721
+      },
+      {
+        "movieId": 5349,
+        "tmdbId": 557,
+        "title": "Spider-Man (2002)",
+        "similarity_score": 0.7512
+      },
+      {
+        "movieId": 5445,
+        "tmdbId": 180,
+        "title": "Minority Report (2002)",
+        "similarity_score": 0.7497
+      },
+      {
+        "movieId": 7090,
+        "tmdbId": 79,
+        "title": "Hero (Ying xiong) (2002)",
+        "similarity_score": 0.7211
+      },
+      {
+        "movieId": 7352,
+        "tmdbId": 156,
+        "title": "Wilbur Wants to Kill Himself (2002)",
+        "similarity_score": 0.6937
+      }
+    ],
+    "2": [
+      {
+        "movieId": 364,
+        "tmdbId": 8587,
+        "title": "Lion King, The (1994)",
+        "similarity_score": 0.7964
+      },
+      {
+        "movieId": 238,
+        "tmdbId": 27985,
+        "title": "Far From Home: The Adventures of Yellow Dog (1995)",
+        "similarity_score": 0.7925
+      },
+      {
+        "movieId": 595,
+        "tmdbId": 10020,
+        "title": "Beauty and the Beast (1991)",
+        "similarity_score": 0.7828
+      },
+      {
+        "movieId": 48,
+        "tmdbId": 10530,
+        "title": "Pocahontas (1995)",
+        "similarity_score": 0.7786
+      },
+      {
+        "movieId": 204,
+        "tmdbId": 3512,
+        "title": "Under Siege 2: Dark Territory (1995)",
+        "similarity_score": 0.7724
+      }
+    ],
+    "349": [
+      {
+        "movieId": 161,
+        "tmdbId": 8963,
+        "title": "Crimson Tide (1995)",
+        "similarity_score": 0.96
+      },
+      {
+        "movieId": 454,
+        "tmdbId": 37233,
+        "title": "Firm, The (1993)",
+        "similarity_score": 0.9155
+      },
+      {
+        "movieId": 434,
+        "tmdbId": 9350,
+        "title": "Cliffhanger (1993)",
+        "similarity_score": 0.8768
+      },
+      {
+        "movieId": 590,
+        "tmdbId": 581,
+        "title": "Dances with Wolves (1990)",
+        "similarity_score": 0.8755
+      },
+      {
+        "movieId": 457,
+        "tmdbId": 5503,
+        "title": "Fugitive, The (1993)",
+        "similarity_score": 0.8714
+      }
+    ],
+    "7438": [
+      {
+        "movieId": 6874,
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1 (2003)",
+        "similarity_score": 0.9484
+      },
+      {
+        "movieId": 32587,
+        "tmdbId": 187,
+        "title": "Sin City (2005)",
+        "similarity_score": 0.8521
+      },
+      {
+        "movieId": 4878,
+        "tmdbId": 141,
+        "title": "Donnie Darko (2001)",
+        "similarity_score": 0.7863
+      },
+      {
+        "movieId": 8874,
+        "tmdbId": 747,
+        "title": "Shaun of the Dead (2004)",
+        "similarity_score": 0.7774
+      },
+      {
+        "movieId": 3949,
+        "tmdbId": 641,
+        "title": "Requiem for a Dream (2000)",
+        "similarity_score": 0.7049
+      }
+    ],
+    "253": [
+      {
+        "movieId": 153,
+        "tmdbId": 414,
+        "title": "Batman Forever (1995)",
+        "similarity_score": 0.86
+      },
+      {
+        "movieId": 160,
+        "tmdbId": 10329,
+        "title": "Congo (1995)",
+        "similarity_score": 0.8587
+      },
+      {
+        "movieId": 344,
+        "tmdbId": 3049,
+        "title": "Ace Ventura: Pet Detective (1994)",
+        "similarity_score": 0.8416
+      },
+      {
+        "movieId": 315,
+        "tmdbId": 2636,
+        "title": "Specialist, The (1994)",
+        "similarity_score": 0.8379
+      },
+      {
+        "movieId": 367,
+        "tmdbId": 854,
+        "title": "Mask, The (1994)",
+        "similarity_score": 0.8342
+      }
+    ],
+    "1258": [
+      {
+        "movieId": 1341,
+        "tmdbId": 13549,
+        "title": "Burnt Offerings (1976)",
+        "similarity_score": 0.7744
+      },
+      {
+        "movieId": 3499,
+        "tmdbId": 1700,
+        "title": "Misery (1990)",
+        "similarity_score": 0.7324
+      },
+      {
+        "movieId": 2160,
+        "tmdbId": 805,
+        "title": "Rosemary's Baby (1968)",
+        "similarity_score": 0.725
+      },
+      {
+        "movieId": 87413,
+        "tmdbId": 19963,
+        "title": "Bernie (1996)",
+        "similarity_score": 0.6924
+      },
+      {
+        "movieId": 1331,
+        "tmdbId": 49126,
+        "title": "Audrey Rose (1977)",
+        "similarity_score": 0.6921
+      }
+    ],
+    "2918": [
+      {
+        "movieId": 1517,
+        "tmdbId": 816,
+        "title": "Austin Powers: International Man of Mystery (1997)",
+        "similarity_score": 0.8033
+      },
+      {
+        "movieId": 1197,
+        "tmdbId": 2493,
+        "title": "Princess Bride, The (1987)",
+        "similarity_score": 0.7598
+      },
+      {
+        "movieId": 3253,
+        "tmdbId": 8872,
+        "title": "Wayne's World (1992)",
+        "similarity_score": 0.7582
+      },
+      {
+        "movieId": 1968,
+        "tmdbId": 2108,
+        "title": "Breakfast Club, The (1985)",
+        "similarity_score": 0.7329
+      },
+      {
+        "movieId": 998,
+        "tmdbId": 9400,
+        "title": "Set It Off (1996)",
+        "similarity_score": 0.7311
+      }
+    ],
+    "924": [
+      {
+        "movieId": 541,
+        "tmdbId": 78,
+        "title": "Blade Runner (1982)",
+        "similarity_score": 0.8248
+      },
+      {
+        "movieId": 1214,
+        "tmdbId": 348,
+        "title": "Alien (1979)",
+        "similarity_score": 0.7753
+      },
+      {
+        "movieId": 750,
+        "tmdbId": 935,
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
+        "similarity_score": 0.7622
+      },
+      {
+        "movieId": 3529,
+        "tmdbId": 11027,
+        "title": "Postman Always Rings Twice, The (1981)",
+        "similarity_score": 0.756
+      },
+      {
+        "movieId": 1201,
+        "tmdbId": 429,
+        "title": "Good, the Bad and the Ugly, The (Buono, il brutto, il cattivo, Il) (1966)",
+        "similarity_score": 0.7464
+      }
+    ],
+    "4878": [
+      {
+        "movieId": 8874,
+        "tmdbId": 747,
+        "title": "Shaun of the Dead (2004)",
+        "similarity_score": 0.8283
+      },
+      {
+        "movieId": 6874,
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1 (2003)",
+        "similarity_score": 0.7957
+      },
+      {
+        "movieId": 7438,
+        "tmdbId": 393,
+        "title": "Kill Bill: Vol. 2 (2004)",
+        "similarity_score": 0.7863
+      },
+      {
+        "movieId": 3949,
+        "tmdbId": 641,
+        "title": "Requiem for a Dream (2000)",
+        "similarity_score": 0.7628
+      },
+      {
+        "movieId": 5244,
+        "tmdbId": 15119,
+        "title": "Shogun Assassin (1980)",
+        "similarity_score": 0.7595
+      }
+    ],
+    "329": [
+      {
+        "movieId": 349,
+        "tmdbId": 9331,
+        "title": "Clear and Present Danger (1994)",
+        "similarity_score": 0.8401
+      },
+      {
+        "movieId": 316,
+        "tmdbId": 2164,
+        "title": "Stargate (1994)",
+        "similarity_score": 0.8289
+      },
+      {
+        "movieId": 161,
+        "tmdbId": 8963,
+        "title": "Crimson Tide (1995)",
+        "similarity_score": 0.8209
+      },
+      {
+        "movieId": 275,
+        "tmdbId": 24070,
+        "title": "Mixed Nuts (1994)",
+        "similarity_score": 0.8162
+      },
+      {
+        "movieId": 153,
+        "tmdbId": 414,
+        "title": "Batman Forever (1995)",
+        "similarity_score": 0.8141
+      }
+    ],
+    "2115": [
+      {
+        "movieId": 2011,
+        "tmdbId": 165,
+        "title": "Back to the Future Part II (1989)",
+        "similarity_score": 0.8937
+      },
+      {
+        "movieId": 2012,
+        "tmdbId": 196,
+        "title": "Back to the Future Part III (1990)",
+        "similarity_score": 0.8316
+      },
+      {
+        "movieId": 1291,
+        "tmdbId": 89,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "similarity_score": 0.8168
+      },
+      {
+        "movieId": 2716,
+        "tmdbId": 620,
+        "title": "Ghostbusters (a.k.a. Ghost Busters) (1984)",
+        "similarity_score": 0.8031
+      },
+      {
+        "movieId": 1240,
+        "tmdbId": 218,
+        "title": "Terminator, The (1984)",
+        "similarity_score": 0.7697
+      }
+    ],
+    "4896": [
+      {
+        "movieId": 5816,
+        "tmdbId": 672,
+        "title": "Harry Potter and the Chamber of Secrets (2002)",
+        "similarity_score": 0.9439
+      },
+      {
+        "movieId": 8368,
+        "tmdbId": 673,
+        "title": "Harry Potter and the Prisoner of Azkaban (2004)",
+        "similarity_score": 0.896
+      },
+      {
+        "movieId": 4306,
+        "tmdbId": 808,
+        "title": "Shrek (2001)",
+        "similarity_score": 0.8371
+      },
+      {
+        "movieId": 4886,
+        "tmdbId": 585,
+        "title": "Monsters, Inc. (2001)",
+        "similarity_score": 0.8289
+      },
+      {
+        "movieId": 54780,
+        "tmdbId": 12435,
+        "title": "Nanny Diaries, The (2007)",
+        "similarity_score": 0.8126
+      }
+    ],
+    "1208": [
+      {
+        "movieId": 456,
+        "tmdbId": 13815,
+        "title": "Fresh (1994)",
+        "similarity_score": 0.7926
+      },
+      {
+        "movieId": 608,
+        "tmdbId": 275,
+        "title": "Fargo (1996)",
+        "similarity_score": 0.7792
+      },
+      {
+        "movieId": 750,
+        "tmdbId": 935,
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
+        "similarity_score": 0.7718
+      },
+      {
+        "movieId": 111,
+        "tmdbId": 103,
+        "title": "Taxi Driver (1976)",
+        "similarity_score": 0.7678
+      },
+      {
+        "movieId": 923,
+        "tmdbId": 15,
+        "title": "Citizen Kane (1941)",
+        "similarity_score": 0.7546
+      }
+    ],
+    "48516": [
+      {
+        "movieId": 55820,
+        "tmdbId": 6977,
+        "title": "No Country for Old Men (2007)",
+        "similarity_score": 0.7246
+      },
+      {
+        "movieId": 4262,
+        "tmdbId": 111,
+        "title": "Scarface (1983)",
+        "similarity_score": 0.7153
+      },
+      {
+        "movieId": 93297,
+        "tmdbId": 75674,
+        "title": "Act of Valor (2012)",
+        "similarity_score": 0.6918
+      },
+      {
+        "movieId": 48780,
+        "tmdbId": 1124,
+        "title": "Prestige, The (2006)",
+        "similarity_score": 0.6879
+      },
+      {
+        "movieId": 2329,
+        "tmdbId": 73,
+        "title": "American History X (1998)",
+        "similarity_score": 0.687
+      }
+    ],
+    "1732": [
+      {
+        "movieId": 1206,
+        "tmdbId": 185,
+        "title": "Clockwork Orange, A (1971)",
+        "similarity_score": 0.735
+      },
+      {
+        "movieId": 1222,
+        "tmdbId": 600,
+        "title": "Full Metal Jacket (1987)",
+        "similarity_score": 0.7305
+      },
+      {
+        "movieId": 2858,
+        "tmdbId": 14,
+        "title": "American Beauty (1999)",
+        "similarity_score": 0.7262
+      },
+      {
+        "movieId": 778,
+        "tmdbId": 627,
+        "title": "Trainspotting (1996)",
+        "similarity_score": 0.7214
+      },
+      {
+        "movieId": 1884,
+        "tmdbId": 1878,
+        "title": "Fear and Loathing in Las Vegas (1998)",
+        "similarity_score": 0.7173
+      }
+    ],
+    "539": [
+      {
+        "movieId": 339,
+        "tmdbId": 2064,
+        "title": "While You Were Sleeping (1995)",
+        "similarity_score": 0.9193
+      },
+      {
+        "movieId": 440,
+        "tmdbId": 11566,
+        "title": "Dave (1993)",
+        "similarity_score": 0.8776
+      },
+      {
+        "movieId": 587,
+        "tmdbId": 251,
+        "title": "Ghost (1990)",
+        "similarity_score": 0.8662
+      },
+      {
+        "movieId": 597,
+        "tmdbId": 114,
+        "title": "Pretty Woman (1990)",
+        "similarity_score": 0.8496
+      },
+      {
+        "movieId": 150,
+        "tmdbId": 568,
+        "title": "Apollo 13 (1995)",
+        "similarity_score": 0.8385
+      }
+    ],
+    "68954": [
+      {
+        "movieId": 60069,
+        "tmdbId": 10681,
+        "title": "WALL\u00b7E (2008)",
+        "similarity_score": 0.8781
+      },
+      {
+        "movieId": 72998,
+        "tmdbId": 19995,
+        "title": "Avatar (2009)",
+        "similarity_score": 0.8623
+      },
+      {
+        "movieId": 170697,
+        "tmdbId": 400928,
+        "title": "Gifted (2017)",
+        "similarity_score": 0.8359
+      },
+      {
+        "movieId": 73017,
+        "tmdbId": 10528,
+        "title": "Sherlock Holmes (2009)",
+        "similarity_score": 0.8347
+      },
+      {
+        "movieId": 81834,
+        "tmdbId": 12444,
+        "title": "Harry Potter and the Deathly Hallows: Part 1 (2010)",
+        "similarity_score": 0.8249
+      }
+    ],
+    "1923": [
+      {
+        "movieId": 2683,
+        "tmdbId": 817,
+        "title": "Austin Powers: The Spy Who Shagged Me (1999)",
+        "similarity_score": 0.7999
+      },
+      {
+        "movieId": 3004,
+        "tmdbId": 2020,
+        "title": "Bachelor, The (1999)",
+        "similarity_score": 0.7413
+      },
+      {
+        "movieId": 2706,
+        "tmdbId": 2105,
+        "title": "American Pie (1999)",
+        "similarity_score": 0.7237
+      },
+      {
+        "movieId": 1517,
+        "tmdbId": 816,
+        "title": "Austin Powers: International Man of Mystery (1997)",
+        "similarity_score": 0.7159
+      },
+      {
+        "movieId": 1500,
+        "tmdbId": 9434,
+        "title": "Grosse Pointe Blank (1997)",
+        "similarity_score": 0.7007
+      }
+    ],
+    "111": [
+      {
+        "movieId": 6858,
+        "tmdbId": 11502,
+        "title": "Knife in the Water (N\u00f3z w wodzie) (1962)",
+        "similarity_score": 0.7917
+      },
+      {
+        "movieId": 130482,
+        "tmdbId": 27036,
+        "title": "Too Late for Tears (1949)",
+        "similarity_score": 0.7776
+      },
+      {
+        "movieId": 136850,
+        "tmdbId": 30341,
+        "title": "Villain (1971)",
+        "similarity_score": 0.7776
+      },
+      {
+        "movieId": 4404,
+        "tmdbId": 10728,
+        "title": "Faust (1926)",
+        "similarity_score": 0.7683
+      },
+      {
+        "movieId": 32179,
+        "tmdbId": 1093,
+        "title": "Elevator to the Gallows (a.k.a. Frantic) (Ascenseur pour l'\u00e9chafaud) (1958)",
+        "similarity_score": 0.7683
+      }
+    ],
+    "60069": [
+      {
+        "movieId": 72998,
+        "tmdbId": 19995,
+        "title": "Avatar (2009)",
+        "similarity_score": 0.9191
+      },
+      {
+        "movieId": 68954,
+        "tmdbId": 14160,
+        "title": "Up (2009)",
+        "similarity_score": 0.8781
+      },
+      {
+        "movieId": 59315,
+        "tmdbId": 1726,
+        "title": "Iron Man (2008)",
+        "similarity_score": 0.8343
+      },
+      {
+        "movieId": 73017,
+        "tmdbId": 10528,
+        "title": "Sherlock Holmes (2009)",
+        "similarity_score": 0.7809
+      },
+      {
+        "movieId": 172591,
+        "tmdbId": 364150,
+        "title": "The Godfather Trilogy: 1972-1990 (1992)",
+        "similarity_score": 0.7597
+      }
+    ],
+    "39": [
+      {
+        "movieId": 588,
+        "tmdbId": 812,
+        "title": "Aladdin (1992)",
+        "similarity_score": 0.7305
+      },
+      {
+        "movieId": 2572,
+        "tmdbId": 4951,
+        "title": "10 Things I Hate About You (1999)",
+        "similarity_score": 0.7211
+      },
+      {
+        "movieId": 539,
+        "tmdbId": 858,
+        "title": "Sleepless in Seattle (1993)",
+        "similarity_score": 0.6997
+      },
+      {
+        "movieId": 203,
+        "tmdbId": 9090,
+        "title": "To Wong Foo, Thanks for Everything! Julie Newmar (1995)",
+        "similarity_score": 0.6879
+      },
+      {
+        "movieId": 500,
+        "tmdbId": 788,
+        "title": "Mrs. Doubtfire (1993)",
+        "similarity_score": 0.6722
+      }
+    ],
+    "223": [
+      {
+        "movieId": 2997,
+        "tmdbId": 492,
+        "title": "Being John Malkovich (1999)",
+        "similarity_score": 0.8329
+      },
+      {
+        "movieId": 778,
+        "tmdbId": 627,
+        "title": "Trainspotting (1996)",
+        "similarity_score": 0.7236
+      },
+      {
+        "movieId": 1639,
+        "tmdbId": 2255,
+        "title": "Chasing Amy (1997)",
+        "similarity_score": 0.714
+      },
+      {
+        "movieId": 337,
+        "tmdbId": 1587,
+        "title": "What's Eating Gilbert Grape (1993)",
+        "similarity_score": 0.7034
+      },
+      {
+        "movieId": 32,
+        "tmdbId": 63,
+        "title": "Twelve Monkeys (a.k.a. 12 Monkeys) (1995)",
+        "similarity_score": 0.6971
+      }
+    ],
+    "357": [
+      {
+        "movieId": 265,
+        "tmdbId": 18183,
+        "title": "Like Water for Chocolate (Como agua para chocolate) (1992)",
+        "similarity_score": 0.7901
+      },
+      {
+        "movieId": 587,
+        "tmdbId": 251,
+        "title": "Ghost (1990)",
+        "similarity_score": 0.7775
+      },
+      {
+        "movieId": 509,
+        "tmdbId": 713,
+        "title": "Piano, The (1993)",
+        "similarity_score": 0.767
+      },
+      {
+        "movieId": 171,
+        "tmdbId": 17447,
+        "title": "Jeffrey (1995)",
+        "similarity_score": 0.7293
+      },
+      {
+        "movieId": 532,
+        "tmdbId": 11592,
+        "title": "Serial Mom (1994)",
+        "similarity_score": 0.7213
+      }
+    ],
+    "2706": [
+      {
+        "movieId": 2694,
+        "tmdbId": 9032,
+        "title": "Big Daddy (1999)",
+        "similarity_score": 0.7587
+      },
+      {
+        "movieId": 1917,
+        "tmdbId": 95,
+        "title": "Armageddon (1998)",
+        "similarity_score": 0.7413
+      },
+      {
+        "movieId": 2683,
+        "tmdbId": 817,
+        "title": "Austin Powers: The Spy Who Shagged Me (1999)",
+        "similarity_score": 0.7397
+      },
+      {
+        "movieId": 1923,
+        "tmdbId": 544,
+        "title": "There's Something About Mary (1998)",
+        "similarity_score": 0.7237
+      },
+      {
+        "movieId": 6188,
+        "tmdbId": 11635,
+        "title": "Old School (2003)",
+        "similarity_score": 0.7221
+      }
+    ],
+    "161": [
+      {
+        "movieId": 349,
+        "tmdbId": 9331,
+        "title": "Clear and Present Danger (1994)",
+        "similarity_score": 0.96
+      },
+      {
+        "movieId": 454,
+        "tmdbId": 37233,
+        "title": "Firm, The (1993)",
+        "similarity_score": 0.9262
+      },
+      {
+        "movieId": 434,
+        "tmdbId": 9350,
+        "title": "Cliffhanger (1993)",
+        "similarity_score": 0.9096
+      },
+      {
+        "movieId": 315,
+        "tmdbId": 2636,
+        "title": "Specialist, The (1994)",
+        "similarity_score": 0.8994
+      },
+      {
+        "movieId": 185,
+        "tmdbId": 1642,
+        "title": "Net, The (1995)",
+        "similarity_score": 0.8873
+      }
+    ],
+    "6": [
+      {
+        "movieId": 1055,
+        "tmdbId": 38153,
+        "title": "Shadow Conspiracy (1997)",
+        "similarity_score": 0.7729
+      },
+      {
+        "movieId": 786,
+        "tmdbId": 9268,
+        "title": "Eraser (1996)",
+        "similarity_score": 0.7628
+      },
+      {
+        "movieId": 95,
+        "tmdbId": 9208,
+        "title": "Broken Arrow (1996)",
+        "similarity_score": 0.7534
+      },
+      {
+        "movieId": 882,
+        "tmdbId": 58770,
+        "title": "Trigger Effect, The (1996)",
+        "similarity_score": 0.7401
+      },
+      {
+        "movieId": 648,
+        "tmdbId": 954,
+        "title": "Mission: Impossible (1996)",
+        "similarity_score": 0.7398
+      }
+    ],
+    "1222": [
+      {
+        "movieId": 1089,
+        "tmdbId": 500,
+        "title": "Reservoir Dogs (1992)",
+        "similarity_score": 0.8676
+      },
+      {
+        "movieId": 1206,
+        "tmdbId": 185,
+        "title": "Clockwork Orange, A (1971)",
+        "similarity_score": 0.7955
+      },
+      {
+        "movieId": 1208,
+        "tmdbId": 28,
+        "title": "Apocalypse Now (1979)",
+        "similarity_score": 0.7314
+      },
+      {
+        "movieId": 1732,
+        "tmdbId": 115,
+        "title": "Big Lebowski, The (1998)",
+        "similarity_score": 0.7305
+      },
+      {
+        "movieId": 778,
+        "tmdbId": 627,
+        "title": "Trainspotting (1996)",
+        "similarity_score": 0.694
+      }
+    ],
+    "5816": [
+      {
+        "movieId": 4896,
+        "tmdbId": 671,
+        "title": "Harry Potter and the Sorcerer's Stone (a.k.a. Harry Potter and the Philosopher's Stone) (2001)",
+        "similarity_score": 0.9439
+      },
+      {
+        "movieId": 8368,
+        "tmdbId": 673,
+        "title": "Harry Potter and the Prisoner of Azkaban (2004)",
+        "similarity_score": 0.9088
+      },
+      {
+        "movieId": 54780,
+        "tmdbId": 12435,
+        "title": "Nanny Diaries, The (2007)",
+        "similarity_score": 0.8221
+      },
+      {
+        "movieId": 40815,
+        "tmdbId": 674,
+        "title": "Harry Potter and the Goblet of Fire (2005)",
+        "similarity_score": 0.8204
+      },
+      {
+        "movieId": 4306,
+        "tmdbId": 808,
+        "title": "Shrek (2001)",
+        "similarity_score": 0.8082
+      }
+    ],
+    "778": [
+      {
+        "movieId": 1089,
+        "tmdbId": 500,
+        "title": "Reservoir Dogs (1992)",
+        "similarity_score": 0.7958
+      },
+      {
+        "movieId": 1206,
+        "tmdbId": 185,
+        "title": "Clockwork Orange, A (1971)",
+        "similarity_score": 0.7721
+      },
+      {
+        "movieId": 223,
+        "tmdbId": 2292,
+        "title": "Clerks (1994)",
+        "similarity_score": 0.7236
+      },
+      {
+        "movieId": 1732,
+        "tmdbId": 115,
+        "title": "Big Lebowski, The (1998)",
+        "similarity_score": 0.7214
+      },
+      {
+        "movieId": 50,
+        "tmdbId": 629,
+        "title": "Usual Suspects, The (1995)",
+        "similarity_score": 0.6999
+      }
+    ],
+    "292": [
+      {
+        "movieId": 185,
+        "tmdbId": 1642,
+        "title": "Net, The (1995)",
+        "similarity_score": 0.9209
+      },
+      {
+        "movieId": 315,
+        "tmdbId": 2636,
+        "title": "Specialist, The (1994)",
+        "similarity_score": 0.9179
+      },
+      {
+        "movieId": 434,
+        "tmdbId": 9350,
+        "title": "Cliffhanger (1993)",
+        "similarity_score": 0.8998
+      },
+      {
+        "movieId": 227,
+        "tmdbId": 4954,
+        "title": "Drop Zone (1994)",
+        "similarity_score": 0.8879
+      },
+      {
+        "movieId": 454,
+        "tmdbId": 37233,
+        "title": "Firm, The (1993)",
+        "similarity_score": 0.8861
+      }
+    ],
+    "454": [
+      {
+        "movieId": 225,
+        "tmdbId": 8984,
+        "title": "Disclosure (1994)",
+        "similarity_score": 0.9487
+      },
+      {
+        "movieId": 350,
+        "tmdbId": 10731,
+        "title": "Client, The (1994)",
+        "similarity_score": 0.9301
+      },
+      {
+        "movieId": 161,
+        "tmdbId": 8963,
+        "title": "Crimson Tide (1995)",
+        "similarity_score": 0.9262
+      },
+      {
+        "movieId": 349,
+        "tmdbId": 9331,
+        "title": "Clear and Present Danger (1994)",
+        "similarity_score": 0.9155
+      },
+      {
+        "movieId": 315,
+        "tmdbId": 2636,
+        "title": "Specialist, The (1994)",
+        "similarity_score": 0.9042
+      }
+    ],
+    "434": [
+      {
+        "movieId": 315,
+        "tmdbId": 2636,
+        "title": "Specialist, The (1994)",
+        "similarity_score": 0.9537
+      },
+      {
+        "movieId": 165,
+        "tmdbId": 1572,
+        "title": "Die Hard: With a Vengeance (1995)",
+        "similarity_score": 0.9155
+      },
+      {
+        "movieId": 185,
+        "tmdbId": 1642,
+        "title": "Net, The (1995)",
+        "similarity_score": 0.9136
+      },
+      {
+        "movieId": 161,
+        "tmdbId": 8963,
+        "title": "Crimson Tide (1995)",
+        "similarity_score": 0.9096
+      },
+      {
+        "movieId": 227,
+        "tmdbId": 4954,
+        "title": "Drop Zone (1994)",
+        "similarity_score": 0.9077
+      }
+    ],
+    "4022": [
+      {
+        "movieId": 5989,
+        "tmdbId": 640,
+        "title": "Catch Me If You Can (2002)",
+        "similarity_score": 0.8012
+      },
+      {
+        "movieId": 7294,
+        "tmdbId": 16784,
+        "title": "Welcome to Mooseport (2004)",
+        "similarity_score": 0.7533
+      },
+      {
+        "movieId": 4310,
+        "tmdbId": 676,
+        "title": "Pearl Harbor (2001)",
+        "similarity_score": 0.749
+      },
+      {
+        "movieId": 3597,
+        "tmdbId": 23531,
+        "title": "Whipped (2000)",
+        "similarity_score": 0.739
+      },
+      {
+        "movieId": 4019,
+        "tmdbId": 711,
+        "title": "Finding Forrester (2000)",
+        "similarity_score": 0.7387
+      }
+    ],
+    "1517": [
+      {
+        "movieId": 2683,
+        "tmdbId": 817,
+        "title": "Austin Powers: The Spy Who Shagged Me (1999)",
+        "similarity_score": 0.9068
+      },
+      {
+        "movieId": 3253,
+        "tmdbId": 8872,
+        "title": "Wayne's World (1992)",
+        "similarity_score": 0.8649
+      },
+      {
+        "movieId": 2918,
+        "tmdbId": 9377,
+        "title": "Ferris Bueller's Day Off (1986)",
+        "similarity_score": 0.8033
+      },
+      {
+        "movieId": 104,
+        "tmdbId": 9614,
+        "title": "Happy Gilmore (1996)",
+        "similarity_score": 0.7818
+      },
+      {
+        "movieId": 1485,
+        "tmdbId": 1624,
+        "title": "Liar Liar (1997)",
+        "similarity_score": 0.7169
+      }
+    ],
+    "44191": [
+      {
+        "movieId": 33794,
+        "tmdbId": 272,
+        "title": "Batman Begins (2005)",
+        "similarity_score": 0.8679
+      },
+      {
+        "movieId": 6874,
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1 (2003)",
+        "similarity_score": 0.7879
+      },
+      {
+        "movieId": 32587,
+        "tmdbId": 187,
+        "title": "Sin City (2005)",
+        "similarity_score": 0.7246
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.7208
+      },
+      {
+        "movieId": 48394,
+        "tmdbId": 1417,
+        "title": "Pan's Labyrinth (Laberinto del fauno, El) (2006)",
+        "similarity_score": 0.7102
+      }
+    ],
+    "912": [
+      {
+        "movieId": 904,
+        "tmdbId": 567,
+        "title": "Rear Window (1954)",
+        "similarity_score": 0.8301
+      },
+      {
+        "movieId": 923,
+        "tmdbId": 15,
+        "title": "Citizen Kane (1941)",
+        "similarity_score": 0.7643
+      },
+      {
+        "movieId": 908,
+        "tmdbId": 213,
+        "title": "North by Northwest (1959)",
+        "similarity_score": 0.7583
+      },
+      {
+        "movieId": 1670,
+        "tmdbId": 14905,
+        "title": "Welcome to Sarajevo (1997)",
+        "similarity_score": 0.7437
+      },
+      {
+        "movieId": 1304,
+        "tmdbId": 642,
+        "title": "Butch Cassidy and the Sundance Kid (1969)",
+        "similarity_score": 0.7392
+      }
+    ],
+    "104": [
+      {
+        "movieId": 6188,
+        "tmdbId": 11635,
+        "title": "Old School (2003)",
+        "similarity_score": 0.856
+      },
+      {
+        "movieId": 1517,
+        "tmdbId": 816,
+        "title": "Austin Powers: International Man of Mystery (1997)",
+        "similarity_score": 0.7818
+      },
+      {
+        "movieId": 63,
+        "tmdbId": 10607,
+        "title": "Don't Be a Menace to South Central While Drinking Your Juice in the Hood (1996)",
+        "similarity_score": 0.7801
+      },
+      {
+        "movieId": 788,
+        "tmdbId": 9327,
+        "title": "Nutty Professor, The (1996)",
+        "similarity_score": 0.7687
+      },
+      {
+        "movieId": 8528,
+        "tmdbId": 9472,
+        "title": "Dodgeball: A True Underdog Story (2004)",
+        "similarity_score": 0.7458
+      }
+    ],
+    "2997": [
+      {
+        "movieId": 223,
+        "tmdbId": 2292,
+        "title": "Clerks (1994)",
+        "similarity_score": 0.8329
+      },
+      {
+        "movieId": 1206,
+        "tmdbId": 185,
+        "title": "Clockwork Orange, A (1971)",
+        "similarity_score": 0.76
+      },
+      {
+        "movieId": 5454,
+        "tmdbId": 12251,
+        "title": "Mo' Money (1992)",
+        "similarity_score": 0.7379
+      },
+      {
+        "movieId": 2692,
+        "tmdbId": 104,
+        "title": "Run Lola Run (Lola rennt) (1998)",
+        "similarity_score": 0.7323
+      },
+      {
+        "movieId": 1080,
+        "tmdbId": 583,
+        "title": "Monty Python's Life of Brian (1979)",
+        "similarity_score": 0.7293
+      }
+    ],
+    "339": [
+      {
+        "movieId": 539,
+        "tmdbId": 858,
+        "title": "Sleepless in Seattle (1993)",
+        "similarity_score": 0.9193
+      },
+      {
+        "movieId": 161,
+        "tmdbId": 8963,
+        "title": "Crimson Tide (1995)",
+        "similarity_score": 0.8594
+      },
+      {
+        "movieId": 454,
+        "tmdbId": 37233,
+        "title": "Firm, The (1993)",
+        "similarity_score": 0.8471
+      },
+      {
+        "movieId": 185,
+        "tmdbId": 1642,
+        "title": "Net, The (1995)",
+        "similarity_score": 0.8442
+      },
+      {
+        "movieId": 587,
+        "tmdbId": 251,
+        "title": "Ghost (1990)",
+        "similarity_score": 0.8412
+      }
+    ],
+    "72998": [
+      {
+        "movieId": 60069,
+        "tmdbId": 10681,
+        "title": "WALL\u00b7E (2008)",
+        "similarity_score": 0.9191
+      },
+      {
+        "movieId": 73017,
+        "tmdbId": 10528,
+        "title": "Sherlock Holmes (2009)",
+        "similarity_score": 0.9024
+      },
+      {
+        "movieId": 68954,
+        "tmdbId": 14160,
+        "title": "Up (2009)",
+        "similarity_score": 0.8623
+      },
+      {
+        "movieId": 59315,
+        "tmdbId": 1726,
+        "title": "Iron Man (2008)",
+        "similarity_score": 0.8485
+      },
+      {
+        "movieId": 70286,
+        "tmdbId": 17654,
+        "title": "District 9 (2009)",
+        "similarity_score": 0.8099
+      }
+    ],
+    "3114": [
+      {
+        "movieId": 2355,
+        "tmdbId": 9487,
+        "title": "Bug's Life, A (1998)",
+        "similarity_score": 0.8679
+      },
+      {
+        "movieId": 3751,
+        "tmdbId": 7443,
+        "title": "Chicken Run (2000)",
+        "similarity_score": 0.8238
+      },
+      {
+        "movieId": 3287,
+        "tmdbId": 15655,
+        "title": "Tigger Movie, The (2000)",
+        "similarity_score": 0.7472
+      },
+      {
+        "movieId": 4886,
+        "tmdbId": 585,
+        "title": "Monsters, Inc. (2001)",
+        "similarity_score": 0.7354
+      },
+      {
+        "movieId": 3410,
+        "tmdbId": 117259,
+        "title": "Soft Fruit (1999)",
+        "similarity_score": 0.7351
+      }
+    ],
+    "750": [
+      {
+        "movieId": 904,
+        "tmdbId": 567,
+        "title": "Rear Window (1954)",
+        "similarity_score": 0.7973
+      },
+      {
+        "movieId": 4282,
+        "tmdbId": 11163,
+        "title": "Fellini Satyricon (1969)",
+        "similarity_score": 0.7836
+      },
+      {
+        "movieId": 4658,
+        "tmdbId": 19236,
+        "title": "Santa Sangre (1989)",
+        "similarity_score": 0.7836
+      },
+      {
+        "movieId": 8143,
+        "tmdbId": 35987,
+        "title": "Lola Mont\u00e8s (1955)",
+        "similarity_score": 0.7836
+      },
+      {
+        "movieId": 8379,
+        "tmdbId": 42122,
+        "title": "Dresser, The (1983)",
+        "similarity_score": 0.7836
+      }
+    ],
+    "2987": [
+      {
+        "movieId": 2174,
+        "tmdbId": 4011,
+        "title": "Beetlejuice (1988)",
+        "similarity_score": 0.8678
+      },
+      {
+        "movieId": 2012,
+        "tmdbId": 196,
+        "title": "Back to the Future Part III (1990)",
+        "similarity_score": 0.7413
+      },
+      {
+        "movieId": 2081,
+        "tmdbId": 10144,
+        "title": "Little Mermaid, The (1989)",
+        "similarity_score": 0.7199
+      },
+      {
+        "movieId": 1562,
+        "tmdbId": 415,
+        "title": "Batman & Robin (1997)",
+        "similarity_score": 0.7073
+      },
+      {
+        "movieId": 3489,
+        "tmdbId": 879,
+        "title": "Hook (1991)",
+        "similarity_score": 0.7069
+      }
+    ],
+    "1617": [
+      {
+        "movieId": 1221,
+        "tmdbId": 240,
+        "title": "Godfather: Part II, The (1974)",
+        "similarity_score": 0.804
+      },
+      {
+        "movieId": 1233,
+        "tmdbId": 387,
+        "title": "Boot, Das (Boat, The) (1981)",
+        "similarity_score": 0.792
+      },
+      {
+        "movieId": 908,
+        "tmdbId": 213,
+        "title": "North by Northwest (1959)",
+        "similarity_score": 0.7165
+      },
+      {
+        "movieId": 1252,
+        "tmdbId": 829,
+        "title": "Chinatown (1974)",
+        "similarity_score": 0.7163
+      },
+      {
+        "movieId": 858,
+        "tmdbId": 238,
+        "title": "Godfather, The (1972)",
+        "similarity_score": 0.7056
+      }
+    ],
+    "1784": [
+      {
+        "movieId": 1968,
+        "tmdbId": 2108,
+        "title": "Breakfast Club, The (1985)",
+        "similarity_score": 0.6887
+      },
+      {
+        "movieId": 1923,
+        "tmdbId": 544,
+        "title": "There's Something About Mary (1998)",
+        "similarity_score": 0.6722
+      },
+      {
+        "movieId": 3448,
+        "tmdbId": 801,
+        "title": "Good Morning, Vietnam (1987)",
+        "similarity_score": 0.6608
+      },
+      {
+        "movieId": 2771,
+        "tmdbId": 17707,
+        "title": "Brokedown Palace (1999)",
+        "similarity_score": 0.6278
+      },
+      {
+        "movieId": 2359,
+        "tmdbId": 10162,
+        "title": "Waking Ned Devine (a.k.a. Waking Ned) (1998)",
+        "similarity_score": 0.6249
+      }
+    ],
+    "6365": [
+      {
+        "movieId": 6934,
+        "tmdbId": 605,
+        "title": "Matrix Revolutions, The (2003)",
+        "similarity_score": 0.9388
+      },
+      {
+        "movieId": 5378,
+        "tmdbId": 1894,
+        "title": "Star Wars: Episode II - Attack of the Clones (2002)",
+        "similarity_score": 0.8374
+      },
+      {
+        "movieId": 5349,
+        "tmdbId": 557,
+        "title": "Spider-Man (2002)",
+        "similarity_score": 0.83
+      },
+      {
+        "movieId": 6333,
+        "tmdbId": 36658,
+        "title": "X2: X-Men United (2003)",
+        "similarity_score": 0.8299
+      },
+      {
+        "movieId": 33493,
+        "tmdbId": 1895,
+        "title": "Star Wars: Episode III - Revenge of the Sith (2005)",
+        "similarity_score": 0.8156
+      }
+    ],
+    "1961": [
+      {
+        "movieId": 5989,
+        "tmdbId": 640,
+        "title": "Catch Me If You Can (2002)",
+        "similarity_score": 0.7206
+      },
+      {
+        "movieId": 1246,
+        "tmdbId": 207,
+        "title": "Dead Poets Society (1989)",
+        "similarity_score": 0.7014
+      },
+      {
+        "movieId": 1962,
+        "tmdbId": 403,
+        "title": "Driving Miss Daisy (1989)",
+        "similarity_score": 0.6817
+      },
+      {
+        "movieId": 7294,
+        "tmdbId": 16784,
+        "title": "Welcome to Mooseport (2004)",
+        "similarity_score": 0.6646
+      },
+      {
+        "movieId": 49530,
+        "tmdbId": 1372,
+        "title": "Blood Diamond (2006)",
+        "similarity_score": 0.6624
+      }
+    ],
+    "3949": [
+      {
+        "movieId": 4878,
+        "tmdbId": 141,
+        "title": "Donnie Darko (2001)",
+        "similarity_score": 0.7628
+      },
+      {
+        "movieId": 6874,
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1 (2003)",
+        "similarity_score": 0.7595
+      },
+      {
+        "movieId": 7361,
+        "tmdbId": 38,
+        "title": "Eternal Sunshine of the Spotless Mind (2004)",
+        "similarity_score": 0.7504
+      },
+      {
+        "movieId": 136469,
+        "tmdbId": 261414,
+        "title": "Larry David: Curb Your Enthusiasm (1999)",
+        "similarity_score": 0.7418
+      },
+      {
+        "movieId": 4262,
+        "tmdbId": 111,
+        "title": "Scarface (1983)",
+        "similarity_score": 0.7122
+      }
+    ],
+    "2502": [
+      {
+        "movieId": 3052,
+        "tmdbId": 1832,
+        "title": "Dogma (1999)",
+        "similarity_score": 0.8495
+      },
+      {
+        "movieId": 2700,
+        "tmdbId": 9473,
+        "title": "South Park: Bigger, Longer and Uncut (1999)",
+        "similarity_score": 0.7883
+      },
+      {
+        "movieId": 3253,
+        "tmdbId": 8872,
+        "title": "Wayne's World (1992)",
+        "similarity_score": 0.7715
+      },
+      {
+        "movieId": 3809,
+        "tmdbId": 10276,
+        "title": "What About Bob? (1991)",
+        "similarity_score": 0.7159
+      },
+      {
+        "movieId": 4734,
+        "tmdbId": 2294,
+        "title": "Jay and Silent Bob Strike Back (2001)",
+        "similarity_score": 0.6931
+      }
+    ],
+    "4027": [
+      {
+        "movieId": 5669,
+        "tmdbId": 1430,
+        "title": "Bowling for Columbine (2002)",
+        "similarity_score": 0.8286
+      },
+      {
+        "movieId": 3897,
+        "tmdbId": 786,
+        "title": "Almost Famous (2000)",
+        "similarity_score": 0.8144
+      },
+      {
+        "movieId": 5902,
+        "tmdbId": 2757,
+        "title": "Adaptation (2002)",
+        "similarity_score": 0.7808
+      },
+      {
+        "movieId": 7147,
+        "tmdbId": 587,
+        "title": "Big Fish (2003)",
+        "similarity_score": 0.7363
+      },
+      {
+        "movieId": 1682,
+        "tmdbId": 37165,
+        "title": "Truman Show, The (1998)",
+        "similarity_score": 0.7227
+      }
+    ],
+    "59315": [
+      {
+        "movieId": 68358,
+        "tmdbId": 13475,
+        "title": "Star Trek (2009)",
+        "similarity_score": 0.8783
+      },
+      {
+        "movieId": 70286,
+        "tmdbId": 17654,
+        "title": "District 9 (2009)",
+        "similarity_score": 0.8762
+      },
+      {
+        "movieId": 54286,
+        "tmdbId": 2503,
+        "title": "Bourne Ultimatum, The (2007)",
+        "similarity_score": 0.8557
+      },
+      {
+        "movieId": 73017,
+        "tmdbId": 10528,
+        "title": "Sherlock Holmes (2009)",
+        "similarity_score": 0.8539
+      },
+      {
+        "movieId": 72998,
+        "tmdbId": 19995,
+        "title": "Avatar (2009)",
+        "similarity_score": 0.8485
+      }
+    ],
+    "8368": [
+      {
+        "movieId": 5816,
+        "tmdbId": 672,
+        "title": "Harry Potter and the Chamber of Secrets (2002)",
+        "similarity_score": 0.9088
+      },
+      {
+        "movieId": 40815,
+        "tmdbId": 674,
+        "title": "Harry Potter and the Goblet of Fire (2005)",
+        "similarity_score": 0.9069
+      },
+      {
+        "movieId": 4896,
+        "tmdbId": 671,
+        "title": "Harry Potter and the Sorcerer's Stone (a.k.a. Harry Potter and the Philosopher's Stone) (2001)",
+        "similarity_score": 0.896
+      },
+      {
+        "movieId": 54001,
+        "tmdbId": 675,
+        "title": "Harry Potter and the Order of the Phoenix (2007)",
+        "similarity_score": 0.7987
+      },
+      {
+        "movieId": 4306,
+        "tmdbId": 808,
+        "title": "Shrek (2001)",
+        "similarity_score": 0.7635
+      }
+    ],
+    "551": [
+      {
+        "movieId": 26326,
+        "tmdbId": 8327,
+        "title": "Holy Mountain, The (Monta\u00f1a sagrada, La) (1973)",
+        "similarity_score": 0.803
+      },
+      {
+        "movieId": 25905,
+        "tmdbId": 42879,
+        "title": "Miracle of Morgan's Creek, The (1944)",
+        "similarity_score": 0.798
+      },
+      {
+        "movieId": 25923,
+        "tmdbId": 14320,
+        "title": "Great Expectations (1946)",
+        "similarity_score": 0.798
+      },
+      {
+        "movieId": 59131,
+        "tmdbId": 25119,
+        "title": "Are You Scared? (2006)",
+        "similarity_score": 0.798
+      },
+      {
+        "movieId": 2800,
+        "tmdbId": 22611,
+        "title": "Little Nemo: Adventures in Slumberland (1992)",
+        "similarity_score": 0.798
+      }
+    ],
+    "4011": [
+      {
+        "movieId": 2542,
+        "tmdbId": 100,
+        "title": "Lock, Stock & Two Smoking Barrels (1998)",
+        "similarity_score": 0.7869
+      },
+      {
+        "movieId": 4226,
+        "tmdbId": 77,
+        "title": "Memento (2000)",
+        "similarity_score": 0.7232
+      },
+      {
+        "movieId": 6055,
+        "tmdbId": 39349,
+        "title": "Sugar Hill (1994)",
+        "similarity_score": 0.7073
+      },
+      {
+        "movieId": 1825,
+        "tmdbId": 19848,
+        "title": "The Players Club (1998)",
+        "similarity_score": 0.6801
+      },
+      {
+        "movieId": 7457,
+        "tmdbId": 16428,
+        "title": "Breakin' All the Rules (2004)",
+        "similarity_score": 0.6801
+      }
+    ],
+    "2396": [
+      {
+        "movieId": 1307,
+        "tmdbId": 639,
+        "title": "When Harry Met Sally... (1989)",
+        "similarity_score": 0.7904
+      },
+      {
+        "movieId": 2248,
+        "tmdbId": 2028,
+        "title": "Say Anything... (1989)",
+        "similarity_score": 0.6826
+      },
+      {
+        "movieId": 902,
+        "tmdbId": 164,
+        "title": "Breakfast at Tiffany's (1961)",
+        "similarity_score": 0.6805
+      },
+      {
+        "movieId": 920,
+        "tmdbId": 770,
+        "title": "Gone with the Wind (1939)",
+        "similarity_score": 0.6786
+      },
+      {
+        "movieId": 2671,
+        "tmdbId": 509,
+        "title": "Notting Hill (1999)",
+        "similarity_score": 0.6748
+      }
+    ],
+    "5378": [
+      {
+        "movieId": 33493,
+        "tmdbId": 1895,
+        "title": "Star Wars: Episode III - Revenge of the Sith (2005)",
+        "similarity_score": 0.8648
+      },
+      {
+        "movieId": 6365,
+        "tmdbId": 604,
+        "title": "Matrix Reloaded, The (2003)",
+        "similarity_score": 0.8374
+      },
+      {
+        "movieId": 5349,
+        "tmdbId": 557,
+        "title": "Spider-Man (2002)",
+        "similarity_score": 0.8282
+      },
+      {
+        "movieId": 5445,
+        "tmdbId": 180,
+        "title": "Minority Report (2002)",
+        "similarity_score": 0.8089
+      },
+      {
+        "movieId": 38388,
+        "tmdbId": 9763,
+        "title": "Goal! The Dream Begins (Goal!) (2005)",
+        "similarity_score": 0.7894
+      }
+    ],
+    "288": [
+      {
+        "movieId": 253,
+        "tmdbId": 628,
+        "title": "Interview with the Vampire: The Vampire Chronicles (1994)",
+        "similarity_score": 0.7343
+      },
+      {
+        "movieId": 225,
+        "tmdbId": 8984,
+        "title": "Disclosure (1994)",
+        "similarity_score": 0.7183
+      },
+      {
+        "movieId": 208,
+        "tmdbId": 9804,
+        "title": "Waterworld (1995)",
+        "similarity_score": 0.7123
+      },
+      {
+        "movieId": 434,
+        "tmdbId": 9350,
+        "title": "Cliffhanger (1993)",
+        "similarity_score": 0.6757
+      },
+      {
+        "movieId": 590,
+        "tmdbId": 581,
+        "title": "Dances with Wolves (1990)",
+        "similarity_score": 0.6684
+      }
+    ],
+    "8360": [
+      {
+        "movieId": 5218,
+        "tmdbId": 425,
+        "title": "Ice Age (2002)",
+        "similarity_score": 0.851
+      },
+      {
+        "movieId": 6863,
+        "tmdbId": 1584,
+        "title": "School of Rock (2003)",
+        "similarity_score": 0.7707
+      },
+      {
+        "movieId": 5816,
+        "tmdbId": 672,
+        "title": "Harry Potter and the Chamber of Secrets (2002)",
+        "similarity_score": 0.7414
+      },
+      {
+        "movieId": 6539,
+        "tmdbId": 22,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+        "similarity_score": 0.7327
+      },
+      {
+        "movieId": 8368,
+        "tmdbId": 673,
+        "title": "Harry Potter and the Prisoner of Azkaban (2004)",
+        "similarity_score": 0.7181
+      }
+    ],
+    "2355": [
+      {
+        "movieId": 3114,
+        "tmdbId": 863,
+        "title": "Toy Story 2 (1999)",
+        "similarity_score": 0.8679
+      },
+      {
+        "movieId": 5307,
+        "tmdbId": 6393,
+        "title": "Taking Care of Business (1990)",
+        "similarity_score": 0.7254
+      },
+      {
+        "movieId": 3299,
+        "tmdbId": 10385,
+        "title": "Hanging Up (2000)",
+        "similarity_score": 0.7247
+      },
+      {
+        "movieId": 3287,
+        "tmdbId": 15655,
+        "title": "Tigger Movie, The (2000)",
+        "similarity_score": 0.7244
+      },
+      {
+        "movieId": 3175,
+        "tmdbId": 926,
+        "title": "Galaxy Quest (1999)",
+        "similarity_score": 0.7218
+      }
+    ],
+    "919": [
+      {
+        "movieId": 2080,
+        "tmdbId": 10340,
+        "title": "Lady and the Tramp (1955)",
+        "similarity_score": 0.825
+      },
+      {
+        "movieId": 1565,
+        "tmdbId": 11103,
+        "title": "Head Above Water (1996)",
+        "similarity_score": 0.7963
+      },
+      {
+        "movieId": 2695,
+        "tmdbId": 13821,
+        "title": "Boys, The (1998)",
+        "similarity_score": 0.7963
+      },
+      {
+        "movieId": 4078,
+        "tmdbId": 74340,
+        "title": "Amazing Grace and Chuck (1987)",
+        "similarity_score": 0.7963
+      },
+      {
+        "movieId": 4505,
+        "tmdbId": 26355,
+        "title": "For Keeps (1988)",
+        "similarity_score": 0.7963
+      }
+    ],
+    "1917": [
+      {
+        "movieId": 1580,
+        "tmdbId": 607,
+        "title": "Men in Black (a.k.a. MIB) (1997)",
+        "similarity_score": 0.7744
+      },
+      {
+        "movieId": 2706,
+        "tmdbId": 2105,
+        "title": "American Pie (1999)",
+        "similarity_score": 0.7413
+      },
+      {
+        "movieId": 1552,
+        "tmdbId": 1701,
+        "title": "Con Air (1997)",
+        "similarity_score": 0.7222
+      },
+      {
+        "movieId": 2628,
+        "tmdbId": 1893,
+        "title": "Star Wars: Episode I - The Phantom Menace (1999)",
+        "similarity_score": 0.7131
+      },
+      {
+        "movieId": 2167,
+        "tmdbId": 36647,
+        "title": "Blade (1998)",
+        "similarity_score": 0.7011
+      }
+    ],
+    "2797": [
+      {
+        "movieId": 2406,
+        "tmdbId": 9326,
+        "title": "Romancing the Stone (1984)",
+        "similarity_score": 0.7756
+      },
+      {
+        "movieId": 2716,
+        "tmdbId": 620,
+        "title": "Ghostbusters (a.k.a. Ghost Busters) (1984)",
+        "similarity_score": 0.7428
+      },
+      {
+        "movieId": 2100,
+        "tmdbId": 2619,
+        "title": "Splash (1984)",
+        "similarity_score": 0.7317
+      },
+      {
+        "movieId": 1380,
+        "tmdbId": 621,
+        "title": "Grease (1978)",
+        "similarity_score": 0.7286
+      },
+      {
+        "movieId": 2915,
+        "tmdbId": 9346,
+        "title": "Risky Business (1983)",
+        "similarity_score": 0.7247
+      }
+    ],
+    "1356": [
+      {
+        "movieId": 733,
+        "tmdbId": 9802,
+        "title": "Rock, The (1996)",
+        "similarity_score": 0.8628
+      },
+      {
+        "movieId": 780,
+        "tmdbId": 602,
+        "title": "Independence Day (a.k.a. ID4) (1996)",
+        "similarity_score": 0.7844
+      },
+      {
+        "movieId": 1004,
+        "tmdbId": 9625,
+        "title": "Glimmer Man, The (1996)",
+        "similarity_score": 0.7607
+      },
+      {
+        "movieId": 494,
+        "tmdbId": 2320,
+        "title": "Executive Decision (1996)",
+        "similarity_score": 0.7576
+      },
+      {
+        "movieId": 260,
+        "tmdbId": 11,
+        "title": "Star Wars: Episode IV - A New Hope (1977)",
+        "similarity_score": 0.7505
+      }
+    ],
+    "2174": [
+      {
+        "movieId": 2987,
+        "tmdbId": 856,
+        "title": "Who Framed Roger Rabbit? (1988)",
+        "similarity_score": 0.8678
+      },
+      {
+        "movieId": 2005,
+        "tmdbId": 9340,
+        "title": "Goonies, The (1985)",
+        "similarity_score": 0.7592
+      },
+      {
+        "movieId": 2291,
+        "tmdbId": 162,
+        "title": "Edward Scissorhands (1990)",
+        "similarity_score": 0.7456
+      },
+      {
+        "movieId": 2657,
+        "tmdbId": 36685,
+        "title": "Rocky Horror Picture Show, The (1975)",
+        "similarity_score": 0.7396
+      },
+      {
+        "movieId": 2081,
+        "tmdbId": 10144,
+        "title": "Little Mermaid, The (1989)",
+        "similarity_score": 0.739
+      }
+    ],
+    "1259": [
+      {
+        "movieId": 1326,
+        "tmdbId": 16235,
+        "title": "Amityville II: The Possession (1982)",
+        "similarity_score": 0.7528
+      },
+      {
+        "movieId": 1197,
+        "tmdbId": 2493,
+        "title": "Princess Bride, The (1987)",
+        "similarity_score": 0.75
+      },
+      {
+        "movieId": 2639,
+        "tmdbId": 15660,
+        "title": "Mommie Dearest (1981)",
+        "similarity_score": 0.7462
+      },
+      {
+        "movieId": 1968,
+        "tmdbId": 2108,
+        "title": "Breakfast Club, The (1985)",
+        "similarity_score": 0.744
+      },
+      {
+        "movieId": 2151,
+        "tmdbId": 11937,
+        "title": "Gods Must Be Crazy II, The (1989)",
+        "similarity_score": 0.7436
+      }
+    ],
+    "3948": [
+      {
+        "movieId": 4025,
+        "tmdbId": 1493,
+        "title": "Miss Congeniality (2000)",
+        "similarity_score": 0.8295
+      },
+      {
+        "movieId": 6373,
+        "tmdbId": 310,
+        "title": "Bruce Almighty (2003)",
+        "similarity_score": 0.7775
+      },
+      {
+        "movieId": 3717,
+        "tmdbId": 9679,
+        "title": "Gone in 60 Seconds (2000)",
+        "similarity_score": 0.7702
+      },
+      {
+        "movieId": 4193,
+        "tmdbId": 62127,
+        "title": "Fantasticks, The (1995)",
+        "similarity_score": 0.7355
+      },
+      {
+        "movieId": 3882,
+        "tmdbId": 1588,
+        "title": "Bring It On (2000)",
+        "similarity_score": 0.7323
+      }
+    ],
+    "1387": [
+      {
+        "movieId": 26198,
+        "tmdbId": 27983,
+        "title": "Yours, Mine and Ours (1968)",
+        "similarity_score": 0.7655
+      },
+      {
+        "movieId": 2871,
+        "tmdbId": 10669,
+        "title": "Deliverance (1972)",
+        "similarity_score": 0.7538
+      },
+      {
+        "movieId": 2804,
+        "tmdbId": 850,
+        "title": "Christmas Story, A (1983)",
+        "similarity_score": 0.7533
+      },
+      {
+        "movieId": 2791,
+        "tmdbId": 813,
+        "title": "Airplane! (1980)",
+        "similarity_score": 0.7401
+      },
+      {
+        "movieId": 1287,
+        "tmdbId": 665,
+        "title": "Ben-Hur (1959)",
+        "similarity_score": 0.7301
+      }
+    ],
+    "1610": [
+      {
+        "movieId": 2194,
+        "tmdbId": 117,
+        "title": "Untouchables, The (1987)",
+        "similarity_score": 0.7905
+      },
+      {
+        "movieId": 1101,
+        "tmdbId": 744,
+        "title": "Top Gun (1986)",
+        "similarity_score": 0.7896
+      },
+      {
+        "movieId": 3256,
+        "tmdbId": 9869,
+        "title": "Patriot Games (1992)",
+        "similarity_score": 0.7632
+      },
+      {
+        "movieId": 2353,
+        "tmdbId": 9798,
+        "title": "Enemy of the State (1998)",
+        "similarity_score": 0.7532
+      },
+      {
+        "movieId": 2534,
+        "tmdbId": 166680,
+        "title": "Avalanche (1978)",
+        "similarity_score": 0.7419
+      }
+    ],
+    "48780": [
+      {
+        "movieId": 48394,
+        "tmdbId": 1417,
+        "title": "Pan's Labyrinth (Laberinto del fauno, El) (2006)",
+        "similarity_score": 0.8419
+      },
+      {
+        "movieId": 58559,
+        "tmdbId": 155,
+        "title": "Dark Knight, The (2008)",
+        "similarity_score": 0.7294
+      },
+      {
+        "movieId": 6874,
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1 (2003)",
+        "similarity_score": 0.6902
+      },
+      {
+        "movieId": 48516,
+        "tmdbId": 1422,
+        "title": "Departed, The (2006)",
+        "similarity_score": 0.6879
+      },
+      {
+        "movieId": 44191,
+        "tmdbId": 752,
+        "title": "V for Vendetta (2006)",
+        "similarity_score": 0.6761
+      }
+    ],
+    "1080": [
+      {
+        "movieId": 1136,
+        "tmdbId": 762,
+        "title": "Monty Python and the Holy Grail (1975)",
+        "similarity_score": 0.8396
+      },
+      {
+        "movieId": 8582,
+        "tmdbId": 36947,
+        "title": "Manufacturing Consent: Noam Chomsky and the Media (1992)",
+        "similarity_score": 0.815
+      },
+      {
+        "movieId": 25788,
+        "tmdbId": 877,
+        "title": "Scarface (1932)",
+        "similarity_score": 0.8148
+      },
+      {
+        "movieId": 27850,
+        "tmdbId": 3396,
+        "title": "Yes Men, The (2003)",
+        "similarity_score": 0.8148
+      },
+      {
+        "movieId": 5932,
+        "tmdbId": 42124,
+        "title": "Burden of Dreams (1982)",
+        "similarity_score": 0.7987
+      }
+    ],
+    "21": [
+      {
+        "movieId": 300,
+        "tmdbId": 11450,
+        "title": "Quiz Show (1994)",
+        "similarity_score": 0.8226
+      },
+      {
+        "movieId": 347,
+        "tmdbId": 10497,
+        "title": "Bitter Moon (1992)",
+        "similarity_score": 0.7768
+      },
+      {
+        "movieId": 440,
+        "tmdbId": 11566,
+        "title": "Dave (1993)",
+        "similarity_score": 0.7693
+      },
+      {
+        "movieId": 348,
+        "tmdbId": 11382,
+        "title": "Bullets Over Broadway (1994)",
+        "similarity_score": 0.7598
+      },
+      {
+        "movieId": 45,
+        "tmdbId": 577,
+        "title": "To Die For (1995)",
+        "similarity_score": 0.7131
+      }
+    ],
+    "2012": [
+      {
+        "movieId": 2011,
+        "tmdbId": 165,
+        "title": "Back to the Future Part II (1989)",
+        "similarity_score": 0.8439
+      },
+      {
+        "movieId": 2115,
+        "tmdbId": 87,
+        "title": "Indiana Jones and the Temple of Doom (1984)",
+        "similarity_score": 0.8316
+      },
+      {
+        "movieId": 2987,
+        "tmdbId": 856,
+        "title": "Who Framed Roger Rabbit? (1988)",
+        "similarity_score": 0.7413
+      },
+      {
+        "movieId": 2174,
+        "tmdbId": 4011,
+        "title": "Beetlejuice (1988)",
+        "similarity_score": 0.6972
+      },
+      {
+        "movieId": 3793,
+        "tmdbId": 36657,
+        "title": "X-Men (2000)",
+        "similarity_score": 0.6869
+      }
+    ],
+    "2324": [
+      {
+        "movieId": 71462,
+        "tmdbId": 23128,
+        "title": "Cove, The (2009)",
+        "similarity_score": 0.7234
+      },
+      {
+        "movieId": 81456,
+        "tmdbId": 51241,
+        "title": "Heartbeats (Les amours imaginaires) (2010)",
+        "similarity_score": 0.7059
+      },
+      {
+        "movieId": 100843,
+        "tmdbId": 130739,
+        "title": "Oh Boy (A Coffee in Berlin) (2012)",
+        "similarity_score": 0.6863
+      },
+      {
+        "movieId": 101973,
+        "tmdbId": 127517,
+        "title": "Disconnect (2012)",
+        "similarity_score": 0.6863
+      },
+      {
+        "movieId": 112454,
+        "tmdbId": 186988,
+        "title": "Honey (Miele) (2013)",
+        "similarity_score": 0.6863
+      }
+    ],
+    "19": [
+      {
+        "movieId": 255,
+        "tmdbId": 18713,
+        "title": "Jerky Boys, The (1995)",
+        "similarity_score": 0.8099
+      },
+      {
+        "movieId": 410,
+        "tmdbId": 2758,
+        "title": "Addams Family Values (1993)",
+        "similarity_score": 0.7927
+      },
+      {
+        "movieId": 158,
+        "tmdbId": 8839,
+        "title": "Casper (1995)",
+        "similarity_score": 0.7536
+      },
+      {
+        "movieId": 2,
+        "tmdbId": 8844,
+        "title": "Jumanji (1995)",
+        "similarity_score": 0.7142
+      },
+      {
+        "movieId": 810,
+        "tmdbId": 11511,
+        "title": "Kazaam (1996)",
+        "similarity_score": 0.7119
+      }
+    ],
+    "2916": [
+      {
+        "movieId": 2985,
+        "tmdbId": 5548,
+        "title": "RoboCop (1987)",
+        "similarity_score": 0.8511
+      },
+      {
+        "movieId": 1127,
+        "tmdbId": 2756,
+        "title": "Abyss, The (1989)",
+        "similarity_score": 0.8008
+      },
+      {
+        "movieId": 3032,
+        "tmdbId": 11234,
+        "title": "Omega Man, The (1971)",
+        "similarity_score": 0.7943
+      },
+      {
+        "movieId": 1676,
+        "tmdbId": 563,
+        "title": "Starship Troopers (1997)",
+        "similarity_score": 0.7532
+      },
+      {
+        "movieId": 3550,
+        "tmdbId": 11654,
+        "title": "The Hunger (1983)",
+        "similarity_score": 0.7353
+      }
+    ],
+    "68157": [
+      {
+        "movieId": 74458,
+        "tmdbId": 11324,
+        "title": "Shutter Island (2010)",
+        "similarity_score": 0.9455
+      },
+      {
+        "movieId": 79132,
+        "tmdbId": 27205,
+        "title": "Inception (2010)",
+        "similarity_score": 0.9102
+      },
+      {
+        "movieId": 99114,
+        "tmdbId": 68718,
+        "title": "Django Unchained (2012)",
+        "similarity_score": 0.8516
+      },
+      {
+        "movieId": 80463,
+        "tmdbId": 37799,
+        "title": "Social Network, The (2010)",
+        "similarity_score": 0.8011
+      },
+      {
+        "movieId": 131724,
+        "tmdbId": 321640,
+        "title": "The Jinx: The Life and Deaths of Robert Durst (2015)",
+        "similarity_score": 0.7945
+      }
+    ],
+    "2617": [
+      {
+        "movieId": 2701,
+        "tmdbId": 8487,
+        "title": "Wild Wild West (1999)",
+        "similarity_score": 0.8564
+      },
+      {
+        "movieId": 2167,
+        "tmdbId": 36647,
+        "title": "Blade (1998)",
+        "similarity_score": 0.7976
+      },
+      {
+        "movieId": 1544,
+        "tmdbId": 330,
+        "title": "Lost World: Jurassic Park, The (1997)",
+        "similarity_score": 0.7876
+      },
+      {
+        "movieId": 1831,
+        "tmdbId": 2157,
+        "title": "Lost in Space (1998)",
+        "similarity_score": 0.7485
+      },
+      {
+        "movieId": 2273,
+        "tmdbId": 2109,
+        "title": "Rush Hour (1998)",
+        "similarity_score": 0.7121
+      }
+    ],
+    "2011": [
+      {
+        "movieId": 2115,
+        "tmdbId": 87,
+        "title": "Indiana Jones and the Temple of Doom (1984)",
+        "similarity_score": 0.8937
+      },
+      {
+        "movieId": 2012,
+        "tmdbId": 196,
+        "title": "Back to the Future Part III (1990)",
+        "similarity_score": 0.8439
+      },
+      {
+        "movieId": 1291,
+        "tmdbId": 89,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "similarity_score": 0.7536
+      },
+      {
+        "movieId": 2716,
+        "tmdbId": 620,
+        "title": "Ghostbusters (a.k.a. Ghost Busters) (1984)",
+        "similarity_score": 0.749
+      },
+      {
+        "movieId": 3489,
+        "tmdbId": 879,
+        "title": "Hook (1991)",
+        "similarity_score": 0.6559
+      }
+    ],
+    "2791": [
+      {
+        "movieId": 3421,
+        "tmdbId": 8469,
+        "title": "Animal House (1978)",
+        "similarity_score": 0.7775
+      },
+      {
+        "movieId": 3671,
+        "tmdbId": 11072,
+        "title": "Blazing Saddles (1974)",
+        "similarity_score": 0.774
+      },
+      {
+        "movieId": 3471,
+        "tmdbId": 840,
+        "title": "Close Encounters of the Third Kind (1977)",
+        "similarity_score": 0.7468
+      },
+      {
+        "movieId": 3552,
+        "tmdbId": 11977,
+        "title": "Caddyshack (1980)",
+        "similarity_score": 0.7416
+      },
+      {
+        "movieId": 1387,
+        "tmdbId": 578,
+        "title": "Jaws (1975)",
+        "similarity_score": 0.7401
+      }
+    ],
+    "5618": [
+      {
+        "movieId": 5971,
+        "tmdbId": 8392,
+        "title": "My Neighbor Totoro (Tonari no Totoro) (1988)",
+        "similarity_score": 0.8412
+      },
+      {
+        "movieId": 31658,
+        "tmdbId": 4935,
+        "title": "Howl's Moving Castle (Hauru no ugoku shiro) (2004)",
+        "similarity_score": 0.7925
+      },
+      {
+        "movieId": 8327,
+        "tmdbId": 870,
+        "title": "Dolls (2002)",
+        "similarity_score": 0.7832
+      },
+      {
+        "movieId": 6408,
+        "tmdbId": 147729,
+        "title": "Animals are Beautiful People (1974)",
+        "similarity_score": 0.7545
+      },
+      {
+        "movieId": 8738,
+        "tmdbId": 31522,
+        "title": "Woman Is a Woman, A (femme est une femme, Une) (1961)",
+        "similarity_score": 0.7545
+      }
+    ],
+    "1653": [
+      {
+        "movieId": 2353,
+        "tmdbId": 9798,
+        "title": "Enemy of the State (1998)",
+        "similarity_score": 0.7244
+      },
+      {
+        "movieId": 2167,
+        "tmdbId": 36647,
+        "title": "Blade (1998)",
+        "similarity_score": 0.7114
+      },
+      {
+        "movieId": 1625,
+        "tmdbId": 2649,
+        "title": "Game, The (1997)",
+        "similarity_score": 0.6931
+      },
+      {
+        "movieId": 2600,
+        "tmdbId": 1946,
+        "title": "eXistenZ (1999)",
+        "similarity_score": 0.6735
+      },
+      {
+        "movieId": 1370,
+        "tmdbId": 1573,
+        "title": "Die Hard 2 (1990)",
+        "similarity_score": 0.6543
+      }
+    ],
+    "141": [
+      {
+        "movieId": 762,
+        "tmdbId": 9879,
+        "title": "Striptease (1996)",
+        "similarity_score": 0.8983
+      },
+      {
+        "movieId": 7,
+        "tmdbId": 11860,
+        "title": "Sabrina (1995)",
+        "similarity_score": 0.8835
+      },
+      {
+        "movieId": 628,
+        "tmdbId": 1592,
+        "title": "Primal Fear (1996)",
+        "similarity_score": 0.8726
+      },
+      {
+        "movieId": 719,
+        "tmdbId": 9304,
+        "title": "Multiplicity (1996)",
+        "similarity_score": 0.8634
+      },
+      {
+        "movieId": 1004,
+        "tmdbId": 9625,
+        "title": "Glimmer Man, The (1996)",
+        "similarity_score": 0.8579
+      }
+    ],
+    "1246": [
+      {
+        "movieId": 1961,
+        "tmdbId": 380,
+        "title": "Rain Man (1988)",
+        "similarity_score": 0.7014
+      },
+      {
+        "movieId": 3100,
+        "tmdbId": 293,
+        "title": "River Runs Through It, A (1992)",
+        "similarity_score": 0.6092
+      },
+      {
+        "movieId": 2396,
+        "tmdbId": 1934,
+        "title": "Shakespeare in Love (1998)",
+        "similarity_score": 0.6078
+      },
+      {
+        "movieId": 46976,
+        "tmdbId": 1262,
+        "title": "Stranger than Fiction (2006)",
+        "similarity_score": 0.6009
+      },
+      {
+        "movieId": 1682,
+        "tmdbId": 37165,
+        "title": "Truman Show, The (1998)",
+        "similarity_score": 0.5802
+      }
+    ],
+    "1391": [
+      {
+        "movieId": 3032,
+        "tmdbId": 11234,
+        "title": "Omega Man, The (1971)",
+        "similarity_score": 0.7739
+      },
+      {
+        "movieId": 4092,
+        "tmdbId": 15785,
+        "title": "Cherry 2000 (1987)",
+        "similarity_score": 0.7556
+      },
+      {
+        "movieId": 2700,
+        "tmdbId": 9473,
+        "title": "South Park: Bigger, Longer and Uncut (1999)",
+        "similarity_score": 0.7544
+      },
+      {
+        "movieId": 3698,
+        "tmdbId": 865,
+        "title": "Running Man, The (1987)",
+        "similarity_score": 0.7302
+      },
+      {
+        "movieId": 1215,
+        "tmdbId": 766,
+        "title": "Army of Darkness (1993)",
+        "similarity_score": 0.7066
+      }
+    ],
+    "1307": [
+      {
+        "movieId": 2396,
+        "tmdbId": 1934,
+        "title": "Shakespeare in Love (1998)",
+        "similarity_score": 0.7904
+      },
+      {
+        "movieId": 2724,
+        "tmdbId": 4806,
+        "title": "Runaway Bride (1999)",
+        "similarity_score": 0.7692
+      },
+      {
+        "movieId": 2915,
+        "tmdbId": 9346,
+        "title": "Risky Business (1983)",
+        "similarity_score": 0.7403
+      },
+      {
+        "movieId": 2749,
+        "tmdbId": 31924,
+        "title": "Morning After, The (1986)",
+        "similarity_score": 0.7388
+      },
+      {
+        "movieId": 920,
+        "tmdbId": 770,
+        "title": "Gone with the Wind (1939)",
+        "similarity_score": 0.7327
+      }
+    ],
+    "1393": [
+      {
+        "movieId": 852,
+        "tmdbId": 10478,
+        "title": "Tin Cup (1996)",
+        "similarity_score": 0.7835
+      },
+      {
+        "movieId": 1042,
+        "tmdbId": 9591,
+        "title": "That Thing You Do! (1996)",
+        "similarity_score": 0.7599
+      },
+      {
+        "movieId": 1302,
+        "tmdbId": 2323,
+        "title": "Field of Dreams (1989)",
+        "similarity_score": 0.7329
+      },
+      {
+        "movieId": 569,
+        "tmdbId": 31504,
+        "title": "Little Big League (1994)",
+        "similarity_score": 0.6882
+      },
+      {
+        "movieId": 832,
+        "tmdbId": 3595,
+        "title": "Ransom (1996)",
+        "similarity_score": 0.6663
+      }
+    ],
+    "5218": [
+      {
+        "movieId": 8360,
+        "tmdbId": 809,
+        "title": "Shrek 2 (2004)",
+        "similarity_score": 0.851
+      },
+      {
+        "movieId": 5816,
+        "tmdbId": 672,
+        "title": "Harry Potter and the Chamber of Secrets (2002)",
+        "similarity_score": 0.7909
+      },
+      {
+        "movieId": 6373,
+        "tmdbId": 310,
+        "title": "Bruce Almighty (2003)",
+        "similarity_score": 0.7863
+      },
+      {
+        "movieId": 53121,
+        "tmdbId": 810,
+        "title": "Shrek the Third (2007)",
+        "similarity_score": 0.7453
+      },
+      {
+        "movieId": 4896,
+        "tmdbId": 671,
+        "title": "Harry Potter and the Sorcerer's Stone (a.k.a. Harry Potter and the Philosopher's Stone) (2001)",
+        "similarity_score": 0.7351
+      }
+    ],
+    "904": [
+      {
+        "movieId": 908,
+        "tmdbId": 213,
+        "title": "North by Northwest (1959)",
+        "similarity_score": 0.8762
+      },
+      {
+        "movieId": 1252,
+        "tmdbId": 829,
+        "title": "Chinatown (1974)",
+        "similarity_score": 0.8424
+      },
+      {
+        "movieId": 1247,
+        "tmdbId": 37247,
+        "title": "Graduate, The (1967)",
+        "similarity_score": 0.8337
+      },
+      {
+        "movieId": 912,
+        "tmdbId": 289,
+        "title": "Casablanca (1942)",
+        "similarity_score": 0.8301
+      },
+      {
+        "movieId": 903,
+        "tmdbId": 426,
+        "title": "Vertigo (1958)",
+        "similarity_score": 0.809
+      }
+    ],
+    "95": [
+      {
+        "movieId": 736,
+        "tmdbId": 664,
+        "title": "Twister (1996)",
+        "similarity_score": 0.902
+      },
+      {
+        "movieId": 1105,
+        "tmdbId": 25750,
+        "title": "Children of the Corn IV: The Gathering (1996)",
+        "similarity_score": 0.8835
+      },
+      {
+        "movieId": 786,
+        "tmdbId": 9268,
+        "title": "Eraser (1996)",
+        "similarity_score": 0.8704
+      },
+      {
+        "movieId": 747,
+        "tmdbId": 16299,
+        "title": "Stupids, The (1996)",
+        "similarity_score": 0.8547
+      },
+      {
+        "movieId": 494,
+        "tmdbId": 2320,
+        "title": "Executive Decision (1996)",
+        "similarity_score": 0.8522
+      }
+    ],
+    "410": [
+      {
+        "movieId": 158,
+        "tmdbId": 8839,
+        "title": "Casper (1995)",
+        "similarity_score": 0.8883
+      },
+      {
+        "movieId": 355,
+        "tmdbId": 888,
+        "title": "Flintstones, The (1994)",
+        "similarity_score": 0.8774
+      },
+      {
+        "movieId": 432,
+        "tmdbId": 11310,
+        "title": "City Slickers II: The Legend of Curly's Gold (1994)",
+        "similarity_score": 0.8714
+      },
+      {
+        "movieId": 217,
+        "tmdbId": 37141,
+        "title": "Babysitter, The (1995)",
+        "similarity_score": 0.8714
+      },
+      {
+        "movieId": 256,
+        "tmdbId": 6280,
+        "title": "Junior (1994)",
+        "similarity_score": 0.8495
+      }
+    ],
+    "1220": [
+      {
+        "movieId": 1079,
+        "tmdbId": 623,
+        "title": "Fish Called Wanda, A (1988)",
+        "similarity_score": 0.8458
+      },
+      {
+        "movieId": 1238,
+        "tmdbId": 11235,
+        "title": "Local Hero (1983)",
+        "similarity_score": 0.7355
+      },
+      {
+        "movieId": 1395,
+        "tmdbId": 10896,
+        "title": "Tin Men (1987)",
+        "similarity_score": 0.6767
+      },
+      {
+        "movieId": 1132,
+        "tmdbId": 4481,
+        "title": "Manon of the Spring (Manon des sources) (1986)",
+        "similarity_score": 0.6756
+      },
+      {
+        "movieId": 1131,
+        "tmdbId": 4480,
+        "title": "Jean de Florette (1986)",
+        "similarity_score": 0.6748
+      }
+    ],
+    "32587": [
+      {
+        "movieId": 6874,
+        "tmdbId": 24,
+        "title": "Kill Bill: Vol. 1 (2003)",
+        "similarity_score": 0.8644
+      },
+      {
+        "movieId": 7438,
+        "tmdbId": 393,
+        "title": "Kill Bill: Vol. 2 (2004)",
+        "similarity_score": 0.8521
+      },
+      {
+        "movieId": 51662,
+        "tmdbId": 1271,
+        "title": "300 (2007)",
+        "similarity_score": 0.7698
+      },
+      {
+        "movieId": 44191,
+        "tmdbId": 752,
+        "title": "V for Vendetta (2006)",
+        "similarity_score": 0.7246
+      },
+      {
+        "movieId": 3275,
+        "tmdbId": 8374,
+        "title": "Boondock Saints, The (2000)",
+        "similarity_score": 0.6774
+      }
+    ],
+    "1219": [
+      {
+        "movieId": 904,
+        "tmdbId": 567,
+        "title": "Rear Window (1954)",
+        "similarity_score": 0.781
+      },
+      {
+        "movieId": 908,
+        "tmdbId": 213,
+        "title": "North by Northwest (1959)",
+        "similarity_score": 0.76
+      },
+      {
+        "movieId": 6987,
+        "tmdbId": 234,
+        "title": "Cabinet of Dr. Caligari, The (Cabinet des Dr. Caligari., Das) (1920)",
+        "similarity_score": 0.749
+      },
+      {
+        "movieId": 926,
+        "tmdbId": 705,
+        "title": "All About Eve (1950)",
+        "similarity_score": 0.7482
+      },
+      {
+        "movieId": 1333,
+        "tmdbId": 571,
+        "title": "Birds, The (1963)",
+        "similarity_score": 0.7141
+      }
+    ],
+    "3897": [
+      {
+        "movieId": 3911,
+        "tmdbId": 13785,
+        "title": "Best in Show (2000)",
+        "similarity_score": 0.8959
+      },
+      {
+        "movieId": 4027,
+        "tmdbId": 134,
+        "title": "O Brother, Where Art Thou? (2000)",
+        "similarity_score": 0.8144
+      },
+      {
+        "movieId": 3481,
+        "tmdbId": 243,
+        "title": "High Fidelity (2000)",
+        "similarity_score": 0.7139
+      },
+      {
+        "movieId": 4816,
+        "tmdbId": 9398,
+        "title": "Zoolander (2001)",
+        "similarity_score": 0.7136
+      },
+      {
+        "movieId": 5669,
+        "tmdbId": 1430,
+        "title": "Bowling for Columbine (2002)",
+        "similarity_score": 0.7075
+      }
+    ],
+    "1101": [
+      {
+        "movieId": 1616,
+        "tmdbId": 6623,
+        "title": "Peacemaker, The (1997)",
+        "similarity_score": 0.7924
+      },
+      {
+        "movieId": 1610,
+        "tmdbId": 1669,
+        "title": "Hunt for Red October, The (1990)",
+        "similarity_score": 0.7896
+      },
+      {
+        "movieId": 1518,
+        "tmdbId": 2163,
+        "title": "Breakdown (1997)",
+        "similarity_score": 0.7815
+      },
+      {
+        "movieId": 3214,
+        "tmdbId": 14040,
+        "title": "American Flyers (1985)",
+        "similarity_score": 0.7428
+      },
+      {
+        "movieId": 8268,
+        "tmdbId": 10498,
+        "title": "Point of No Return (1993)",
+        "similarity_score": 0.7292
+      }
+    ],
+    "788": [
+      {
+        "movieId": 135,
+        "tmdbId": 9101,
+        "title": "Down Periscope (1996)",
+        "similarity_score": 0.8878
+      },
+      {
+        "movieId": 64,
+        "tmdbId": 19760,
+        "title": "Two if by Sea (1996)",
+        "similarity_score": 0.8771
+      },
+      {
+        "movieId": 656,
+        "tmdbId": 11107,
+        "title": "Eddie (1996)",
+        "similarity_score": 0.8702
+      },
+      {
+        "movieId": 1004,
+        "tmdbId": 9625,
+        "title": "Glimmer Man, The (1996)",
+        "similarity_score": 0.865
+      },
+      {
+        "movieId": 65,
+        "tmdbId": 9536,
+        "title": "Bio-Dome (1996)",
+        "similarity_score": 0.8436
+      }
+    ],
+    "16": [
+      {
+        "movieId": 5059,
+        "tmdbId": 57976,
+        "title": "Little Dieter Needs to Fly (1997)",
+        "similarity_score": 0.778
+      },
+      {
+        "movieId": 5513,
+        "tmdbId": 20337,
+        "title": "Martin Lawrence Live: Runteldat (2002)",
+        "similarity_score": 0.778
+      },
+      {
+        "movieId": 61257,
+        "tmdbId": 15320,
+        "title": "I.O.U.S.A. (a.k.a. IOUSA) (2008)",
+        "similarity_score": 0.778
+      },
+      {
+        "movieId": 43684,
+        "tmdbId": 15363,
+        "title": "Something New (2006)",
+        "similarity_score": 0.778
+      },
+      {
+        "movieId": 1825,
+        "tmdbId": 19848,
+        "title": "The Players Club (1998)",
+        "similarity_score": 0.778
+      }
+    ],
+    "1584": [
+      {
+        "movieId": 1807,
+        "tmdbId": 37272,
+        "title": "Cool, Dry Place, A (1998)",
+        "similarity_score": 0.774
+      },
+      {
+        "movieId": 3807,
+        "tmdbId": 11940,
+        "title": "Sinbad and the Eye of the Tiger (1977)",
+        "similarity_score": 0.774
+      },
+      {
+        "movieId": 2628,
+        "tmdbId": 1893,
+        "title": "Star Wars: Episode I - The Phantom Menace (1999)",
+        "similarity_score": 0.7624
+      },
+      {
+        "movieId": 1240,
+        "tmdbId": 218,
+        "title": "Terminator, The (1984)",
+        "similarity_score": 0.7097
+      },
+      {
+        "movieId": 1374,
+        "tmdbId": 154,
+        "title": "Star Trek II: The Wrath of Khan (1982)",
+        "similarity_score": 0.7013
+      }
+    ]
+  }
+}
