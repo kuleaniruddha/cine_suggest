@@ -3,6 +3,7 @@ const { getDb } = require('../db');
 const { requireAuth, optionalAuth } = require('../middleware/auth');
 const tmdb = require('../services/tmdb');
 const { CATALOG } = require('../services/catalog');
+const firebaseService = require('../services/firebase');
 
 const router = express.Router();
 
@@ -189,6 +190,9 @@ router.post('/watchlist', requireAuth, async (req, res) => {
       [req.user.id, parseInt(movieId), metadataStr]
     );
 
+    // Sync to Firestore
+    firebaseService.syncWatchlistToFirestore(req.user.firebaseUid || req.user.id, parseInt(movieId), movie);
+
     res.json({ message: 'Movie added to watchlist.', movie });
   } catch (err) {
     console.error('Error saving to watchlist:', err);
@@ -206,6 +210,9 @@ router.delete('/watchlist/:movieId', requireAuth, async (req, res) => {
       'DELETE FROM watchlist WHERE user_id = ? AND movie_id = ?',
       [req.user.id, parseInt(movieId)]
     );
+
+    // Remove from Firestore
+    firebaseService.removeWatchlistFromFirestore(req.user.firebaseUid || req.user.id, parseInt(movieId));
 
     res.json({ message: 'Movie removed from watchlist.' });
   } catch (err) {
@@ -263,6 +270,9 @@ router.post('/favorites', requireAuth, async (req, res) => {
       [req.user.id, parseInt(movieId), metadataStr]
     );
 
+    // Sync to Firestore
+    firebaseService.syncFavoriteToFirestore(req.user.firebaseUid || req.user.id, parseInt(movieId), movie);
+
     res.json({ message: 'Movie added to favorites.', movie });
   } catch (err) {
     console.error('Error saving to favorites:', err);
@@ -280,6 +290,9 @@ router.delete('/favorites/:movieId', requireAuth, async (req, res) => {
       'DELETE FROM favorites WHERE user_id = ? AND movie_id = ?',
       [req.user.id, parseInt(movieId)]
     );
+
+    // Remove from Firestore
+    firebaseService.removeFavoriteFromFirestore(req.user.firebaseUid || req.user.id, parseInt(movieId));
 
     res.json({ message: 'Movie removed from favorites.' });
   } catch (err) {
@@ -433,6 +446,9 @@ router.post('/ratings', requireAuth, async (req, res) => {
       [req.user.id, parseInt(movieId), score, genresStr, metadataStr]
     );
 
+    // Sync to Firestore
+    firebaseService.syncRatingToFirestore(req.user.firebaseUid || req.user.id, parseInt(movieId), score, genresStr, movie);
+
     res.json({ message: 'Rating saved successfully.', rating: score });
   } catch (err) {
     console.error('Error saving rating:', err);
@@ -493,6 +509,9 @@ router.post('/history', requireAuth, async (req, res) => {
       'INSERT INTO history (user_id, movie_id, movie_metadata) VALUES (?, ?, ?)',
       [req.user.id, parseInt(movieId), metadataStr]
     );
+
+    // Sync to Firestore
+    firebaseService.syncHistoryToFirestore(req.user.firebaseUid || req.user.id, parseInt(movieId), movie);
 
     res.status(201).json({ message: 'History entry logged.' });
   } catch (err) {

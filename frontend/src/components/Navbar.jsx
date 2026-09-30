@@ -189,10 +189,23 @@ const Navbar = () => {
             {user ? (
               <div className="flex items-center gap-4">
                 <Link to="/dashboard" className="flex items-center gap-2 hover:text-neutral-300 transition text-sm">
-                  <div className="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center font-bold text-white shadow-md">
-                    {user.username.substring(0, 2).toUpperCase()}
+                  {user.photoURL ? (
+                    <img 
+                      src={user.photoURL} 
+                      alt={user.username} 
+                      className="w-8 h-8 rounded-full border border-amber-500/50 object-cover shadow-md"
+                    />
+                  ) : (
+                    <div className="w-8 h-8 rounded-full bg-brand-red flex items-center justify-center font-bold text-white shadow-md text-xs">
+                      {user.username ? user.username.substring(0, 2).toUpperCase() : 'U'}
+                    </div>
+                  )}
+                  <div className="flex flex-col text-left">
+                    <span className="font-medium leading-tight">{user.username}</span>
+                    {user.isFirebase && (
+                      <span className="text-[10px] text-amber-400 font-semibold leading-none">Firebase</span>
+                    )}
                   </div>
-                  <span className="font-medium">{user.username}</span>
                 </Link>
                 <button
                   onClick={logout}

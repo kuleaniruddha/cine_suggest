@@ -376,6 +376,7 @@ This generates an updated `analytics_results.json` containing:
 
 ## 📄 License & Acknowledgments
 
+- **Repository**: [https://github.com/kuleaniruddha/cine_suggest](https://github.com/kuleaniruddha/cine_suggest)
 - **Author**: [Aniruddha Kule](https://github.com/kuleaniruddha)
 - **Dataset**: Provided by [GroupLens Research](https://grouplens.org/datasets/movielens/latest/) (University of Minnesota).
 - **Metadata & Artwork**: Courtesy of [The Movie Database (TMDB)](https://www.themoviedb.org/).
@@ -384,5 +385,6 @@ This generates an updated `analytics_results.json` containing:
 ---
 
 <p align="center">
-  Built with ❤️ for cinema lovers and data science enthusiasts.
+  Built with ❤️ by <a href="https://github.com/kuleaniruddha">Aniruddha Kule</a> for cinema lovers and data science enthusiasts.<br/>
+  Star the project on GitHub: <a href="https://github.com/kuleaniruddha/cine_suggest">kuleaniruddha/cine_suggest</a>
 </p>

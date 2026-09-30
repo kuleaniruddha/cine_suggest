@@ -1,7 +1,12 @@
 {
   "name": "cineai-movie-rec-app",
   "version": "1.0.0",
-  "description": "CineAI - Live Movie discovery & recommendation engine",
+  "description": "CineSuggest - Live Movie discovery & recommendation engine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuleaniruddha/cine_suggest.git"
+  },
+  "homepage": "https://github.com/kuleaniruddha/cine_suggest",
   "scripts": {
     "server": "npm --prefix backend run dev",
     "dev": "npm --prefix frontend run dev",

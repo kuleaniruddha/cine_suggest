@@ -1,6 +1,7 @@
 const express = require('express');
 const { getDb } = require('../db');
 const { requireAuth, optionalAuth } = require('../middleware/auth');
+const firebaseService = require('../services/firebase');
 
 const router = express.Router();
 
@@ -69,6 +70,16 @@ router.post('/reviews', requireAuth, async (req, res) => {
       'INSERT INTO reviews (user_id, movie_id, movie_title, content) VALUES (?, ?, ?, ?)',
       [req.user.id, parseInt(tmdb_id), title || '', content]
     );
+
+    // Sync to Firestore
+    firebaseService.syncReviewToFirestore(result.lastID, {
+      userId: req.user.firebaseUid || req.user.id,
+      movieId: parseInt(tmdb_id),
+      movieTitle: title || '',
+      content,
+      authorEmail: req.user.email,
+      authorName: req.user.username || req.user.email.split('@')[0]
+    });
 
     res.status(201).json({
       id: result.lastID,

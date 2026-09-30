@@ -1,4 +1,13 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
+import { 
+  auth, 
+  googleProvider, 
+  signInWithPopup, 
+  signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword,
+  firebaseSignOut,
+  onAuthStateChanged 
+} from '../firebase';
 
 const AuthContext = createContext(null);
 
@@ -7,19 +16,40 @@ export const AuthProvider = ({ children }) => {
   const [watchlist, setWatchlist] = useState([]);
   const [userRatings, setUserRatings] = useState([]);
   const [history, setHistory] = useState([]);
-  const [favorites, setFavorites] = useState([]); // Client-only fallback state to support existing icons
+  const [favorites, setFavorites] = useState([]);
   const [collections, setCollections] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [authToken, setAuthToken] = useState(() => localStorage.getItem('cineai_auth_token') || '');
 
-  // Fetch watchlist, ratings, viewing history, favorites, and collections from backend Express proxy
+  const getHeaders = () => {
+    const headers = { 'Content-Type': 'application/json' };
+    const token = authToken || localStorage.getItem('cineai_auth_token');
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+    return headers;
+  };
+
+  const authFetch = async (url, options = {}) => {
+    const headers = {
+      ...getHeaders(),
+      ...(options.headers || {})
+    };
+    return fetch(url, {
+      ...options,
+      headers
+    });
+  };
+
+  // Fetch watchlist, ratings, viewing history, favorites, and collections from backend
   const fetchUserData = async () => {
     try {
       const [watchRes, rateRes, histRes, favRes, colRes] = await Promise.all([
-        fetch('/api/user/watchlist'),
-        fetch('/api/user/ratings'),
-        fetch('/api/user/history'),
-        fetch('/api/user/favorites'),
-        fetch('/api/user/collections')
+        authFetch('/api/user/watchlist'),
+        authFetch('/api/user/ratings'),
+        authFetch('/api/user/history'),
+        authFetch('/api/user/favorites'),
+        authFetch('/api/user/collections')
       ]);
 
       if (watchRes.ok) {
@@ -42,28 +72,37 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const saveUser = (u) => {
+  const saveUser = (u, token) => {
     if (!u) {
       setUser(null);
+      setAuthToken('');
+      localStorage.removeItem('cineai_auth_token');
       return null;
+    }
+    if (token) {
+      setAuthToken(token);
+      localStorage.setItem('cineai_auth_token', token);
     }
     const hydratedUser = {
       ...u,
-      username: u.username || (u.email ? u.email.split('@')[0] : 'User'),
+      username: u.username || u.displayName || (u.email ? u.email.split('@')[0] : 'User'),
+      photoURL: u.photoURL || u.picture || null,
       created_at: u.created_at || new Date().toISOString()
     };
     setUser(hydratedUser);
     return hydratedUser;
   };
 
-  // Verify cookie session on mount
+  // Verify session on mount
   useEffect(() => {
+    let mounted = true;
+
     const verifyUser = async () => {
       try {
-        const res = await fetch('/api/auth/me');
+        const res = await authFetch('/api/auth/me');
         if (res.ok) {
           const data = await res.json();
-          if (data.user) {
+          if (data.user && mounted) {
             saveUser(data.user);
             await fetchUserData();
           }
@@ -71,14 +110,110 @@ export const AuthProvider = ({ children }) => {
       } catch (err) {
         console.error('Session verification failed:', err);
       } finally {
-        setLoading(false);
+        if (mounted) setLoading(false);
       }
     };
     
     verifyUser();
+
+    // Firebase Auth State Listener
+    const unsubscribe = onAuthStateChanged(auth, async (fbUser) => {
+      if (fbUser && !user) {
+        try {
+          const idToken = await fbUser.getIdToken();
+          const res = await fetch('/api/auth/firebase-login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              idToken,
+              user: {
+                uid: fbUser.uid,
+                email: fbUser.email,
+                displayName: fbUser.displayName,
+                photoURL: fbUser.photoURL
+              }
+            })
+          });
+          if (res.ok && mounted) {
+            const data = await res.json();
+            saveUser(data.user, data.token);
+            await fetchUserData();
+          }
+        } catch (err) {
+          console.error('Firebase auto-sync error:', err);
+        }
+      }
+    });
+
+    return () => {
+      mounted = false;
+      unsubscribe();
+    };
   }, []);
 
+  // Google Sign-In with Firebase
+  const signInWithGoogle = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const idToken = await result.user.getIdToken();
+      
+      const res = await fetch('/api/auth/firebase-login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          idToken,
+          user: {
+            uid: result.user.uid,
+            email: result.user.email,
+            displayName: result.user.displayName,
+            photoURL: result.user.photoURL
+          }
+        })
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || 'Google Sign-in synchronization failed');
+      }
+
+      const data = await res.json();
+      const loggedUser = saveUser(data.user, data.token);
+      await fetchUserData();
+      return loggedUser;
+    } catch (err) {
+      console.error('Firebase Google Sign-In error:', err);
+      throw err;
+    }
+  };
+
   const login = async (email, password) => {
+    // 1. Try Firebase Email/Password first
+    try {
+      const fbCred = await signInWithEmailAndPassword(auth, email, password);
+      const idToken = await fbCred.user.getIdToken();
+      const res = await fetch('/api/auth/firebase-login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          idToken,
+          user: {
+            uid: fbCred.user.uid,
+            email: fbCred.user.email,
+            displayName: fbCred.user.displayName
+          }
+        })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        const loggedUser = saveUser(data.user, data.token);
+        await fetchUserData();
+        return loggedUser;
+      }
+    } catch (fbErr) {
+      // If Firebase auth throws (e.g. user registered in local DB), fallback to local login
+    }
+
+    // 2. Standard backend DB login fallback
     const res = await fetch('/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -91,20 +226,53 @@ export const AuthProvider = ({ children }) => {
     }
 
     const data = await res.json();
-    const loggedUser = saveUser(data.user);
+    const loggedUser = saveUser(data.user, data.token);
     await fetchUserData();
     return loggedUser;
   };
 
   const register = async (arg1, arg2, arg3) => {
-    // Handle both (email, password) and (username, email, password) signatures
     const email = arg3 ? arg2 : arg1;
     const password = arg3 || arg2;
+    const username = arg3 ? arg1 : (email.split('@')[0]);
 
+    // Try creating user in Firebase Auth
+    let fbToken = null;
+    let fbUid = null;
+    try {
+      const fbCred = await createUserWithEmailAndPassword(auth, email, password);
+      fbToken = await fbCred.user.getIdToken();
+      fbUid = fbCred.user.uid;
+    } catch (fbErr) {
+      console.warn('Firebase user creation note:', fbErr.message);
+    }
+
+    if (fbToken) {
+      const res = await fetch('/api/auth/firebase-login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          idToken: fbToken,
+          user: {
+            uid: fbUid,
+            email,
+            displayName: username
+          }
+        })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        const regUser = saveUser(data.user, data.token);
+        await fetchUserData();
+        return regUser;
+      }
+    }
+
+    // Standard backend DB registration
     const res = await fetch('/api/auth/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email, password, username }),
     });
 
     if (!res.ok) {
@@ -113,30 +281,35 @@ export const AuthProvider = ({ children }) => {
     }
 
     const data = await res.json();
-    const regUser = saveUser(data.user);
+    const regUser = saveUser(data.user, data.token);
     await fetchUserData();
     return regUser;
   };
 
   const logout = async () => {
     try {
+      await firebaseSignOut(auth);
+    } catch (e) {
+      // ignore
+    }
+    try {
       await fetch('/api/auth/logout', { method: 'POST' });
     } catch (e) {
       console.error(e);
     }
-    saveUser(null);
+    saveUser(null, '');
     setWatchlist([]);
     setUserRatings([]);
     setHistory([]);
     setFavorites([]);
+    setCollections([]);
   };
 
   // Watchlist Management
   const addToWatchlist = async (movie) => {
     try {
-      const res = await fetch('/api/user/watchlist', {
+      const res = await authFetch('/api/user/watchlist', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ movieId: movie.id, movie }),
       });
       if (res.ok) {
@@ -151,7 +324,7 @@ export const AuthProvider = ({ children }) => {
 
   const removeFromWatchlist = async (movieId) => {
     try {
-      const res = await fetch(`/api/user/watchlist/${movieId}`, {
+      const res = await authFetch(`/api/user/watchlist/${movieId}`, {
         method: 'DELETE',
       });
       if (res.ok) {
@@ -184,9 +357,8 @@ export const AuthProvider = ({ children }) => {
         return false;
       }
 
-      const res = await fetch('/api/user/ratings', {
+      const res = await authFetch('/api/user/ratings', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           movieId,
           rating: ratingScore,
@@ -216,9 +388,8 @@ export const AuthProvider = ({ children }) => {
   const addToHistory = async (movie) => {
     if (!user) return;
     try {
-      await fetch('/api/user/history', {
+      await authFetch('/api/user/history', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ movieId: movie.id, movie }),
       });
       setHistory((prev) => [movie, ...prev.filter(m => m.id !== movie.id)]);
@@ -230,9 +401,8 @@ export const AuthProvider = ({ children }) => {
   // Persisted Favorites triggers
   const addFavorite = async (movie) => {
     try {
-      const res = await fetch('/api/user/favorites', {
+      const res = await authFetch('/api/user/favorites', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ movieId: movie.id, movie }),
       });
       if (res.ok) {
@@ -247,7 +417,7 @@ export const AuthProvider = ({ children }) => {
 
   const removeFavorite = async (movieId) => {
     try {
-      const res = await fetch(`/api/user/favorites/${movieId}`, {
+      const res = await authFetch(`/api/user/favorites/${movieId}`, {
         method: 'DELETE',
       });
       if (res.ok) {
@@ -266,9 +436,8 @@ export const AuthProvider = ({ children }) => {
 
   const createCollection = async (name, description, isPublic) => {
     try {
-      const res = await fetch('/api/user/collections', {
+      const res = await authFetch('/api/user/collections', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, description, is_public: isPublic }),
       });
       if (res.ok) {
@@ -284,7 +453,7 @@ export const AuthProvider = ({ children }) => {
 
   const deleteCollection = async (collectionId) => {
     try {
-      const res = await fetch(`/api/user/collections/${collectionId}`, {
+      const res = await authFetch(`/api/user/collections/${collectionId}`, {
         method: 'DELETE',
       });
       if (res.ok) {
@@ -299,9 +468,8 @@ export const AuthProvider = ({ children }) => {
 
   const addMovieToCollection = async (collectionId, movie) => {
     try {
-      const res = await fetch(`/api/user/collections/${collectionId}/movies`, {
+      const res = await authFetch(`/api/user/collections/${collectionId}/movies`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ movieId: movie.id, movie }),
       });
       if (res.ok) {
@@ -323,7 +491,7 @@ export const AuthProvider = ({ children }) => {
 
   const removeMovieFromCollection = async (collectionId, movieId) => {
     try {
-      const res = await fetch(`/api/user/collections/${collectionId}/movies/${movieId}`, {
+      const res = await authFetch(`/api/user/collections/${collectionId}/movies/${movieId}`, {
         method: 'DELETE',
       });
       if (res.ok) {
@@ -348,7 +516,7 @@ export const AuthProvider = ({ children }) => {
 
   const clearAllData = async () => {
     try {
-      const res = await fetch('/api/user/clear-all', {
+      const res = await authFetch('/api/user/clear-all', {
         method: 'POST',
       });
       if (res.ok) {
@@ -374,6 +542,7 @@ export const AuthProvider = ({ children }) => {
     favorites,
     login,
     register,
+    signInWithGoogle,
     logout,
     addToWatchlist,
     removeFromWatchlist,
@@ -384,7 +553,8 @@ export const AuthProvider = ({ children }) => {
     addFavorite,
     removeFavorite,
     isFavorite,
-    getHeaders: () => ({}),
+    getHeaders,
+    authFetch,
     collections,
     createCollection,
     deleteCollection,
